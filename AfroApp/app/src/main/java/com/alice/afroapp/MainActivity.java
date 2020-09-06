@@ -73,7 +73,8 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void Viewprofile(){
-        Intent intent= new Intent(MainActivity.this,Profile.class);
-        startActivity(intent);
+//        Intent intent= new Intent(MainActivity.this,Profile.class);
+//        startActivity(intent);
+        Toast.makeText(this,"View profile",Toast.LENGTH_LONG).show();
     }
 }
