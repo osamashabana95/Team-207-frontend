@@ -977,9 +977,9 @@ public final class R {
         public static final int design_ic_visibility_off = 0x7f070074;
         public static final int design_password_eye = 0x7f070075;
         public static final int design_snackbar_background = 0x7f070076;
-        public static final int ic_mtrl_chip_checked_black = 0x7f070082;
-        public static final int ic_mtrl_chip_checked_circle = 0x7f070083;
-        public static final int ic_mtrl_chip_close_circle = 0x7f070084;
+        public static final int ic_mtrl_chip_checked_black = 0x7f070083;
+        public static final int ic_mtrl_chip_checked_circle = 0x7f070084;
+        public static final int ic_mtrl_chip_close_circle = 0x7f070085;
         public static final int mtrl_snackbar_background = 0x7f070088;
         public static final int mtrl_tabs_default_indicator = 0x7f070089;
         public static final int navigation_empty_icon = 0x7f07008a;
@@ -1234,10 +1234,10 @@ public final class R {
         public static final int notification_template_icon_group = 0x7f0b003f;
         public static final int notification_template_part_chronometer = 0x7f0b0043;
         public static final int notification_template_part_time = 0x7f0b0044;
-        public static final int select_dialog_item_material = 0x7f0b0045;
-        public static final int select_dialog_multichoice_material = 0x7f0b0046;
-        public static final int select_dialog_singlechoice_material = 0x7f0b0047;
-        public static final int support_simple_spinner_dropdown_item = 0x7f0b0048;
+        public static final int select_dialog_item_material = 0x7f0b0046;
+        public static final int select_dialog_multichoice_material = 0x7f0b0047;
+        public static final int select_dialog_singlechoice_material = 0x7f0b0048;
+        public static final int support_simple_spinner_dropdown_item = 0x7f0b0049;
     }
     public static final class string {
         private string() {}

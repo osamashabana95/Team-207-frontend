@@ -4863,18 +4863,18 @@ public final class R {
     public static final int googleg_standard_color_18=0x7f070078;
     public static final int ic_account_box_black_24dp=0x7f070079;
     public static final int ic_account_circle_black_24dp=0x7f07007a;
-    public static final int ic_create_black_24dp=0x7f07007b;
-    public static final int ic_dashboard_black_24dp=0x7f07007c;
-    public static final int ic_home_black_24dp=0x7f07007d;
-    public static final int ic_laptop_windows_black_24dp=0x7f07007e;
-    public static final int ic_launcher_background=0x7f07007f;
-    public static final int ic_launcher_foreground=0x7f070080;
-    public static final int ic_list_black_24dp=0x7f070081;
-    public static final int ic_mtrl_chip_checked_black=0x7f070082;
-    public static final int ic_mtrl_chip_checked_circle=0x7f070083;
-    public static final int ic_mtrl_chip_close_circle=0x7f070084;
-    public static final int ic_notifications_black_24dp=0x7f070085;
-    public static final int ic_question_answer_black_24dp=0x7f070086;
+    public static final int ic_comment_black_24dp=0x7f07007b;
+    public static final int ic_create_black_24dp=0x7f07007c;
+    public static final int ic_dashboard_black_24dp=0x7f07007d;
+    public static final int ic_home_black_24dp=0x7f07007e;
+    public static final int ic_laptop_windows_black_24dp=0x7f07007f;
+    public static final int ic_launcher_background=0x7f070080;
+    public static final int ic_launcher_foreground=0x7f070081;
+    public static final int ic_list_black_24dp=0x7f070082;
+    public static final int ic_mtrl_chip_checked_black=0x7f070083;
+    public static final int ic_mtrl_chip_checked_circle=0x7f070084;
+    public static final int ic_mtrl_chip_close_circle=0x7f070085;
+    public static final int ic_notifications_black_24dp=0x7f070086;
     public static final int ic_send_black_24dp=0x7f070087;
     public static final int mtrl_snackbar_background=0x7f070088;
     public static final int mtrl_tabs_default_indicator=0x7f070089;
@@ -5218,10 +5218,11 @@ public final class R {
     public static final int notification_template_media_custom=0x7f0b0042;
     public static final int notification_template_part_chronometer=0x7f0b0043;
     public static final int notification_template_part_time=0x7f0b0044;
-    public static final int select_dialog_item_material=0x7f0b0045;
-    public static final int select_dialog_multichoice_material=0x7f0b0046;
-    public static final int select_dialog_singlechoice_material=0x7f0b0047;
-    public static final int support_simple_spinner_dropdown_item=0x7f0b0048;
+    public static final int questions_row=0x7f0b0045;
+    public static final int select_dialog_item_material=0x7f0b0046;
+    public static final int select_dialog_multichoice_material=0x7f0b0047;
+    public static final int select_dialog_singlechoice_material=0x7f0b0048;
+    public static final int support_simple_spinner_dropdown_item=0x7f0b0049;
   }
   public static final class menu {
     public static final int bottom_nav_menu=0x7f0c0000;
