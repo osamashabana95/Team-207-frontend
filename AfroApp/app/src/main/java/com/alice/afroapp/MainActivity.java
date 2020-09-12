@@ -7,6 +7,8 @@ import android.view.MenuItem;
 import android.widget.Toast;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.navigation.NavController;
@@ -15,6 +17,8 @@ import androidx.navigation.ui.AppBarConfiguration;
 import androidx.navigation.ui.NavigationUI;
 
 public class MainActivity extends AppCompatActivity {
+    private FirebaseDatabase mFirebaseDatabase;
+    private DatabaseReference mDatabaseReference;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,6 +33,11 @@ public class MainActivity extends AppCompatActivity {
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment);
         NavigationUI.setupActionBarWithNavController(this, navController, appBarConfiguration);
         NavigationUI.setupWithNavController(navView, navController);
+       // FirebaseUtil.openFbReference("Conversations",this);
+        FirebaseDatabase.getInstance().setPersistenceEnabled(true);
+        FirebaseDatabase mFirebaseDatabase = FirebaseDatabase.getInstance();
+       mDatabaseReference = mFirebaseDatabase.getReference().child("ref");
+
     }
 
     @Override
@@ -49,17 +58,20 @@ public class MainActivity extends AppCompatActivity {
                 Post();
                 Toast.makeText(this,"Post a question",Toast.LENGTH_LONG).show();
                 return true;
+            case R.id.action_profile_creation:
+                ViewprofileAdd();
+                return  true;
 
             default: return super.onOptionsItemSelected(item);
         }
     }
-
+    //onClicklistener to go to listActivity
     public void Viewlist(MenuItem item) {
         Intent intent= new Intent(MainActivity.this,Listquestions.class);
         startActivity(intent);
         Toast.makeText(this,"Questions list.",Toast.LENGTH_LONG).show();
-
     }
+
 
     public void Viecomments(MenuItem item) {
         Intent intent= new Intent(MainActivity.this,Listcomments.class);
@@ -76,5 +88,24 @@ public class MainActivity extends AppCompatActivity {
 //        Intent intent= new Intent(MainActivity.this,Profile.class);
 //        startActivity(intent);
         Toast.makeText(this,"View profile",Toast.LENGTH_LONG).show();
+    }
+
+    public void ViewprofileAdd(){
+       Intent intent= new Intent(MainActivity.this,ProfileAdd.class);
+       startActivity(intent);
+    }
+
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+       // FirebaseUtil.attachListener();
+    }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+       // FirebaseUtil.detachListener();
+
     }
 }

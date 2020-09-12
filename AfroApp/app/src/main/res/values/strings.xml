@@ -8,4 +8,16 @@
     <string name="title_activity_listquestions">Listquestions</string>
     <string name="title_activity_listcomments">Listcomments</string>
     <string name="View_list">View_list</string>
+    <string name="title_activity_profile_add">ProfileAdd</string>
+    <string name="email_address">Email Address</string>
+    <string name="home">Home</string>
+    <string name="submitt">Submitt</string>
+    <string name="email">email</string>
+    <string name="Emaik_Add">Email_Add:</string>
+    <string name="Email_Add">Email_Add</string>
+    <string name="full_name">Full Name:</string>
+    <string name="proficiency">Proficiency:</string>
+    <string name="location">Location:</string>
+    <string name="title_activity_add">Add</string>
+    <string name="title_activity_add_prof">activity_add_prof</string>
 </resources>

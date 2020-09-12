@@ -4,7 +4,7 @@
             "outputFile": "C:\\Users\\Alice\\AndroidStudioProjects\\AfroApp\\New\\Team-207-frontend\\AfroApp\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-am\\values-am.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\Alice\\.gradle\\caches\\transforms-2\\files-2.1\\847ed1f530974668c36b8ace3e5db8b8\\jetified-play-services-basement-16.0.1\\res\\values-am\\values.xml",
+                    "source": "C:\\Users\\Alice\\.gradle\\caches\\transforms-2\\files-2.1\\d1d3ed258e90acf9a9901b27c6261dd1\\jetified-play-services-basement-17.0.0\\res\\values-am\\values.xml",
                     "from": {
                         "startLines": "4",
                         "startColumns": "0",
@@ -38,7 +38,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\Alice\\.gradle\\caches\\transforms-2\\files-2.1\\802cff68635c75a444baa6581a43dd6a\\jetified-play-services-base-16.0.1\\res\\values-am\\values.xml",
+                    "source": "C:\\Users\\Alice\\.gradle\\caches\\transforms-2\\files-2.1\\a7dfbb78c47d6fb61939251aeae30df0\\play-services-base-17.1.0\\res\\values-am\\values.xml",
                     "from": {
                         "startLines": "4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20",
                         "startColumns": "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0",

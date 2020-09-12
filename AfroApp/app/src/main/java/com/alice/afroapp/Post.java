@@ -6,14 +6,36 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.ImageButton;
 import android.widget.Toast;
 
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+
 public class Post extends AppCompatActivity {
+    private FirebaseDatabase mFirebaseDatabase;
+    private DatabaseReference mDatabaseReference;
+    private EditText editQuestiion;
+    private ImageButton postButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_post);
+        editQuestiion  = (EditText) findViewById(R.id.editQuestion);
+        postButton = (ImageButton)findViewById(R.id.postButton);
+//        mFirebaseDatabase = FirebaseUtil.mFirebaseDatabase;
+        mDatabaseReference = FirebaseUtil.mDatabaseReference;
+        postButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                postQuestion();
+            }
+        });
+
     }
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -44,6 +66,12 @@ public class Post extends AppCompatActivity {
     public void Gohome(){
         Intent intent= new Intent(Post.this,MainActivity.class);
         startActivity(intent);
+    }
+
+    public void postQuestion(){
+        String title = editQuestiion.getText().toString();
+//        mDatabaseReference.child("Conversations").child("Questions").
+//                child("id").child("title").setValue("title")
     }
 
 }

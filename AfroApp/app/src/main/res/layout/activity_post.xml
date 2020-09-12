@@ -8,7 +8,7 @@
     tools:context=".Post">
 
     <EditText
-        android:id="@+id/editText"
+        android:id="@+id/editQuestion"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="152dp"
@@ -20,12 +20,12 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageButton
-        android:id="@+id/imageButton"
+        android:id="@+id/postButton"
         android:layout_width="75dp"
         android:layout_height="55dp"
         android:layout_marginTop="16dp"
         android:background="@drawable/btn_shape"
-        app:layout_constraintEnd_toEndOf="@+id/editText"
-        app:layout_constraintTop_toBottomOf="@+id/editText"
+        app:layout_constraintEnd_toEndOf="@+id/editQuestion"
+        app:layout_constraintTop_toBottomOf="@+id/editQuestion"
         app:srcCompat="@drawable/ic_send_black_24dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>
