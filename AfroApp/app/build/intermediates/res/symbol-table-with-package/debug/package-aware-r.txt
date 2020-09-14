@@ -1141,6 +1141,8 @@ drawable googleg_disabled_color_18
 drawable googleg_standard_color_18
 drawable ic_account_box_black_24dp
 drawable ic_account_circle_black_24dp
+drawable ic_add_black_24dp
+drawable ic_add_circle_black_24dp
 drawable ic_comment_black_24dp
 drawable ic_create_black_24dp
 drawable ic_dashboard_black_24dp
@@ -1191,6 +1193,7 @@ id action_container
 id action_context_bar
 id action_divider
 id action_edit
+id action_goprofile
 id action_home
 id action_image
 id action_list
@@ -1202,7 +1205,6 @@ id action_mode_close_button
 id action_new
 id action_post
 id action_profile
-id action_profile_creation
 id action_text
 id actions
 id activity_chooser_view_content
@@ -1271,11 +1273,11 @@ id divider2
 id divider3
 id divider4
 id dynamic
+id editEmail
+id editLoc
 id editName
 id editProf
 id editQuestion
-id editText3
-id editText4
 id edit_phone_number
 id edit_query
 id email
@@ -1528,6 +1530,7 @@ layout abc_search_dropdown_item_icons_2line
 layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
+layout activity_add
 layout activity_listcomments
 layout activity_listquestions
 layout activity_main
@@ -1536,6 +1539,7 @@ layout activity_profile
 layout activity_profile_add
 layout browser_actions_context_menu_page
 layout browser_actions_context_menu_row
+layout content_add
 layout content_listcomments
 layout content_listquestions
 layout design_bottom_navigation_item
@@ -1611,6 +1615,8 @@ mipmap ic_launcher
 mipmap ic_launcher_round
 navigation mobile_navigation
 plurals fui_error_weak_password
+string Add_Profile
+string AfroDevMeet
 string Comments
 string Emaik_Add
 string Email_Add
@@ -1798,11 +1804,16 @@ string path_password_eye
 string path_password_eye_mask_strike_through
 string path_password_eye_mask_visible
 string path_password_strike_through
+string post_question
 string proficiency
+string profile
 string project_id
+string question
 string search_menu_title
 string status_bar_notification_info_overflow
 string submitt
+string title_activity_add
+string title_activity_add_prof
 string title_activity_listcomments
 string title_activity_listquestions
 string title_activity_profile_add

@@ -1,5 +1,6 @@
 package com.alice.afroapp;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
@@ -8,7 +9,10 @@ import com.google.android.material.snackbar.Snackbar;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
+import android.widget.Toast;
 
 public class AddProf extends AppCompatActivity {
 
@@ -27,6 +31,34 @@ public class AddProf extends AppCompatActivity {
                         .setAction("Action", null).show();
             }
         });
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.profile_add_menu,menu);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+
+        int id = item.getItemId();
+        switch (item.getItemId()){
+            case R.id.action_home:
+                GoHome();
+                return true;
+            case R.id.action_new:
+                return true;
+            case R.id.action_list:
+                return true;
+            default: return super.onOptionsItemSelected(item);
+        }
+    }
+
+    public void GoHome(){
+        Intent intent= new Intent(AddProf.this,MainActivity.class);
+        startActivity(intent);
+        Toast.makeText(this,"Questions list.",Toast.LENGTH_LONG).show();
     }
 
 }

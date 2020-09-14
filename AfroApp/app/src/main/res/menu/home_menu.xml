@@ -3,6 +3,11 @@
     xmlns:android="http://schemas.android.com/apk/res/android">
 
     <item
+        android:id="@+id/action_home"
+        android:icon="@drawable/ic_home_black_24dp"
+        android:title="profile post"
+        app:showAsAction="always" />
+    <item
         android:id="@+id/action_profile"
         android:icon="@drawable/ic_account_circle_black_24dp"
         android:title="Item"
@@ -11,10 +16,6 @@
         android:id="@+id/action_post"
         android:icon="@drawable/ic_create_black_24dp"
         android:title="Item"
-        app:showAsAction="always" />
-    <item
-        android:id="@+id/action_profile_creation"
-        android:icon="@drawable/ic_person_add_black_24dp"
-        android:title="profile post"
-        app:showAsAction="always" />
+        app:showAsAction="ifRoom" />
+
 </menu>

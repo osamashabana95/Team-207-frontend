@@ -52,28 +52,27 @@ public class MainActivity extends AppCompatActivity {
         int id = item.getItemId();
         switch (item.getItemId()){
             case R.id.action_profile:
-                Viewprofile();
+                ViewProfile();
                 return true;
             case R.id.action_post:
                 Post();
-                Toast.makeText(this,"Post a question",Toast.LENGTH_LONG).show();
                 return true;
-            case R.id.action_profile_creation:
+            case R.id.action_home:
                 ViewprofileAdd();
                 return  true;
 
             default: return super.onOptionsItemSelected(item);
         }
     }
-    //onClicklistener to go to listActivity
-    public void Viewlist(MenuItem item) {
+    //function to go to listActivity
+    public void ViewList(MenuItem item) {
         Intent intent= new Intent(MainActivity.this,Listquestions.class);
         startActivity(intent);
         Toast.makeText(this,"Questions list.",Toast.LENGTH_LONG).show();
     }
 
 
-    public void Viecomments(MenuItem item) {
+    public void ViewComments(MenuItem item) {
         Intent intent= new Intent(MainActivity.this,Listcomments.class);
         startActivity(intent);
         Toast.makeText(this,"Comments list.",Toast.LENGTH_LONG).show();
@@ -84,14 +83,14 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
-    public void Viewprofile(){
+    public void ViewProfile(){
 //        Intent intent= new Intent(MainActivity.this,Profile.class);
 //        startActivity(intent);
         Toast.makeText(this,"View profile",Toast.LENGTH_LONG).show();
     }
 
     public void ViewprofileAdd(){
-       Intent intent= new Intent(MainActivity.this,ProfileAdd.class);
+       Intent intent= new Intent(MainActivity.this,AddProf.class);
        startActivity(intent);
     }
 
@@ -105,7 +104,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onPause() {
         super.onPause();
-       // FirebaseUtil.detachListener();
+      //  FirebaseUtil.detachListener();
 
     }
 }

@@ -20,4 +20,9 @@
     <string name="location">Location:</string>
     <string name="title_activity_add">Add</string>
     <string name="title_activity_add_prof">activity_add_prof</string>
+    <string name="profile">profile</string>
+    <string name="question">question</string>
+    <string name="Add_Profile">Add_Profile</string>
+    <string name="AfroDevMeet">AfroDevMeet</string>
+    <string name="post_question">post question</string>
 </resources>

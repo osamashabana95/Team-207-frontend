@@ -10,10 +10,13 @@
     <EditText
         android:id="@+id/editQuestion"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="45dp"
         android:layout_marginTop="152dp"
+        android:autofillHints="question"
+        android:background="@drawable/edit_shape"
         android:ems="10"
         android:gravity="start|top"
+        android:hint="@string/question"
         android:inputType="textMultiLine"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -22,7 +25,7 @@
     <ImageButton
         android:id="@+id/postButton"
         android:layout_width="75dp"
-        android:layout_height="55dp"
+        android:layout_height="50dp"
         android:layout_marginTop="16dp"
         android:background="@drawable/btn_shape"
         app:layout_constraintEnd_toEndOf="@+id/editQuestion"

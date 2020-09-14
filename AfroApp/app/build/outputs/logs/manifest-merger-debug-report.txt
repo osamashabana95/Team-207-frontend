@@ -161,14 +161,14 @@ MERGED from [androidx.lifecycle:lifecycle-process:2.1.0] C:\Users\Alice\.gradle\
 		ADDED from C:\Users\Alice\AndroidStudioProjects\AfroApp\New\Team-207-frontend\AfroApp\app\src\main\AndroidManifest.xml:6:9-35
 	android:theme
 		ADDED from C:\Users\Alice\AndroidStudioProjects\AfroApp\New\Team-207-frontend\AfroApp\app\src\main\AndroidManifest.xml:11:9-40
-activity#com.alice.afroapp.Add
+activity#com.alice.afroapp.AddProf
 ADDED from C:\Users\Alice\AndroidStudioProjects\AfroApp\New\Team-207-frontend\AfroApp\app\src\main\AndroidManifest.xml:12:9-15:68
 	android:label
-		ADDED from C:\Users\Alice\AndroidStudioProjects\AfroApp\New\Team-207-frontend\AfroApp\app\src\main\AndroidManifest.xml:14:13-55
+		ADDED from C:\Users\Alice\AndroidStudioProjects\AfroApp\New\Team-207-frontend\AfroApp\app\src\main\AndroidManifest.xml:14:13-48
 	android:theme
 		ADDED from C:\Users\Alice\AndroidStudioProjects\AfroApp\New\Team-207-frontend\AfroApp\app\src\main\AndroidManifest.xml:15:13-56
 	android:name
-		ADDED from C:\Users\Alice\AndroidStudioProjects\AfroApp\New\Team-207-frontend\AfroApp\app\src\main\AndroidManifest.xml:13:13-32
+		ADDED from C:\Users\Alice\AndroidStudioProjects\AfroApp\New\Team-207-frontend\AfroApp\app\src\main\AndroidManifest.xml:13:13-36
 activity#com.alice.afroapp.ProfileAdd
 ADDED from C:\Users\Alice\AndroidStudioProjects\AfroApp\New\Team-207-frontend\AfroApp\app\src\main\AndroidManifest.xml:16:9-48
 	android:name
@@ -200,7 +200,7 @@ ADDED from C:\Users\Alice\AndroidStudioProjects\AfroApp\New\Team-207-frontend\Af
 activity#com.alice.afroapp.MainActivity
 ADDED from C:\Users\Alice\AndroidStudioProjects\AfroApp\New\Team-207-frontend\AfroApp\app\src\main\AndroidManifest.xml:27:9-35:20
 	android:label
-		ADDED from C:\Users\Alice\AndroidStudioProjects\AfroApp\New\Team-207-frontend\AfroApp\app\src\main\AndroidManifest.xml:29:13-45
+		ADDED from C:\Users\Alice\AndroidStudioProjects\AfroApp\New\Team-207-frontend\AfroApp\app\src\main\AndroidManifest.xml:29:13-48
 	android:name
 		ADDED from C:\Users\Alice\AndroidStudioProjects\AfroApp\New\Team-207-frontend\AfroApp\app\src\main\AndroidManifest.xml:28:13-41
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
