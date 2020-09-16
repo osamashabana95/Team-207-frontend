@@ -9,6 +9,7 @@
         android:title="@string/View_list" />
     <item
         android:id="@+id/navigation_home"
+        android:onClick="MentorSignUp"
         android:icon="@drawable/ic_person_add_black_24dp"
         android:title="Mentor_signUp" />
 

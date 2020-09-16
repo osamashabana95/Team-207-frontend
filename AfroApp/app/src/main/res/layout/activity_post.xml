@@ -16,7 +16,6 @@
         android:background="@drawable/edit_shape"
         android:ems="10"
         android:gravity="start|top"
-        android:hint="@string/question"
         android:inputType="textMultiLine"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

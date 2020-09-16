@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\Alice\AndroidStudioProjects\AfroApp\New\Team-207-frontend\AfroApp\app\src\main\AndroidManifest.xml:2:1-38:12
-INJECTED from C:\Users\Alice\AndroidStudioProjects\AfroApp\New\Team-207-frontend\AfroApp\app\src\main\AndroidManifest.xml:2:1-38:12
-INJECTED from C:\Users\Alice\AndroidStudioProjects\AfroApp\New\Team-207-frontend\AfroApp\app\src\main\AndroidManifest.xml:2:1-38:12
-INJECTED from C:\Users\Alice\AndroidStudioProjects\AfroApp\New\Team-207-frontend\AfroApp\app\src\main\AndroidManifest.xml:2:1-38:12
+ADDED from C:\Users\Alice\AndroidStudioProjects\AfroApp\New\Team-207-frontend\AfroApp\app\src\main\AndroidManifest.xml:2:1-41:12
+INJECTED from C:\Users\Alice\AndroidStudioProjects\AfroApp\New\Team-207-frontend\AfroApp\app\src\main\AndroidManifest.xml:2:1-41:12
+INJECTED from C:\Users\Alice\AndroidStudioProjects\AfroApp\New\Team-207-frontend\AfroApp\app\src\main\AndroidManifest.xml:2:1-41:12
+INJECTED from C:\Users\Alice\AndroidStudioProjects\AfroApp\New\Team-207-frontend\AfroApp\app\src\main\AndroidManifest.xml:2:1-41:12
 MERGED from [androidx.navigation:navigation-ui:2.0.0] C:\Users\Alice\.gradle\caches\transforms-2\files-2.1\0d8f63c76f73b43f364444cc45155dad\jetified-navigation-ui-2.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [com.firebaseui:firebase-ui-auth:6.2.0] C:\Users\Alice\.gradle\caches\transforms-2\files-2.1\87fce023291dbc6387f21bd3ab91ac81\jetified-firebase-ui-auth-6.2.0\AndroidManifest.xml:2:1-109:12
 MERGED from [com.google.android.material:material:1.0.0] C:\Users\Alice\.gradle\caches\transforms-2\files-2.1\42dfa75dd97f65b6f13ab377026b4c61\material-1.0.0\AndroidManifest.xml:17:1-24:12
@@ -72,25 +72,25 @@ MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] C:\Users\Alice\.gradl
 MERGED from [androidx.lifecycle:lifecycle-livedata:2.1.0] C:\Users\Alice\.gradle\caches\transforms-2\files-2.1\6501d7b8db52b54c0b6135e0c93921cb\lifecycle-livedata-2.1.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.1.0] C:\Users\Alice\.gradle\caches\transforms-2\files-2.1\d13f1412cefd14d06f0bbca17031f634\lifecycle-livedata-core-2.1.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.arch.core:core-runtime:2.1.0] C:\Users\Alice\.gradle\caches\transforms-2\files-2.1\7a185b806a15947a5d07fe5ace9e35ef\core-runtime-2.1.0\AndroidManifest.xml:17:1-24:12
-INJECTED from C:\Users\Alice\AndroidStudioProjects\AfroApp\New\Team-207-frontend\AfroApp\app\src\main\AndroidManifest.xml:2:1-38:12
-INJECTED from C:\Users\Alice\AndroidStudioProjects\AfroApp\New\Team-207-frontend\AfroApp\app\src\main\AndroidManifest.xml:2:1-38:12
-INJECTED from C:\Users\Alice\AndroidStudioProjects\AfroApp\New\Team-207-frontend\AfroApp\app\src\main\AndroidManifest.xml:2:1-38:12
+INJECTED from C:\Users\Alice\AndroidStudioProjects\AfroApp\New\Team-207-frontend\AfroApp\app\src\main\AndroidManifest.xml:2:1-41:12
+INJECTED from C:\Users\Alice\AndroidStudioProjects\AfroApp\New\Team-207-frontend\AfroApp\app\src\main\AndroidManifest.xml:2:1-41:12
+INJECTED from C:\Users\Alice\AndroidStudioProjects\AfroApp\New\Team-207-frontend\AfroApp\app\src\main\AndroidManifest.xml:2:1-41:12
 	package
 		ADDED from C:\Users\Alice\AndroidStudioProjects\AfroApp\New\Team-207-frontend\AfroApp\app\src\main\AndroidManifest.xml:3:5-32
 		INJECTED from C:\Users\Alice\AndroidStudioProjects\AfroApp\New\Team-207-frontend\AfroApp\app\src\main\AndroidManifest.xml
 		INJECTED from C:\Users\Alice\AndroidStudioProjects\AfroApp\New\Team-207-frontend\AfroApp\app\src\main\AndroidManifest.xml
 	android:versionName
 		INJECTED from C:\Users\Alice\AndroidStudioProjects\AfroApp\New\Team-207-frontend\AfroApp\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\Alice\AndroidStudioProjects\AfroApp\New\Team-207-frontend\AfroApp\app\src\main\AndroidManifest.xml:2:1-38:12
+		ADDED from C:\Users\Alice\AndroidStudioProjects\AfroApp\New\Team-207-frontend\AfroApp\app\src\main\AndroidManifest.xml:2:1-41:12
 		INJECTED from C:\Users\Alice\AndroidStudioProjects\AfroApp\New\Team-207-frontend\AfroApp\app\src\main\AndroidManifest.xml
 	android:versionCode
 		INJECTED from C:\Users\Alice\AndroidStudioProjects\AfroApp\New\Team-207-frontend\AfroApp\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\Alice\AndroidStudioProjects\AfroApp\New\Team-207-frontend\AfroApp\app\src\main\AndroidManifest.xml:2:1-38:12
+		ADDED from C:\Users\Alice\AndroidStudioProjects\AfroApp\New\Team-207-frontend\AfroApp\app\src\main\AndroidManifest.xml:2:1-41:12
 		INJECTED from C:\Users\Alice\AndroidStudioProjects\AfroApp\New\Team-207-frontend\AfroApp\app\src\main\AndroidManifest.xml
 	xmlns:android
 		ADDED from C:\Users\Alice\AndroidStudioProjects\AfroApp\New\Team-207-frontend\AfroApp\app\src\main\AndroidManifest.xml:2:11-69
 application
-ADDED from C:\Users\Alice\AndroidStudioProjects\AfroApp\New\Team-207-frontend\AfroApp\app\src\main\AndroidManifest.xml:5:5-36:19
+ADDED from C:\Users\Alice\AndroidStudioProjects\AfroApp\New\Team-207-frontend\AfroApp\app\src\main\AndroidManifest.xml:5:5-39:19
 MERGED from [com.firebaseui:firebase-ui-auth:6.2.0] C:\Users\Alice\.gradle\caches\transforms-2\files-2.1\87fce023291dbc6387f21bd3ab91ac81\jetified-firebase-ui-auth-6.2.0\AndroidManifest.xml:15:5-107:19
 MERGED from [com.firebaseui:firebase-ui-auth:6.2.0] C:\Users\Alice\.gradle\caches\transforms-2\files-2.1\87fce023291dbc6387f21bd3ab91ac81\jetified-firebase-ui-auth-6.2.0\AndroidManifest.xml:15:5-107:19
 MERGED from [com.google.android.material:material:1.0.0] C:\Users\Alice\.gradle\caches\transforms-2\files-2.1\42dfa75dd97f65b6f13ab377026b4c61\material-1.0.0\AndroidManifest.xml:22:5-20
@@ -169,50 +169,52 @@ ADDED from C:\Users\Alice\AndroidStudioProjects\AfroApp\New\Team-207-frontend\Af
 		ADDED from C:\Users\Alice\AndroidStudioProjects\AfroApp\New\Team-207-frontend\AfroApp\app\src\main\AndroidManifest.xml:15:13-56
 	android:name
 		ADDED from C:\Users\Alice\AndroidStudioProjects\AfroApp\New\Team-207-frontend\AfroApp\app\src\main\AndroidManifest.xml:13:13-36
-activity#com.alice.afroapp.ProfileAdd
-ADDED from C:\Users\Alice\AndroidStudioProjects\AfroApp\New\Team-207-frontend\AfroApp\app\src\main\AndroidManifest.xml:16:9-48
-	android:name
-		ADDED from C:\Users\Alice\AndroidStudioProjects\AfroApp\New\Team-207-frontend\AfroApp\app\src\main\AndroidManifest.xml:16:19-45
 activity#com.alice.afroapp.Profile
-ADDED from C:\Users\Alice\AndroidStudioProjects\AfroApp\New\Team-207-frontend\AfroApp\app\src\main\AndroidManifest.xml:17:9-45
+ADDED from C:\Users\Alice\AndroidStudioProjects\AfroApp\New\Team-207-frontend\AfroApp\app\src\main\AndroidManifest.xml:16:9-45
 	android:name
-		ADDED from C:\Users\Alice\AndroidStudioProjects\AfroApp\New\Team-207-frontend\AfroApp\app\src\main\AndroidManifest.xml:17:19-42
+		ADDED from C:\Users\Alice\AndroidStudioProjects\AfroApp\New\Team-207-frontend\AfroApp\app\src\main\AndroidManifest.xml:16:19-42
 activity#com.alice.afroapp.Post
-ADDED from C:\Users\Alice\AndroidStudioProjects\AfroApp\New\Team-207-frontend\AfroApp\app\src\main\AndroidManifest.xml:18:9-42
+ADDED from C:\Users\Alice\AndroidStudioProjects\AfroApp\New\Team-207-frontend\AfroApp\app\src\main\AndroidManifest.xml:17:9-42
 	android:name
-		ADDED from C:\Users\Alice\AndroidStudioProjects\AfroApp\New\Team-207-frontend\AfroApp\app\src\main\AndroidManifest.xml:18:19-39
+		ADDED from C:\Users\Alice\AndroidStudioProjects\AfroApp\New\Team-207-frontend\AfroApp\app\src\main\AndroidManifest.xml:17:19-39
 activity#com.alice.afroapp.Listcomments
-ADDED from C:\Users\Alice\AndroidStudioProjects\AfroApp\New\Team-207-frontend\AfroApp\app\src\main\AndroidManifest.xml:19:9-22:59
+ADDED from C:\Users\Alice\AndroidStudioProjects\AfroApp\New\Team-207-frontend\AfroApp\app\src\main\AndroidManifest.xml:18:9-21:59
 	android:label
-		ADDED from C:\Users\Alice\AndroidStudioProjects\AfroApp\New\Team-207-frontend\AfroApp\app\src\main\AndroidManifest.xml:21:13-64
+		ADDED from C:\Users\Alice\AndroidStudioProjects\AfroApp\New\Team-207-frontend\AfroApp\app\src\main\AndroidManifest.xml:20:13-64
 	android:theme
-		ADDED from C:\Users\Alice\AndroidStudioProjects\AfroApp\New\Team-207-frontend\AfroApp\app\src\main\AndroidManifest.xml:22:13-56
+		ADDED from C:\Users\Alice\AndroidStudioProjects\AfroApp\New\Team-207-frontend\AfroApp\app\src\main\AndroidManifest.xml:21:13-56
 	android:name
-		ADDED from C:\Users\Alice\AndroidStudioProjects\AfroApp\New\Team-207-frontend\AfroApp\app\src\main\AndroidManifest.xml:20:13-41
+		ADDED from C:\Users\Alice\AndroidStudioProjects\AfroApp\New\Team-207-frontend\AfroApp\app\src\main\AndroidManifest.xml:19:13-41
 activity#com.alice.afroapp.Listquestions
-ADDED from C:\Users\Alice\AndroidStudioProjects\AfroApp\New\Team-207-frontend\AfroApp\app\src\main\AndroidManifest.xml:23:9-26:59
+ADDED from C:\Users\Alice\AndroidStudioProjects\AfroApp\New\Team-207-frontend\AfroApp\app\src\main\AndroidManifest.xml:22:9-25:59
 	android:label
-		ADDED from C:\Users\Alice\AndroidStudioProjects\AfroApp\New\Team-207-frontend\AfroApp\app\src\main\AndroidManifest.xml:25:13-65
+		ADDED from C:\Users\Alice\AndroidStudioProjects\AfroApp\New\Team-207-frontend\AfroApp\app\src\main\AndroidManifest.xml:24:13-65
 	android:theme
-		ADDED from C:\Users\Alice\AndroidStudioProjects\AfroApp\New\Team-207-frontend\AfroApp\app\src\main\AndroidManifest.xml:26:13-56
+		ADDED from C:\Users\Alice\AndroidStudioProjects\AfroApp\New\Team-207-frontend\AfroApp\app\src\main\AndroidManifest.xml:25:13-56
 	android:name
-		ADDED from C:\Users\Alice\AndroidStudioProjects\AfroApp\New\Team-207-frontend\AfroApp\app\src\main\AndroidManifest.xml:24:13-42
+		ADDED from C:\Users\Alice\AndroidStudioProjects\AfroApp\New\Team-207-frontend\AfroApp\app\src\main\AndroidManifest.xml:23:13-42
 activity#com.alice.afroapp.MainActivity
-ADDED from C:\Users\Alice\AndroidStudioProjects\AfroApp\New\Team-207-frontend\AfroApp\app\src\main\AndroidManifest.xml:27:9-35:20
+ADDED from C:\Users\Alice\AndroidStudioProjects\AfroApp\New\Team-207-frontend\AfroApp\app\src\main\AndroidManifest.xml:26:9-34:20
 	android:label
-		ADDED from C:\Users\Alice\AndroidStudioProjects\AfroApp\New\Team-207-frontend\AfroApp\app\src\main\AndroidManifest.xml:29:13-48
+		ADDED from C:\Users\Alice\AndroidStudioProjects\AfroApp\New\Team-207-frontend\AfroApp\app\src\main\AndroidManifest.xml:28:13-48
 	android:name
-		ADDED from C:\Users\Alice\AndroidStudioProjects\AfroApp\New\Team-207-frontend\AfroApp\app\src\main\AndroidManifest.xml:28:13-41
+		ADDED from C:\Users\Alice\AndroidStudioProjects\AfroApp\New\Team-207-frontend\AfroApp\app\src\main\AndroidManifest.xml:27:13-41
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from C:\Users\Alice\AndroidStudioProjects\AfroApp\New\Team-207-frontend\AfroApp\app\src\main\AndroidManifest.xml:30:13-34:29
+ADDED from C:\Users\Alice\AndroidStudioProjects\AfroApp\New\Team-207-frontend\AfroApp\app\src\main\AndroidManifest.xml:29:13-33:29
 action#android.intent.action.MAIN
-ADDED from C:\Users\Alice\AndroidStudioProjects\AfroApp\New\Team-207-frontend\AfroApp\app\src\main\AndroidManifest.xml:31:17-69
+ADDED from C:\Users\Alice\AndroidStudioProjects\AfroApp\New\Team-207-frontend\AfroApp\app\src\main\AndroidManifest.xml:30:17-69
 	android:name
-		ADDED from C:\Users\Alice\AndroidStudioProjects\AfroApp\New\Team-207-frontend\AfroApp\app\src\main\AndroidManifest.xml:31:25-66
+		ADDED from C:\Users\Alice\AndroidStudioProjects\AfroApp\New\Team-207-frontend\AfroApp\app\src\main\AndroidManifest.xml:30:25-66
 category#android.intent.category.LAUNCHER
-ADDED from C:\Users\Alice\AndroidStudioProjects\AfroApp\New\Team-207-frontend\AfroApp\app\src\main\AndroidManifest.xml:33:17-77
+ADDED from C:\Users\Alice\AndroidStudioProjects\AfroApp\New\Team-207-frontend\AfroApp\app\src\main\AndroidManifest.xml:32:17-77
 	android:name
-		ADDED from C:\Users\Alice\AndroidStudioProjects\AfroApp\New\Team-207-frontend\AfroApp\app\src\main\AndroidManifest.xml:33:27-74
+		ADDED from C:\Users\Alice\AndroidStudioProjects\AfroApp\New\Team-207-frontend\AfroApp\app\src\main\AndroidManifest.xml:32:27-74
+meta-data#preloaded_fonts
+ADDED from C:\Users\Alice\AndroidStudioProjects\AfroApp\New\Team-207-frontend\AfroApp\app\src\main\AndroidManifest.xml:36:9-38:57
+	android:resource
+		ADDED from C:\Users\Alice\AndroidStudioProjects\AfroApp\New\Team-207-frontend\AfroApp\app\src\main\AndroidManifest.xml:38:13-54
+	android:name
+		ADDED from C:\Users\Alice\AndroidStudioProjects\AfroApp\New\Team-207-frontend\AfroApp\app\src\main\AndroidManifest.xml:37:13-43
 uses-sdk
 INJECTED from C:\Users\Alice\AndroidStudioProjects\AfroApp\New\Team-207-frontend\AfroApp\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from C:\Users\Alice\AndroidStudioProjects\AfroApp\New\Team-207-frontend\AfroApp\app\src\main\AndroidManifest.xml

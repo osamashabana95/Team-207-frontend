@@ -69,9 +69,7 @@ public class FirebaseUtil {
 //        mFirebaseAuth.addAuthStateListener(mAuthListener);
 //    }
 //
-//    public static void detachListener(){
-//        mFirebaseAuth.removeAuthStateListener(mAuthListener);
-//    }
+//
 //
 
 }

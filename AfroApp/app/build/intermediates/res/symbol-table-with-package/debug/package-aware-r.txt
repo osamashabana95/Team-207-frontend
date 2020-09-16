@@ -31,6 +31,10 @@ animator mtrl_fab_hide_motion_spec
 animator mtrl_fab_show_motion_spec
 animator mtrl_fab_transformation_sheet_collapse_spec
 animator mtrl_fab_transformation_sheet_expand_spec
+array com_google_android_gms_fonts_certs
+array com_google_android_gms_fonts_certs_dev
+array com_google_android_gms_fonts_certs_prod
+array preloaded_fonts
 attr action
 attr actionBarDivider
 attr actionBarItemBackground
@@ -1156,6 +1160,7 @@ drawable ic_mtrl_chip_checked_circle
 drawable ic_mtrl_chip_close_circle
 drawable ic_notifications_black_24dp
 drawable ic_person_add_black_24dp
+drawable ic_search_black_24dp
 drawable ic_send_black_24dp
 drawable mtrl_snackbar_background
 drawable mtrl_tabs_default_indicator
@@ -1175,6 +1180,7 @@ drawable notify_panel_notification_icon_bg
 drawable submitt_shape
 drawable tooltip_frame_dark
 drawable tooltip_frame_light
+font actor
 id ALT
 id CTRL
 id FUNCTION
@@ -1205,6 +1211,7 @@ id action_mode_close_button
 id action_new
 id action_post
 id action_profile
+id action_set
 id action_text
 id actions
 id activity_chooser_view_content
@@ -1228,7 +1235,6 @@ id browser_actions_menu_item_text
 id browser_actions_menu_items
 id browser_actions_menu_view
 id btn_holder
-id button2
 id buttonPanel
 id button_continue
 id button_create
@@ -1373,6 +1379,7 @@ id phone_layout
 id phone_number
 id pin
 id postButton
+id postImage
 id progress_circular
 id progress_horizontal
 id radio
@@ -1440,8 +1447,10 @@ id textSpacerNoTitle
 id textStart
 id textView
 id textView2
+id textView3
 id textView4
 id textView5
+id textView6
 id text_dashboard
 id text_input_password_toggle
 id text_notifications
@@ -1536,7 +1545,6 @@ layout activity_listquestions
 layout activity_main
 layout activity_post
 layout activity_profile
-layout activity_profile_add
 layout browser_actions_context_menu_page
 layout browser_actions_context_menu_row
 layout content_add

@@ -28,7 +28,6 @@
             android:name="com.alice.afroapp.AddProf"
             android:label="@string/Add_Profile"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name="com.alice.afroapp.ProfileAdd" />
         <activity android:name="com.alice.afroapp.Profile" />
         <activity android:name="com.alice.afroapp.Post" />
         <activity
@@ -49,6 +48,9 @@
             </intent-filter>
         </activity>
 
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
         <meta-data
             android:name="com.google.android.gms.version"
             android:value="@integer/google_play_services_version" />
