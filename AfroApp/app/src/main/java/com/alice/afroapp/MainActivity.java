@@ -122,16 +122,7 @@ public class MainActivity extends AppCompatActivity {
             }
         }
     }
-    private void signOut(){
-        //auth_fui_signout
-            AuthUI.getInstance()
-                        .signOut(this)
-                        .addOnCompleteListener(new OnCompleteListener<Void>() {
-                            @Override
-                            public void onComplete(@NonNull Task<Void> task) {
-                                //
-                            }});
-    }
+
 
     //stateListener for Firebase
     public void attachListener(){

@@ -1545,6 +1545,7 @@ layout activity_listquestions
 layout activity_main
 layout activity_post
 layout activity_profile
+layout activity_sign_out
 layout browser_actions_context_menu_page
 layout browser_actions_context_menu_row
 layout content_add
