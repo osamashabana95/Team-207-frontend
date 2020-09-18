@@ -10,8 +10,6 @@ import android.widget.Toast;
 
 import com.firebase.ui.auth.AuthUI;
 import com.firebase.ui.auth.IdpResponse;
-import com.google.android.gms.tasks.OnCompleteListener;
-import com.google.android.gms.tasks.Task;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
@@ -75,10 +73,9 @@ public class MainActivity extends AppCompatActivity {
             case R.id.action_home:
                 Toast.makeText(this,"Home.",Toast.LENGTH_LONG).show();
                 return true;
-            case R.id.action_goprofile:
-                Toast.makeText(this,"Profile",Toast.LENGTH_LONG).show();
-                return true;
-            case R.id.action_post:
+            case R.id.action_signout:
+                FirebaseAuth.getInstance()
+                        .signOut();
                 return  true;
 
             default: return super.onOptionsItemSelected(item);
@@ -115,23 +112,12 @@ public class MainActivity extends AppCompatActivity {
                 FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
                 // ...
             } else {
-                // Sign in failed. If response is null the user canceled the
-                // sign-in flow using the back button. Otherwise check
-                // response.getError().getErrorCode() and handle the error.
-                // ...
+                Toast.makeText(this,"SignIn failed.",Toast.LENGTH_LONG).show();
+
             }
         }
     }
-    private void signOut(){
-        //auth_fui_signout
-            AuthUI.getInstance()
-                        .signOut(this)
-                        .addOnCompleteListener(new OnCompleteListener<Void>() {
-                            @Override
-                            public void onComplete(@NonNull Task<Void> task) {
-                                //
-                            }});
-    }
+
 
     //stateListener for Firebase
     public void attachListener(){
@@ -157,7 +143,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void Post(){
-        Intent intent= new Intent(MainActivity.this,Post.class);
+        Intent intent= new Intent(MainActivity.this,SignOut.class);
         startActivity(intent);
     }
 

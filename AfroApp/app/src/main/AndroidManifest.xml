@@ -9,12 +9,15 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".SignOut"></activity>
         <activity
             android:name=".AddProf"
             android:label="@string/Add_Profile"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".Profile" />
-        <activity android:name=".Post" />
+        <activity
+            android:label="AfroDevMeet"
+            android:name=".Post" />
         <activity
             android:name=".Listcomments"
             android:label="@string/title_activity_listcomments"
