@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.Toast;
 
@@ -32,7 +33,7 @@ public class MainActivity extends AppCompatActivity {
     private DatabaseReference mDatabaseReference;
     private FirebaseAuth mFirebaseAuth;
     private FirebaseAuth.AuthStateListener mAuth;
-    private ImageView postImage;
+    private ImageButton postButton;
     private static final int RC_SIGN_IN=123;
 
 
@@ -47,6 +48,7 @@ public class MainActivity extends AppCompatActivity {
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment);
         NavigationUI.setupActionBarWithNavController(this, navController, appBarConfiguration);
         NavigationUI.setupWithNavController(navView, navController);
+
 
         mFirebaseAuth = FirebaseAuth.getInstance();
         mAuth = new FirebaseAuth.AuthStateListener() {
@@ -87,6 +89,7 @@ public class MainActivity extends AppCompatActivity {
             // Choose authentication providers
         List<AuthUI.IdpConfig> providers = Arrays.asList(
                 new AuthUI.IdpConfig.EmailBuilder().build(),
+                new AuthUI.IdpConfig.FacebookBuilder().build(),
                 new AuthUI.IdpConfig.GoogleBuilder().build());
 
 
@@ -98,8 +101,6 @@ public class MainActivity extends AppCompatActivity {
                         .build(),
                 RC_SIGN_IN);
     }
-
-
 
     @Override
     protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
@@ -166,13 +167,14 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-    public void PostQuestion(View view) {
-        Intent intent= new Intent(MainActivity.this,Post.class);
-        startActivity(intent);
-    }
 
     public void MentorSignUp(MenuItem item) {
         Intent intent= new Intent(MainActivity.this,AddProf.class);
+        startActivity(intent);
+    }
+
+    public void PostQues(View view) {
+        Intent intent= new Intent(MainActivity.this,Post.class);
         startActivity(intent);
     }
 }

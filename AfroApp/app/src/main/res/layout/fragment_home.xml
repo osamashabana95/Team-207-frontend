@@ -8,24 +8,14 @@
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="212dp"
-        android:layout_height="224dp"
-        android:layout_marginTop="40dp"
+        android:layout_width="234dp"
+        android:layout_height="232dp"
+        android:layout_marginTop="50dp"
         android:tint="@color/colorPrimary"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/ic_laptop_windows_black_24dp" />
-
-    <TextView
-        android:id="@+id/textView3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:fontFamily="casual"
-        android:text="Welcome to AfroDevMeet"
-        android:textSize="18sp"
-        app:layout_constraintStart_toStartOf="@+id/imageView"
-        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+        app:srcCompat="@drawable/logo" />
 
     <TextView
         android:id="@+id/textView6"
@@ -33,15 +23,16 @@
         android:layout_height="wrap_content"
         android:fontFamily="casual"
         android:text="Post a question"
-        android:textSize="14sp"
-        app:layout_constraintStart_toStartOf="@+id/textView3"
-        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/imageView"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
-    <ImageView
-        android:id="@+id/postImage"
-        android:layout_width="50dp"
+    <ImageButton
+        android:id="@+id/postButton"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:onClick="PostQuestion"
+        android:background="@drawable/btn_shape"
+        android:onClick="PostQues"
         app:layout_constraintStart_toEndOf="@+id/textView6"
         app:layout_constraintTop_toTopOf="@+id/textView6"
         app:srcCompat="@drawable/ic_create_black_24dp" />

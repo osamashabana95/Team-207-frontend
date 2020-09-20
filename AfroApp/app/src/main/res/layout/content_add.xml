@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#F5140F0F"
+    android:background="#F7FDF5F5"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context=".AddProf"
     tools:showIn="@layout/activity_add">
@@ -27,7 +27,7 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="16dp"
-        android:background="#E9A7A2A2"
+        android:background="#BDBDBD"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView2" />
@@ -50,7 +50,7 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="32dp"
         android:layout_marginEnd="16dp"
-        android:background="#E9A7A2A2"
+        android:background="#BDBDBD"
         app:layout_constraintEnd_toEndOf="@+id/divider"
         app:layout_constraintStart_toStartOf="@+id/divider"
         app:layout_constraintTop_toBottomOf="@+id/textView" />
@@ -68,23 +68,13 @@
         app:layout_constraintStart_toEndOf="@+id/textView"
         app:layout_constraintTop_toTopOf="@+id/textView" />
 
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:text="@string/proficiency"
-        android:textSize="18sp"
-        app:layout_constraintStart_toStartOf="@+id/textView"
-        app:layout_constraintTop_toBottomOf="@+id/divider2" />
-
     <View
         android:id="@+id/divider3"
         android:layout_width="300dp"
         android:layout_height="1dp"
         android:layout_marginTop="32dp"
         android:layout_marginEnd="16dp"
-        android:background="#E9A7A2A2"
+        android:background="#BDBDBD"
         app:layout_constraintEnd_toEndOf="@+id/divider"
         app:layout_constraintStart_toStartOf="@+id/divider"
         app:layout_constraintTop_toBottomOf="@+id/textView2" />
@@ -105,7 +95,7 @@
         android:layout_height="1dp"
         android:layout_marginTop="32dp"
         android:layout_marginEnd="16dp"
-        android:background="#E9A7A2A2"
+        android:background="#BDBDBD"
         app:layout_constraintEnd_toEndOf="@+id/divider"
         app:layout_constraintStart_toStartOf="@+id/divider"
         app:layout_constraintTop_toBottomOf="@+id/textView4" />
@@ -157,6 +147,16 @@
         android:inputType="textMultiLine"
         app:layout_constraintStart_toEndOf="@+id/textView5"
         app:layout_constraintTop_toTopOf="@+id/textView5" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/proficiency"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/divider2" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
