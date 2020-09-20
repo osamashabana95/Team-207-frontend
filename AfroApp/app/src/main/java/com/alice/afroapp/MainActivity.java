@@ -34,7 +34,7 @@ public class MainActivity extends AppCompatActivity {
     private FirebaseAuth.AuthStateListener mAuth;
     private ImageView postImage;
     private static final int RC_SIGN_IN=123;
-
+    private Database db;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -174,5 +174,13 @@ public class MainActivity extends AppCompatActivity {
     public void MentorSignUp(MenuItem item) {
         Intent intent= new Intent(MainActivity.this,AddProf.class);
         startActivity(intent);
+    }
+
+    //  to test the database class
+    private void testDatabase(){
+        db = new Database();
+        db.setUser("1","oo","jkdlfjdl@df.com");
+        db.setQuestion("1","what?");
+        db.setSolution("1","1","yes");
     }
 }
