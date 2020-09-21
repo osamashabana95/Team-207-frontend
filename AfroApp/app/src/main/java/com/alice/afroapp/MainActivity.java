@@ -143,10 +143,7 @@ public class MainActivity extends AppCompatActivity {
         Toast.makeText(this,"Comments list.",Toast.LENGTH_LONG).show();
     }
 
-    public void Post(){
-        Intent intent= new Intent(MainActivity.this,SignOut.class);
-        startActivity(intent);
-    }
+
 
     public void ViewProfile(){
 //        Intent intent= new Intent(MainActivity.this,Profile.class);
@@ -173,7 +170,7 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
-    public void PostQues(View view) {
+    public void PostQuestion(View view) {
         Intent intent= new Intent(MainActivity.this,Post.class);
         startActivity(intent);
     }

@@ -7,10 +7,11 @@
 
 
     <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="234dp"
-        android:layout_height="232dp"
-        android:layout_marginTop="50dp"
+        android:id="@+id/logo_image"
+        android:layout_width="274dp"
+        android:layout_height="268dp"
+        android:layout_marginTop="40dp"
+        android:contentDescription="@string/logo_image"
         android:tint="@color/colorPrimary"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -18,23 +19,35 @@
         app:srcCompat="@drawable/logo" />
 
     <TextView
-        android:id="@+id/textView6"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:id="@+id/textView7"
+        android:layout_width="141dp"
+        android:layout_height="37dp"
+        android:contentDescription="@string/post_a_question"
         android:fontFamily="casual"
-        android:text="Post a question"
+        android:text="@string/post_a_question"
+        android:textColor="#757575"
         android:textSize="18sp"
-        app:layout_constraintStart_toStartOf="@+id/imageView"
-        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+        app:layout_constraintStart_toStartOf="@+id/logo_image"
+        app:layout_constraintTop_toBottomOf="@+id/logo_image" />
 
-    <ImageButton
-        android:id="@+id/postButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="@drawable/btn_shape"
-        android:onClick="PostQues"
-        app:layout_constraintStart_toEndOf="@+id/textView6"
-        app:layout_constraintTop_toTopOf="@+id/textView6"
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="35dp"
+        android:layout_height="31dp"
+        android:tint="@color/colorPrimary"
+        app:layout_constraintEnd_toStartOf="@+id/textView7"
+        app:layout_constraintTop_toTopOf="@+id/textView7"
+        app:srcCompat="@drawable/ic_person_black_24dp" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="40dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="32dp"
+        android:onClick="PostQuestion"
+        app:layout_constraintEnd_toEndOf="@+id/logo_image"
+        app:layout_constraintStart_toEndOf="@+id/textView7"
+        app:layout_constraintTop_toTopOf="@+id/textView7"
         app:srcCompat="@drawable/ic_create_black_24dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
