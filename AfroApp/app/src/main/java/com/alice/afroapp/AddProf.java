@@ -8,6 +8,7 @@ import com.google.android.material.snackbar.Snackbar;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
+import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
@@ -18,6 +19,7 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 public class AddProf extends AppCompatActivity {
+    private static final int PICK_IMAGE_REQUEST = 323;
     private FirebaseDatabase mFirebaseDatabase;
     private DatabaseReference mDatabaseReference;
     private EditText editName,editProf,editLoc,editEmail;
@@ -33,6 +35,7 @@ public class AddProf extends AppCompatActivity {
         editLoc = (EditText) findViewById(R.id.editLoc);
         editEmail= (EditText) findViewById(R.id.editEmail);
         mFirebaseDatabase = FirebaseDatabase.getInstance();
+        FirebaseDatabase.getInstance().setPersistenceEnabled(true);
         mDatabaseReference = mFirebaseDatabase.getReference().child("mentors");
 
         FloatingActionButton fab = findViewById(R.id.fab);
@@ -60,6 +63,7 @@ public class AddProf extends AppCompatActivity {
                 GoHome();
                 return true;
             case R.id.action_new:
+                GoList();
                 return true;
             case R.id.action_list:
                 return true;
@@ -70,7 +74,11 @@ public class AddProf extends AppCompatActivity {
     public void GoHome(){
         Intent intent= new Intent(AddProf.this,MainActivity.class);
         startActivity(intent);
-        Toast.makeText(this,"Questions list.",Toast.LENGTH_LONG).show();
+    }
+
+    public void GoList(){
+        Intent intent= new Intent(AddProf.this,MentorList.class);
+        startActivity(intent);
     }
 
     public void SaveMentor(){
@@ -81,9 +89,25 @@ public class AddProf extends AppCompatActivity {
         Mentor mentor = new Mentor("id",fullname,proficiency,location,email,
                 "imageurl","imageName");
         mDatabaseReference.push().setValue(mentor);
+    }
+
+    public void SelectImage(){
+// Defining Implicit Intent to mobile gallery
+        Intent intent = new Intent();
+        intent.setType("image/*");
+        intent.setAction(Intent.ACTION_GET_CONTENT);
+        startActivityForResult(
+                Intent.createChooser(
+                        intent,
+                        "Select Image from here..."),
+                PICK_IMAGE_REQUEST);
+    }
+
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
 
 
 
     }
-
 }

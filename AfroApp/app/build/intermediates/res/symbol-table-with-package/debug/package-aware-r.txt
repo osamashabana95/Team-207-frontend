@@ -1229,6 +1229,7 @@ drawable ic_list_black_24dp
 drawable ic_mtrl_chip_checked_black
 drawable ic_mtrl_chip_checked_circle
 drawable ic_mtrl_chip_close_circle
+drawable ic_note_add_black_24dp
 drawable ic_notifications_black_24dp
 drawable ic_person_add_black_24dp
 drawable ic_person_black_24dp
@@ -1283,6 +1284,7 @@ id action_mode_bar
 id action_mode_bar_stub
 id action_mode_close_button
 id action_new
+id action_post
 id action_set
 id action_signout
 id action_text
@@ -1366,6 +1368,7 @@ id divider
 id divider2
 id divider3
 id divider4
+id divider5
 id dynamic
 id editEmail
 id editLoc
@@ -1396,6 +1399,7 @@ id fixed
 id forever
 id fragment_phone
 id fragment_register_email
+id fullname_text
 id ghost_view
 id gone
 id group_divider
@@ -1411,9 +1415,8 @@ id icon_group
 id icon_only
 id ifRoom
 id image
+id imageButton
 id imageView
-id imageView2
-id imageView3
 id info
 id inline
 id invisible
@@ -1429,11 +1432,13 @@ id line1
 id line3
 id listMode
 id list_item
+id loc_text
 id logo
 id logo_image
 id main_tos_and_pp
 id masked
 id media_actions
+id mentor_list
 id message
 id microsoft_signin_button
 id middle
@@ -1474,6 +1479,8 @@ id phone_layout
 id phone_number
 id pin
 id postButton
+id prof_pic
+id prof_text
 id progress_bar
 id progress_circular
 id progress_horizontal
@@ -1543,10 +1550,8 @@ id textSpacerNoTitle
 id textStart
 id textView
 id textView2
-id textView3
 id textView4
 id textView5
-id textView6
 id textView7
 id text_dashboard
 id text_input_password_toggle
@@ -1723,6 +1728,7 @@ layout select_dialog_singlechoice_material
 layout support_simple_spinner_dropdown_item
 menu bottom_nav_menu
 menu home_menu
+menu mentor_menu
 menu post_question_menu
 menu profile_add_menu
 mipmap ic_launcher
@@ -1953,6 +1959,7 @@ string profile
 string project_id
 string question
 string search_menu_title
+string send_post
 string status_bar_notification_info_overflow
 string submitt
 string title_activity_add

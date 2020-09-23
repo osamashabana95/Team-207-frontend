@@ -34,4 +34,6 @@
     <string name="title_activity_mentor_list">MentorList</string>
     <string name="mentor_pic">mentor_pic</string>
     <string name="post_a_question">Post a question</string>
+    <string name="send_post">send post</string>
+    <string name="back_home">Back home</string>
 </resources>
