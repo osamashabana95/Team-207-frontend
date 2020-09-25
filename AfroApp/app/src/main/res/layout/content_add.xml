@@ -11,12 +11,13 @@
 
     <ImageView
         android:id="@+id/prof_pic"
-        android:layout_width="110dp"
-        android:layout_height="116dp"
-        android:layout_marginTop="8dp"
+        android:layout_width="153dp"
+        android:layout_height="110dp"
+        android:layout_marginTop="16dp"
         android:contentDescription="@string/mentor_pic"
         android:tint="@color/colorPrimary"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.597"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/ic_account_circle_black_24dp" />
@@ -146,9 +147,10 @@
         android:layout_marginStart="24dp"
         android:background="@drawable/edit_shape"
         android:ems="10"
+        android:labelFor="@+id/editEmail"
         android:gravity="start|top"
         android:importantForAutofill="no"
-        android:inputType="textMultiLine"
+        android:inputType="textMultiLine|textEmailAddress"
         app:layout_constraintStart_toEndOf="@+id/textView5"
         app:layout_constraintTop_toTopOf="@+id/textView5" />
 
@@ -162,13 +164,14 @@
         app:layout_constraintStart_toStartOf="@+id/textView"
         app:layout_constraintTop_toBottomOf="@+id/divider2" />
 
-    <Button
-        android:id="@+id/button2"
+    <ImageButton
+        android:id="@+id/select_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Button"
-        tools:layout_editor_absoluteX="216dp"
-        tools:layout_editor_absoluteY="81dp" />
+        android:contentDescription="@string/Add_Profile"
+        app:layout_constraintEnd_toEndOf="@+id/prof_pic"
+        app:layout_constraintTop_toTopOf="@+id/prof_pic"
+        app:srcCompat="@drawable/ic_camera_alt_black_24dp" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

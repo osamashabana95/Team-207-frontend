@@ -170,7 +170,8 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
-    public void PostQuestion(View view) {
+
+    public void Post(View view) {
         Intent intent= new Intent(MainActivity.this,Post.class);
         startActivity(intent);
     }

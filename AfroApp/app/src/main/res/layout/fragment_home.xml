@@ -8,8 +8,8 @@
 
     <ImageView
         android:id="@+id/logo_image"
-        android:layout_width="274dp"
-        android:layout_height="268dp"
+        android:layout_width="240dp"
+        android:layout_height="222dp"
         android:layout_marginTop="40dp"
         android:contentDescription="@string/logo_image"
         android:tint="@color/colorPrimary"
@@ -18,35 +18,25 @@
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/logo" />
 
-    <TextView
-        android:id="@+id/textView7"
-        android:layout_width="144dp"
-        android:layout_height="26dp"
-        android:contentDescription="@string/post_a_question"
-        android:fontFamily="casual"
-        android:text="@string/post_a_question"
-        android:textColor="#757575"
-        android:textSize="18sp"
-        app:layout_constraintStart_toStartOf="@+id/logo_image"
-        app:layout_constraintTop_toBottomOf="@+id/logo_image" />
-
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="27dp"
-        android:layout_height="22dp"
-        android:contentDescription="@string/post_a_question"
-        android:tint="@color/colorPrimary"
-        app:layout_constraintEnd_toStartOf="@+id/textView7"
-        app:layout_constraintTop_toTopOf="@+id/textView7"
-        app:srcCompat="@drawable/ic_person_black_24dp" />
-
     <ImageButton
         android:id="@+id/imageButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="@drawable/btn_shape"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:background="@drawable/submitt_shape"
+        android:contentDescription="@string/post"
+        android:onClick="Post"
         app:layout_constraintEnd_toEndOf="@+id/logo_image"
-        app:layout_constraintTop_toTopOf="@+id/textView7"
+        app:layout_constraintTop_toBottomOf="@+id/logo_image"
         app:srcCompat="@drawable/ic_create_black_24dp" />
+
+    <Button
+        android:id="@+id/welcome_button"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/submitt_shape"
+        android:text="@string/Welcome"
+        android:textColor="#FFFFFF"
+        app:layout_constraintStart_toStartOf="@+id/logo_image"
+        app:layout_constraintTop_toBottomOf="@+id/logo_image" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1137,6 +1137,7 @@ drawable abc_textfield_search_activated_mtrl_alpha
 drawable abc_textfield_search_default_mtrl_alpha
 drawable abc_textfield_search_material
 drawable abc_vector_test
+drawable app_logo
 drawable avd_hide_password
 drawable avd_show_password
 drawable btn_shape
@@ -1218,6 +1219,7 @@ drawable ic_account_box_black_24dp
 drawable ic_account_circle_black_24dp
 drawable ic_add_black_24dp
 drawable ic_add_circle_black_24dp
+drawable ic_camera_alt_black_24dp
 drawable ic_comment_black_24dp
 drawable ic_create_black_24dp
 drawable ic_dashboard_black_24dp
@@ -1263,6 +1265,7 @@ id SHIFT
 id SYM
 id acc_image
 id action0
+id action_back_home
 id action_bar
 id action_bar_activity_content
 id action_bar_container
@@ -1416,7 +1419,6 @@ id icon_only
 id ifRoom
 id image
 id imageButton
-id imageView
 id info
 id inline
 id invisible
@@ -1510,6 +1512,7 @@ id search_mag_icon
 id search_plate
 id search_src_text
 id search_voice_btn
+id select_button
 id select_dialog_listview
 id selected
 id send_code
@@ -1552,7 +1555,6 @@ id textView
 id textView2
 id textView4
 id textView5
-id textView7
 id text_dashboard
 id text_input_password_toggle
 id text_notifications
@@ -1588,6 +1590,7 @@ id welcome_back_email_link_body
 id welcome_back_idp_button
 id welcome_back_idp_prompt
 id welcome_back_password_body
+id welcome_button
 id wide
 id withText
 id wrap
@@ -1656,6 +1659,7 @@ layout com_facebook_device_auth_dialog_fragment
 layout com_facebook_login_fragment
 layout com_facebook_smart_device_dialog_fragment
 layout com_facebook_tooltip_bubble
+layout comments_row
 layout content_add
 layout content_listcomments
 layout content_listquestions
@@ -1785,6 +1789,7 @@ string abc_shareactionprovider_share_with_application
 string abc_toolbar_collapse_description
 string app_name
 string appbar_scrolling_view_behavior
+string back_home
 string bottom_sheet_behavior
 string character_counter_content_description
 string character_counter_pattern

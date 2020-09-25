@@ -11,7 +11,7 @@
         android:id="@+id/editQuestion"
         android:layout_width="wrap_content"
         android:layout_height="45dp"
-        android:layout_marginTop="270dp"
+        android:layout_marginTop="240dp"
         android:background="@drawable/edit_shape"
         android:ems="10"
         android:gravity="start|top"

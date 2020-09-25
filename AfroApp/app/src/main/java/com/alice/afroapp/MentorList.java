@@ -4,6 +4,7 @@ import android.os.Bundle;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.snackbar.Snackbar;
+import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
@@ -12,7 +13,10 @@ import androidx.appcompat.widget.Toolbar;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
+import android.widget.Toast;
 
 public class MentorList extends AppCompatActivity {
     private FirebaseDatabase mFirebaseDatabase;
@@ -39,6 +43,26 @@ public class MentorList extends AppCompatActivity {
                         .setAction("Action", null).show();
             }
         });
+
     }
 
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.mentor_menu,menu);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        int id = item.getItemId();
+        switch (item.getItemId()){
+            case R.id.action_back_home:
+                Toast.makeText(this,"Home.",Toast.LENGTH_LONG).show();
+                return true;
+            case R.id.action_new:
+                return  true;
+
+            default: return super.onOptionsItemSelected(item);
+        }
+    }
 }
