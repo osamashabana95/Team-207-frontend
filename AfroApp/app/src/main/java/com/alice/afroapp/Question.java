@@ -2,32 +2,37 @@ package com.alice.afroapp;
 
 public class Question {
 
-//    String body;
-//    String user;
-//    String Id;
-//
-//    public Question(String body, String user, String id) {
-//        this.body = body;
-//        this.user = user;
-//        Id = id;
-//    }
-//
-//    public Question(){}
-//
-//
-//    public String getBody() { return body; }
-//
-//    public void setBody(String body) { this.body = body; }
-//
-//    public String getUser() { return user; }
-//
-//    public void setUser(String user) { this.user = user; }
-//
-//    public String getId() { return Id; }
-//
-//    public void setId(String id) { Id = id; }
-//
+    private String questionId;
+    private String title;
+    String solution;
 
+    public Question(String questionId, String title, String solution) {
+        this.questionId = questionId;
+        this.title = title;
+        this.solution = solution;
+    }
 
+    public String getQuestionId() {
+        return questionId;
+    }
 
+    public void setQuestionId(String questionId) {
+        this.questionId = questionId;
+    }
+
+    public String getTitle() {
+        return title;
+    }
+
+    public void setTitle(String title) {
+        this.title = title;
+    }
+
+    public String getSolution() {
+        return solution;
+    }
+
+    public void setSolution(String solution) {
+        this.solution = solution;
+    }
 }

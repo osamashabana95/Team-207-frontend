@@ -49,7 +49,6 @@ public class MainActivity extends AppCompatActivity {
         NavigationUI.setupActionBarWithNavController(this, navController, appBarConfiguration);
         NavigationUI.setupWithNavController(navView, navController);
 
-
         mFirebaseAuth = FirebaseAuth.getInstance();
         mAuth = new FirebaseAuth.AuthStateListener() {
             @Override

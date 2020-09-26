@@ -115,6 +115,8 @@ public class AddProf extends AppCompatActivity {
         startActivity(intent);
     }
 
+
+
     public void SaveMentor(){
         String fullname = editName.getText().toString();
         String proficiency = editProf.getText().toString();
@@ -174,7 +176,10 @@ public class AddProf extends AppCompatActivity {
     }
 
     private void uploadImage()
+
     {
+        final Mentor mentor = new Mentor();
+
         if (filePath != null) {
 
             // Code for showing progressDialog while uploading
@@ -182,6 +187,7 @@ public class AddProf extends AppCompatActivity {
                     = new ProgressDialog(this);
             progressDialog.setTitle("Uploading...");
             progressDialog.show();
+
 
             // Defining the child of storageReference
             StorageReference ref
@@ -204,6 +210,11 @@ public class AddProf extends AppCompatActivity {
                                     // Image uploaded successfully
                                     // Dismiss dialog
                                     progressDialog.dismiss();
+                                    String url = taskSnapshot.getMetadata().getReference().getDownloadUrl().toString();
+                                    String pictureName = taskSnapshot.getStorage().getPath();
+                                    mentor.setImageName(pictureName);
+                                    mentor.setImageUrl(url);
+
                                     Toast
                                             .makeText(AddProf.this,
                                                     "Image Uploaded!!",

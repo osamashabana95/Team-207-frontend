@@ -36,4 +36,8 @@
     <string name="post_a_question">Post a question</string>
     <string name="send_post">send post</string>
     <string name="back_home">Back home</string>
+    <string name="comment">comment</string>
+    <string name="question_solu">Question</string>
+    <string name="username">username</string>
+    <string name="solution">Solution</string>
 </resources>

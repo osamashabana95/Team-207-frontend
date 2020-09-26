@@ -1486,6 +1486,7 @@ id prof_text
 id progress_bar
 id progress_circular
 id progress_horizontal
+id ques_text
 id radio
 id resend_barrier
 id resend_code
@@ -1529,6 +1530,7 @@ id snackbar_action
 id snackbar_text
 id snap
 id snapMargins
+id solution_Text
 id spacer
 id split_action_bar
 id spread
@@ -1584,6 +1586,7 @@ id unknown
 id unlabeled
 id up
 id useLogo
+id username_Text
 id view_offset_helper
 id visible
 id welcome_back_email_link_body
@@ -1816,6 +1819,7 @@ string com_facebook_smart_login_confirmation_cancel
 string com_facebook_smart_login_confirmation_continue_as
 string com_facebook_smart_login_confirmation_title
 string com_facebook_tooltip_default
+string comment
 string common_google_play_services_enable_button
 string common_google_play_services_enable_text
 string common_google_play_services_enable_title
@@ -1963,8 +1967,10 @@ string proficiency
 string profile
 string project_id
 string question
+string question_solu
 string search_menu_title
 string send_post
+string solution
 string status_bar_notification_info_overflow
 string submitt
 string title_activity_add
@@ -1976,6 +1982,7 @@ string title_activity_profile_add
 string title_dashboard
 string title_home
 string title_notifications
+string username
 style AlertDialog_AppCompat
 style AlertDialog_AppCompat_Light
 style Animation_AppCompat_Dialog
