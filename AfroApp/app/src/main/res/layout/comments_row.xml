@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/solution_Text"
+            android:layout_width="78dp"
+            android:layout_height="32dp"
+            android:text="@string/solution"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/ques_text"
+            android:layout_width="109dp"
+            android:layout_height="25dp"
+            android:layout_marginStart="44dp"
+            android:layout_marginTop="4dp"
+            android:text="@string/question"
+            app:layout_constraintStart_toEndOf="@+id/solution_Text"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/username_Text"
+            android:layout_width="45dp"
+            android:layout_height="21dp"
+            android:text="@string/username"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>

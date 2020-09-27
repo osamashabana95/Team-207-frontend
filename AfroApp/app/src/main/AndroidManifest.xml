@@ -2,6 +2,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.alice.afroapp">
 
+    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -9,15 +12,18 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".SignOut"></activity>
+        <activity
+            android:name=".MentorList"
+            android:label="@string/title_activity_mentor_list"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
         <activity
             android:name=".AddProf"
             android:label="@string/Add_Profile"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".Profile" />
         <activity
-            android:label="AfroDevMeet"
-            android:name=".Post" />
+            android:name=".Post"
+            android:label="AfroDevMeet" />
         <activity
             android:name=".Listcomments"
             android:label="@string/title_activity_listcomments"

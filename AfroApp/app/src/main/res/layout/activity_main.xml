@@ -5,15 +5,17 @@
     android:id="@+id/container"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#F30C0C0C"
+    android:background="#FFFFFF"
     android:paddingTop="?attr/actionBarSize">
+
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/nav_view"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:background="#EBF7F8F8"
-        app:itemIconTint="#565C5B"
+        android:background="#4CAF50"
+        app:itemIconTint="#FFFFFF"
+        app:itemTextColor="#FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
@@ -24,7 +26,7 @@
         android:name="androidx.navigation.fragment.NavHostFragment"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="#F21B1616"
+        android:background="#FFFFFF"
         app:defaultNavHost="true"
         app:layout_constraintBottom_toTopOf="@id/nav_view"
         app:layout_constraintLeft_toLeftOf="parent"

@@ -25,4 +25,19 @@
     <string name="Add_Profile">Add_Profile</string>
     <string name="AfroDevMeet">AfroDevMeet</string>
     <string name="post_question">post question</string>
+    <string name="Signout">SignOut</string>
+    <string name="facebook_application_id" translatable="false">371042157245845</string>
+    <string name="facebook_login_protocol_scheme" translatable="false">fb371042157245845</string>
+    <string name="Welcome">Welcome</string>
+    <string name="post">Post</string>
+    <string name="logo_image">logo_image</string>
+    <string name="title_activity_mentor_list">MentorList</string>
+    <string name="mentor_pic">mentor_pic</string>
+    <string name="post_a_question">Post a question</string>
+    <string name="send_post">send post</string>
+    <string name="back_home">Back home</string>
+    <string name="comment">comment</string>
+    <string name="question_solu">Question</string>
+    <string name="username">username</string>
+    <string name="solution">Solution</string>
 </resources>

@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.Toast;
 
@@ -32,9 +33,9 @@ public class MainActivity extends AppCompatActivity {
     private DatabaseReference mDatabaseReference;
     private FirebaseAuth mFirebaseAuth;
     private FirebaseAuth.AuthStateListener mAuth;
-    private ImageView postImage;
+    private ImageButton postButton;
     private static final int RC_SIGN_IN=123;
-    private Database db;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -87,6 +88,7 @@ public class MainActivity extends AppCompatActivity {
             // Choose authentication providers
         List<AuthUI.IdpConfig> providers = Arrays.asList(
                 new AuthUI.IdpConfig.EmailBuilder().build(),
+                new AuthUI.IdpConfig.FacebookBuilder().build(),
                 new AuthUI.IdpConfig.GoogleBuilder().build());
 
 
@@ -98,8 +100,6 @@ public class MainActivity extends AppCompatActivity {
                         .build(),
                 RC_SIGN_IN);
     }
-
-
 
     @Override
     protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
@@ -142,10 +142,7 @@ public class MainActivity extends AppCompatActivity {
         Toast.makeText(this,"Comments list.",Toast.LENGTH_LONG).show();
     }
 
-    public void Post(){
-        Intent intent= new Intent(MainActivity.this,SignOut.class);
-        startActivity(intent);
-    }
+
 
     public void ViewProfile(){
 //        Intent intent= new Intent(MainActivity.this,Profile.class);
@@ -166,21 +163,15 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-    public void PostQuestion(View view) {
-        Intent intent= new Intent(MainActivity.this,Post.class);
-        startActivity(intent);
-    }
 
     public void MentorSignUp(MenuItem item) {
         Intent intent= new Intent(MainActivity.this,AddProf.class);
         startActivity(intent);
     }
 
-    //  to test the database class
-    private void testDatabase(){
-        db = new Database();
-        db.setUser("1","oo","jkdlfjdl@df.com");
-        db.setQuestion("1","what?");
-        db.setSolution("1","1","yes");
+
+    public void Post(View view) {
+        Intent intent= new Intent(MainActivity.this,Post.class);
+        startActivity(intent);
     }
 }
