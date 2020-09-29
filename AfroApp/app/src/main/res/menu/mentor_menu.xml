@@ -8,6 +8,6 @@
         android:title="@string/back_home"
         app:showAsAction="always" />
     <item
-        android:id="@+id/action_new"
+        android:id="@+id/action_list"
         android:title="@string/Add_Profile" />
 </menu>

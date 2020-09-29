@@ -20,7 +20,7 @@
             android:contentDescription="@string/mentor_pic"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@drawable/ic_person_black_24dp" />
+            app:srcCompat="@drawable/placeholder" />
 
         <TextView
             android:id="@+id/fullname_text"

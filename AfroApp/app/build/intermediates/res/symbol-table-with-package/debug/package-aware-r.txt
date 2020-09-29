@@ -1137,6 +1137,7 @@ drawable abc_textfield_search_activated_mtrl_alpha
 drawable abc_textfield_search_default_mtrl_alpha
 drawable abc_textfield_search_material
 drawable abc_vector_test
+drawable addprof
 drawable app_logo
 drawable avd_hide_password
 drawable avd_show_password
@@ -1191,7 +1192,6 @@ drawable design_ic_visibility_off
 drawable design_password_eye
 drawable design_snackbar_background
 drawable dev
-drawable edit_shape
 drawable fui_ic_anonymous_white_24dp
 drawable fui_ic_apple_white_24dp
 drawable fui_ic_check_circle_black_128dp
@@ -1223,11 +1223,14 @@ drawable ic_camera_alt_black_24dp
 drawable ic_comment_black_24dp
 drawable ic_create_black_24dp
 drawable ic_dashboard_black_24dp
+drawable ic_email_black_24dp
 drawable ic_home_black_24dp
+drawable ic_laptop_black_24dp
 drawable ic_laptop_windows_black_24dp
 drawable ic_launcher_background
 drawable ic_launcher_foreground
 drawable ic_list_black_24dp
+drawable ic_location_on_black_24dp
 drawable ic_mtrl_chip_checked_black
 drawable ic_mtrl_chip_checked_circle
 drawable ic_mtrl_chip_close_circle
@@ -1253,6 +1256,7 @@ drawable notification_template_icon_bg
 drawable notification_template_icon_low_bg
 drawable notification_tile_bg
 drawable notify_panel_notification_icon_bg
+drawable placeholder
 drawable submitt_shape
 drawable tooltip_frame_dark
 drawable tooltip_frame_light
@@ -1286,11 +1290,12 @@ id action_menu_presenter
 id action_mode_bar
 id action_mode_bar_stub
 id action_mode_close_button
-id action_new
 id action_post
+id action_prof
 id action_set
 id action_signout
 id action_text
+id action_tohome
 id actions
 id activity_chooser_view_content
 id add
@@ -1316,6 +1321,7 @@ id browser_actions_menu_items
 id browser_actions_menu_view
 id btn_holder
 id button
+id button3
 id buttonPanel
 id button_continue
 id button_create
@@ -1381,9 +1387,11 @@ id editQuestion
 id edit_phone_number
 id edit_query
 id email
+id email_addtext
 id email_button
 id email_footer_tos_and_pp_text
 id email_layout
+id email_text
 id email_top_layout
 id email_tos_and_pp_text
 id end
@@ -1419,6 +1427,10 @@ id icon_only
 id ifRoom
 id image
 id imageButton
+id imageView
+id imageView3
+id imageView4
+id imageView6
 id info
 id inline
 id invisible
@@ -1435,6 +1447,7 @@ id line3
 id listMode
 id list_item
 id loc_text
+id locat_text
 id logo
 id logo_image
 id main_tos_and_pp
@@ -1451,6 +1464,7 @@ id mtrl_internal_children_alpha_tag
 id multiply
 id name
 id name_layout
+id name_text
 id nav_controller_view_tag
 id nav_host_fragment
 id nav_view
@@ -1483,6 +1497,8 @@ id pin
 id postButton
 id prof_pic
 id prof_text
+id profciency_text
+id profie_text
 id progress_bar
 id progress_circular
 id progress_horizontal
@@ -1654,7 +1670,7 @@ layout activity_listquestions
 layout activity_main
 layout activity_mentor_list
 layout activity_post
-layout activity_profile
+layout activity_prof
 layout browser_actions_context_menu_page
 layout browser_actions_context_menu_row
 layout com_facebook_activity_layout
@@ -1667,6 +1683,7 @@ layout content_add
 layout content_listcomments
 layout content_listquestions
 layout content_mentor_list
+layout content_prof
 layout design_bottom_navigation_item
 layout design_bottom_sheet_dialog
 layout design_layout_snackbar
@@ -1736,6 +1753,7 @@ layout support_simple_spinner_dropdown_item
 menu bottom_nav_menu
 menu home_menu
 menu mentor_menu
+menu mentorprofie
 menu post_question_menu
 menu profile_add_menu
 mipmap ic_launcher
@@ -1747,6 +1765,8 @@ string AfroDevMeet
 string Comments
 string Emaik_Add
 string Email_Add
+string Fullname
+string Mentor
 string Signout
 string View_list
 string View_questions
@@ -1949,6 +1969,7 @@ string google_crash_reporting_api_key
 string google_storage_bucket
 string hide_bottom_view_on_scroll_behavior
 string home
+string languages
 string location
 string logo_image
 string mentor_pic
@@ -1978,6 +1999,8 @@ string title_activity_add_prof
 string title_activity_listcomments
 string title_activity_listquestions
 string title_activity_mentor_list
+string title_activity_prof
+string title_activity_profile
 string title_activity_profile_add
 string title_dashboard
 string title_home

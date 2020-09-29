@@ -1,6 +1,8 @@
 package com.alice.afroapp;
 
-public class Mentor {
+import java.io.Serializable;
+
+public class Mentor implements Serializable {
     private  String id;
     private  String fullname;
     private String proficiency;
@@ -8,10 +10,11 @@ public class Mentor {
     private String email;
     private String imageUrl;
     private String imageName;
+    private String key;
     public  Mentor(){}
 
     public Mentor(String id, String fullname, String proficiency, String location,
-                  String email, String imageUrl, String imageName) {
+                  String email, String imageUrl, String imageName, String key) {
         this.id = id;
         this.fullname = fullname;
         this.proficiency = proficiency;
@@ -19,6 +22,7 @@ public class Mentor {
         this.email = email;
         this.imageUrl = imageUrl;
         this.imageName = imageName;
+        this.key = key;
     }
 
     public String getId() {
@@ -75,5 +79,13 @@ public class Mentor {
 
     public void setImageName(String imageName) {
         this.imageName = imageName;
+    }
+
+    public String getKey() {
+        return key;
+    }
+
+    public void setKey(String key) {
+        this.key = key;
     }
 }

@@ -7,11 +7,16 @@
         android:icon="@drawable/ic_home_black_24dp"
         android:title="@string/home"
         app:showAsAction="always" />
+
+    <item
+        android:id="@+id/action_post"
+        android:icon="@drawable/ic_create_black_24dp"
+        android:title="@string/post_a_question"
+        app:showAsAction="always" />
+
     <item
         android:id="@+id/action_signout"
         android:icon="@drawable/ic_account_box_black_24dp"
         android:title="@string/Signout" />
-    <item android:id="@+id/action_post"
-        android:title="@string/post_a_question" />
 
 </menu>

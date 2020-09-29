@@ -630,6 +630,8 @@
     <string name="Comments">Comments</string>
     <string name="Emaik_Add">Email_Add:</string>
     <string name="Email_Add">Email_Add</string>
+    <string name="Fullname">Fullname</string>
+    <string name="Mentor">Mentor</string>
     <string name="Signout">SignOut</string>
     <string name="View_list">View_list</string>
     <string name="View_questions">Vie_questions</string>
@@ -842,6 +844,7 @@
     <string name="google_storage_bucket" translatable="false">afroapp-6da94.appspot.com</string>
     <string name="hide_bottom_view_on_scroll_behavior" translatable="false">com.google.android.material.behavior.HideBottomViewOnScrollBehavior</string>
     <string name="home">Home</string>
+    <string name="languages">laptop</string>
     <string name="location">Location:</string>
     <string name="logo_image">logo_image</string>
     <string name="mentor_pic">mentor_pic</string>
@@ -871,6 +874,8 @@
     <string name="title_activity_listcomments">Listcomments</string>
     <string name="title_activity_listquestions">Listquestions</string>
     <string name="title_activity_mentor_list">MentorList</string>
+    <string name="title_activity_prof">Prof</string>
+    <string name="title_activity_profile">Profile</string>
     <string name="title_activity_profile_add">ProfileAdd</string>
     <string name="title_dashboard">Dashboard</string>
     <string name="title_home">Home</string>

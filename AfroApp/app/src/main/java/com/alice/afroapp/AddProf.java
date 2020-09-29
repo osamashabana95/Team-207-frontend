@@ -3,15 +3,12 @@ package com.alice.afroapp;
 import android.app.ProgressDialog;
 import android.content.Intent;
 import android.graphics.Bitmap;
-import android.graphics.Color;
-import android.graphics.drawable.ColorDrawable;
 import android.net.Uri;
 import android.os.Bundle;
 
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
-import com.google.android.material.snackbar.Snackbar;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.storage.FirebaseStorage;
@@ -21,7 +18,6 @@ import com.google.firebase.storage.UploadTask;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
-import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
@@ -40,7 +36,7 @@ import java.util.UUID;
 public class AddProf extends AppCompatActivity {
     private static final int PICK_IMAGE_REQUEST = 22;
     private FirebaseDatabase mFirebaseDatabase;
-    private DatabaseReference mDatabaseReference;
+    private  DatabaseReference mDatabaseReference;
     private FirebaseStorage storage;
     private StorageReference storageReference;
     private EditText editName,editProf,editLoc,editEmail;
@@ -54,6 +50,8 @@ public class AddProf extends AppCompatActivity {
         setContentView(R.layout.activity_add);
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+
+        //initializing views
         editName = (EditText) findViewById(R.id.editName);
         editProf = (EditText) findViewById(R.id.editProf);
         editLoc = (EditText) findViewById(R.id.editLoc);
@@ -96,10 +94,11 @@ public class AddProf extends AppCompatActivity {
             case R.id.action_home:
                 GoHome();
                 return true;
-            case R.id.action_new:
-                GoList();
+            case R.id.action_prof:
+                GoProf();
                 return true;
             case R.id.action_list:
+                GoList();
                 return true;
             default: return super.onOptionsItemSelected(item);
         }
@@ -110,22 +109,18 @@ public class AddProf extends AppCompatActivity {
         startActivity(intent);
     }
 
+    public void GoProf(){
+        Intent intent= new Intent(AddProf.this,Prof.class);
+        startActivity(intent);
+    }
+
+
     public void GoList(){
         Intent intent= new Intent(AddProf.this,MentorList.class);
         startActivity(intent);
     }
 
 
-
-    public void SaveMentor(){
-        String fullname = editName.getText().toString();
-        String proficiency = editProf.getText().toString();
-        String location = editLoc.getText().toString();
-        String email = editEmail.getText().toString();
-        Mentor mentor = new Mentor("id",fullname,proficiency,location,email,
-                "imageurl","imageName");
-        mDatabaseReference.push().setValue(mentor);
-    }
 
     public void SelectImage(){
 // Defining Implicit Intent to mobile gallery
@@ -146,9 +141,11 @@ public class AddProf extends AppCompatActivity {
         super.onActivityResult(requestCode,
                 resultCode,
                 data);
+        final Mentor mentor = new Mentor();
+
 
         // checking request code and result code
-        if (requestCode == PICK_IMAGE_REQUEST
+       if (requestCode == PICK_IMAGE_REQUEST
                 && resultCode == RESULT_OK
                 && data != null
                 && data.getData() != null) {
@@ -159,20 +156,31 @@ public class AddProf extends AppCompatActivity {
                 // Setting image on image view using Bitmap
                 Bitmap bitmap = MediaStore
                         .Images
-                        .Media
+                       .Media
                         .getBitmap(
-                                getContentResolver(),
+                               getContentResolver(),
                                 filePath);
-                imageView.setImageBitmap(bitmap);
-            }
-
+               imageView.setImageBitmap(bitmap);
+           }
             catch (IOException e) {
-                // Log the exception
+               // Log the exception
                 e.printStackTrace();
             }
         }
 
         uploadImage();
+        Uri imageUri = data.getData();
+        StorageReference ref = storageReference.child(imageUri.getLastPathSegment());
+        ref.putFile(imageUri).addOnSuccessListener(this, new OnSuccessListener<UploadTask.TaskSnapshot>() {
+            @Override
+            public void onSuccess(UploadTask.TaskSnapshot taskSnapshot) {
+                String url = taskSnapshot.getMetadata().getReference().getDownloadUrl().toString();
+                String pictureName = taskSnapshot.getStorage().getPath();
+                mDatabaseReference.child(mentor.getKey()).child("imageUrl").setValue(url);
+
+            }
+        });
+
     }
 
     private void uploadImage()
@@ -197,7 +205,6 @@ public class AddProf extends AppCompatActivity {
                                     + UUID.randomUUID().toString());
 
             // adding listeners on upload
-            // or failure of image
             ref.putFile(filePath)
                     .addOnSuccessListener(
                             new OnSuccessListener<UploadTask.TaskSnapshot>() {
@@ -206,14 +213,16 @@ public class AddProf extends AppCompatActivity {
                                 public void onSuccess(
                                         UploadTask.TaskSnapshot taskSnapshot)
                                 {
+                                    String url = taskSnapshot.getMetadata().getReference()
+                                            .getDownloadUrl().toString();
+                                    mDatabaseReference.child(mentor.getKey().toString())
+                                            .child("imageUrl").setValue(url);
+                                    String pictureName = taskSnapshot.getStorage().getPath();
 
                                     // Image uploaded successfully
                                     // Dismiss dialog
                                     progressDialog.dismiss();
-                                    String url = taskSnapshot.getMetadata().getReference().getDownloadUrl().toString();
-                                    String pictureName = taskSnapshot.getStorage().getPath();
-                                    mentor.setImageName(pictureName);
-                                    mentor.setImageUrl(url);
+
 
                                     Toast
                                             .makeText(AddProf.this,
@@ -227,7 +236,6 @@ public class AddProf extends AppCompatActivity {
                         @Override
                         public void onFailure(@NonNull Exception e)
                         {
-
                             // Error, Image not uploaded
                             progressDialog.dismiss();
                             Toast
@@ -241,7 +249,6 @@ public class AddProf extends AppCompatActivity {
                             new OnProgressListener<UploadTask.TaskSnapshot>() {
 
                                 // Progress Listener for loading
-                                // percentage on the dialog box
                                 @Override
                                 public void onProgress(
                                         UploadTask.TaskSnapshot taskSnapshot)
@@ -257,6 +264,17 @@ public class AddProf extends AppCompatActivity {
                             });
         }
     }
-
+    public void SaveMentor(){
+        String fullname = editName.getText().toString();
+        String proficiency = editProf.getText().toString();
+        String location = editLoc.getText().toString();
+        String email = editEmail.getText().toString();
+        Mentor mentor = new Mentor("id",fullname,proficiency,location,email,
+                "","", "");
+       DatabaseReference mentoRef= mDatabaseReference.push();
+               mentoRef.setValue(mentor);
+               String key = mentoRef.getKey();
+               mentor.setKey(key);
+    }
 
 }
