@@ -40,4 +40,9 @@
     <string name="question_solu">Question</string>
     <string name="username">username</string>
     <string name="solution">Solution</string>
+    <string name="Mentor">Mentor</string>
+    <string name="title_activity_prof">Prof</string>
+    <string name="languages">laptop</string>
+    <string name="Fullname">Fullname</string>
+    <string name="title_activity_profile">Profile</string>
 </resources>

@@ -1,6 +1,8 @@
 package com.alice.afroapp;
 
 import android.content.Context;
+import android.content.Intent;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -74,9 +76,6 @@ public class MentorAdapter extends RecyclerView.Adapter<MentorAdapter.ViewHolder
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
         Mentor mentor = mentors.get(position);
         holder.bind(mentor);
-
-
-
     }
 
     @Override
@@ -84,17 +83,19 @@ public class MentorAdapter extends RecyclerView.Adapter<MentorAdapter.ViewHolder
         return mentors.size();
     }
 
-    public class ViewHolder extends RecyclerView.ViewHolder{
+    public class ViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
         TextView fullname;
         TextView profieciency;
         TextView location;
 
 
-        public ViewHolder(@NonNull View itemView) {
+        public ViewHolder(@NonNull View itemView)  {
             super(itemView);
             fullname = (TextView) itemView.findViewById(R.id.fullname_text);
             profieciency = (TextView) itemView.findViewById(R.id.prof_text);
             location = (TextView) itemView.findViewById(R.id.loc_text);
+            fullname.setOnClickListener(this);
+           // itemView.setOnClickListener(this);
 
         }
         public void bind(Mentor mentor){
@@ -103,6 +104,17 @@ public class MentorAdapter extends RecyclerView.Adapter<MentorAdapter.ViewHolder
             location.setText(mentor.getLocation());
         }
 
+        @Override
+        public void onClick(View v) {
+            int position = getAdapterPosition();
+            Mentor selectedMentor = mentors.get(position);
+            String id = selectedMentor.getId();
+            Log.d("message", String.valueOf(position));
+            Intent intent = new Intent(itemView.getContext(), Prof.class);
+            intent.putExtra("id",id);
+            v.getContext().startActivity(intent);
+
+        }
     }
 
 

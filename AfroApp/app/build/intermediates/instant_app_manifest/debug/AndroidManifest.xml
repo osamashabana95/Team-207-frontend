@@ -20,30 +20,35 @@
         android:appComponentFactory="androidx.core.app.CoreComponentFactory"
         android:debuggable="true"
         android:icon="@mipmap/ic_launcher"
-        android:label="@string/app_name"
+        android:label="@string/AfroDevMeet"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:testOnly="true"
         android:theme="@style/AppTheme" >
         <activity
+            android:name="com.alice.afroapp.Prof"
+            android:label="@string/title_activity_profile"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
             android:name="com.alice.afroapp.MentorList"
+            android:icon="@drawable/app_logo"
             android:label="@string/title_activity_mentor_list"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name="com.alice.afroapp.AddProf"
-            android:label="@string/Add_Profile"
+            android:icon="@drawable/app_logo"
+            android:label="@string/Mentor"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name="com.alice.afroapp.Profile" />
         <activity
             android:name="com.alice.afroapp.Post"
             android:label="AfroDevMeet" />
         <activity
             android:name="com.alice.afroapp.Listcomments"
-            android:label="@string/title_activity_listcomments"
+            android:label="@string/Comments"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name="com.alice.afroapp.Listquestions"
-            android:label="@string/title_activity_listquestions"
+            android:label="@string/question"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name="com.alice.afroapp.MainActivity"

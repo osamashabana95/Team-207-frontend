@@ -48,16 +48,20 @@
         "source": "C:\\Users\\Alice\\AndroidStudioProjects\\AfroApp\\New\\Team-207-frontend\\AfroApp\\app\\src\\main\\res\\layout\\questions_row.xml"
     },
     {
-        "merged": "C:\\Users\\Alice\\AndroidStudioProjects\\AfroApp\\New\\Team-207-frontend\\AfroApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_tab_indicator_mtrl_alpha.9.png.flat",
-        "source": "C:\\Users\\Alice\\.gradle\\caches\\transforms-2\\files-2.1\\daee6df2c31aab579f82be9a195199ab\\appcompat-1.0.2\\res\\drawable-xxhdpi-v4\\abc_tab_indicator_mtrl_alpha.9.png"
+        "merged": "C:\\Users\\Alice\\AndroidStudioProjects\\AfroApp\\New\\Team-207-frontend\\AfroApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_com_facebook_tooltip_black_topnub.png.flat",
+        "source": "C:\\Users\\Alice\\.gradle\\caches\\transforms-2\\files-2.1\\2c14fd299e8eaa627ce473619dbf61d5\\jetified-facebook-login-4.30.0\\res\\drawable-hdpi-v4\\com_facebook_tooltip_black_topnub.png"
     },
     {
         "merged": "C:\\Users\\Alice\\AndroidStudioProjects\\AfroApp\\New\\Team-207-frontend\\AfroApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldrtl-xxhdpi-v17_abc_ic_menu_copy_mtrl_am_alpha.png.flat",
         "source": "C:\\Users\\Alice\\.gradle\\caches\\transforms-2\\files-2.1\\daee6df2c31aab579f82be9a195199ab\\appcompat-1.0.2\\res\\drawable-ldrtl-xxhdpi-v17\\abc_ic_menu_copy_mtrl_am_alpha.png"
     },
     {
-        "merged": "C:\\Users\\Alice\\AndroidStudioProjects\\AfroApp\\New\\Team-207-frontend\\AfroApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_com_facebook_tooltip_black_topnub.png.flat",
-        "source": "C:\\Users\\Alice\\.gradle\\caches\\transforms-2\\files-2.1\\2c14fd299e8eaa627ce473619dbf61d5\\jetified-facebook-login-4.30.0\\res\\drawable-hdpi-v4\\com_facebook_tooltip_black_topnub.png"
+        "merged": "C:\\Users\\Alice\\AndroidStudioProjects\\AfroApp\\New\\Team-207-frontend\\AfroApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_tab_indicator_mtrl_alpha.9.png.flat",
+        "source": "C:\\Users\\Alice\\.gradle\\caches\\transforms-2\\files-2.1\\daee6df2c31aab579f82be9a195199ab\\appcompat-1.0.2\\res\\drawable-xxhdpi-v4\\abc_tab_indicator_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "C:\\Users\\Alice\\AndroidStudioProjects\\AfroApp\\New\\Team-207-frontend\\AfroApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_laptop_black_24dp.xml.flat",
+        "source": "C:\\Users\\Alice\\AndroidStudioProjects\\AfroApp\\New\\Team-207-frontend\\AfroApp\\app\\src\\main\\res\\drawable\\ic_laptop_black_24dp.xml"
     },
     {
         "merged": "C:\\Users\\Alice\\AndroidStudioProjects\\AfroApp\\New\\Team-207-frontend\\AfroApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_ic_star_black_36dp.png.flat",
@@ -180,10 +184,6 @@
         "source": "C:\\Users\\Alice\\.gradle\\caches\\transforms-2\\files-2.1\\a7dfbb78c47d6fb61939251aeae30df0\\play-services-base-17.1.0\\res\\color\\common_google_signin_btn_tint.xml"
     },
     {
-        "merged": "C:\\Users\\Alice\\AndroidStudioProjects\\AfroApp\\New\\Team-207-frontend\\AfroApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_edit_shape.xml.flat",
-        "source": "C:\\Users\\Alice\\AndroidStudioProjects\\AfroApp\\New\\Team-207-frontend\\AfroApp\\app\\src\\main\\res\\drawable\\edit_shape.xml"
-    },
-    {
         "merged": "C:\\Users\\Alice\\AndroidStudioProjects\\AfroApp\\New\\Team-207-frontend\\AfroApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_googleg_disabled_color_18.png.flat",
         "source": "C:\\Users\\Alice\\.gradle\\caches\\transforms-2\\files-2.1\\a7dfbb78c47d6fb61939251aeae30df0\\play-services-base-17.1.0\\res\\drawable-xxhdpi-v4\\googleg_disabled_color_18.png"
     },
@@ -210,6 +210,14 @@
     {
         "merged": "C:\\Users\\Alice\\AndroidStudioProjects\\AfroApp\\New\\Team-207-frontend\\AfroApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_common_google_signin_btn_text_dark_normal_background.9.png.flat",
         "source": "C:\\Users\\Alice\\.gradle\\caches\\transforms-2\\files-2.1\\a7dfbb78c47d6fb61939251aeae30df0\\play-services-base-17.1.0\\res\\drawable-hdpi-v4\\common_google_signin_btn_text_dark_normal_background.9.png"
+    },
+    {
+        "merged": "C:\\Users\\Alice\\AndroidStudioProjects\\AfroApp\\New\\Team-207-frontend\\AfroApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_location_on_black_24dp.xml.flat",
+        "source": "C:\\Users\\Alice\\AndroidStudioProjects\\AfroApp\\New\\Team-207-frontend\\AfroApp\\app\\src\\main\\res\\drawable\\ic_location_on_black_24dp.xml"
+    },
+    {
+        "merged": "C:\\Users\\Alice\\AndroidStudioProjects\\AfroApp\\New\\Team-207-frontend\\AfroApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_email_black_24dp.xml.flat",
+        "source": "C:\\Users\\Alice\\AndroidStudioProjects\\AfroApp\\New\\Team-207-frontend\\AfroApp\\app\\src\\main\\res\\drawable\\ic_email_black_24dp.xml"
     },
     {
         "merged": "C:\\Users\\Alice\\AndroidStudioProjects\\AfroApp\\New\\Team-207-frontend\\AfroApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_abc_ic_voice_search_api_material.xml.flat",
@@ -1652,6 +1660,10 @@
         "source": "C:\\Users\\Alice\\AndroidStudioProjects\\AfroApp\\New\\Team-207-frontend\\AfroApp\\app\\src\\main\\res\\drawable\\ic_person_add_black_24dp.xml"
     },
     {
+        "merged": "C:\\Users\\Alice\\AndroidStudioProjects\\AfroApp\\New\\Team-207-frontend\\AfroApp\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_prof.xml.flat",
+        "source": "C:\\Users\\Alice\\AndroidStudioProjects\\AfroApp\\New\\Team-207-frontend\\AfroApp\\app\\src\\main\\res\\layout\\activity_prof.xml"
+    },
+    {
         "merged": "C:\\Users\\Alice\\AndroidStudioProjects\\AfroApp\\New\\Team-207-frontend\\AfroApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_abc_switch_thumb_material.xml.flat",
         "source": "C:\\Users\\Alice\\.gradle\\caches\\transforms-2\\files-2.1\\daee6df2c31aab579f82be9a195199ab\\appcompat-1.0.2\\res\\drawable\\abc_switch_thumb_material.xml"
     },
@@ -2064,6 +2076,10 @@
         "source": "C:\\Users\\Alice\\AndroidStudioProjects\\AfroApp\\New\\Team-207-frontend\\AfroApp\\app\\src\\main\\res\\drawable\\ic_add_black_24dp.xml"
     },
     {
+        "merged": "C:\\Users\\Alice\\AndroidStudioProjects\\AfroApp\\New\\Team-207-frontend\\AfroApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_addprof.xml.flat",
+        "source": "C:\\Users\\Alice\\AndroidStudioProjects\\AfroApp\\New\\Team-207-frontend\\AfroApp\\app\\src\\main\\res\\drawable\\addprof.xml"
+    },
+    {
         "merged": "C:\\Users\\Alice\\AndroidStudioProjects\\AfroApp\\New\\Team-207-frontend\\AfroApp\\app\\build\\intermediates\\res\\merged\\debug\\layout_abc_expanded_menu_layout.xml.flat",
         "source": "C:\\Users\\Alice\\.gradle\\caches\\transforms-2\\files-2.1\\daee6df2c31aab579f82be9a195199ab\\appcompat-1.0.2\\res\\layout\\abc_expanded_menu_layout.xml"
     },
@@ -2102,10 +2118,6 @@
     {
         "merged": "C:\\Users\\Alice\\AndroidStudioProjects\\AfroApp\\New\\Team-207-frontend\\AfroApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_tab_indicator_mtrl_alpha.9.png.flat",
         "source": "C:\\Users\\Alice\\.gradle\\caches\\transforms-2\\files-2.1\\daee6df2c31aab579f82be9a195199ab\\appcompat-1.0.2\\res\\drawable-xhdpi-v4\\abc_tab_indicator_mtrl_alpha.9.png"
-    },
-    {
-        "merged": "C:\\Users\\Alice\\AndroidStudioProjects\\AfroApp\\New\\Team-207-frontend\\AfroApp\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_profile.xml.flat",
-        "source": "C:\\Users\\Alice\\AndroidStudioProjects\\AfroApp\\New\\Team-207-frontend\\AfroApp\\app\\src\\main\\res\\layout\\activity_profile.xml"
     },
     {
         "merged": "C:\\Users\\Alice\\AndroidStudioProjects\\AfroApp\\New\\Team-207-frontend\\AfroApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_fui_idp_button_background_email.xml.flat",
@@ -2172,6 +2184,10 @@
         "source": "C:\\Users\\Alice\\.gradle\\caches\\transforms-2\\files-2.1\\daee6df2c31aab579f82be9a195199ab\\appcompat-1.0.2\\res\\drawable-xxhdpi-v4\\abc_popup_background_mtrl_mult.9.png"
     },
     {
+        "merged": "C:\\Users\\Alice\\AndroidStudioProjects\\AfroApp\\New\\Team-207-frontend\\AfroApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_placeholder.xml.flat",
+        "source": "C:\\Users\\Alice\\AndroidStudioProjects\\AfroApp\\New\\Team-207-frontend\\AfroApp\\app\\src\\main\\res\\drawable\\placeholder.xml"
+    },
+    {
         "merged": "C:\\Users\\Alice\\AndroidStudioProjects\\AfroApp\\New\\Team-207-frontend\\AfroApp\\app\\build\\intermediates\\res\\merged\\debug\\color-v23_abc_tint_default.xml.flat",
         "source": "C:\\Users\\Alice\\.gradle\\caches\\transforms-2\\files-2.1\\daee6df2c31aab579f82be9a195199ab\\appcompat-1.0.2\\res\\color-v23\\abc_tint_default.xml"
     },
@@ -2206,6 +2222,10 @@
     {
         "merged": "C:\\Users\\Alice\\AndroidStudioProjects\\AfroApp\\New\\Team-207-frontend\\AfroApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_com_facebook_button_like_icon_selected.png.flat",
         "source": "C:\\Users\\Alice\\.gradle\\caches\\transforms-2\\files-2.1\\44b6e086f4c3484d9ad58a43afccddfa\\jetified-facebook-common-4.30.0\\res\\drawable-mdpi-v4\\com_facebook_button_like_icon_selected.png"
+    },
+    {
+        "merged": "C:\\Users\\Alice\\AndroidStudioProjects\\AfroApp\\New\\Team-207-frontend\\AfroApp\\app\\build\\intermediates\\res\\merged\\debug\\layout_content_prof.xml.flat",
+        "source": "C:\\Users\\Alice\\AndroidStudioProjects\\AfroApp\\New\\Team-207-frontend\\AfroApp\\app\\src\\main\\res\\layout\\content_prof.xml"
     },
     {
         "merged": "C:\\Users\\Alice\\AndroidStudioProjects\\AfroApp\\New\\Team-207-frontend\\AfroApp\\app\\build\\intermediates\\res\\merged\\debug\\layout_abc_search_view.xml.flat",
@@ -2406,6 +2426,10 @@
     {
         "merged": "C:\\Users\\Alice\\AndroidStudioProjects\\AfroApp\\New\\Team-207-frontend\\AfroApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_scrubber_control_off_mtrl_alpha.png.flat",
         "source": "C:\\Users\\Alice\\.gradle\\caches\\transforms-2\\files-2.1\\daee6df2c31aab579f82be9a195199ab\\appcompat-1.0.2\\res\\drawable-hdpi-v4\\abc_scrubber_control_off_mtrl_alpha.png"
+    },
+    {
+        "merged": "C:\\Users\\Alice\\AndroidStudioProjects\\AfroApp\\New\\Team-207-frontend\\AfroApp\\app\\build\\intermediates\\res\\merged\\debug\\menu_mentorprofie.xml.flat",
+        "source": "C:\\Users\\Alice\\AndroidStudioProjects\\AfroApp\\New\\Team-207-frontend\\AfroApp\\app\\src\\main\\res\\menu\\mentorprofie.xml"
     },
     {
         "merged": "C:\\Users\\Alice\\AndroidStudioProjects\\AfroApp\\New\\Team-207-frontend\\AfroApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_abc_ratingbar_material.xml.flat",

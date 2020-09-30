@@ -4,7 +4,6 @@ import android.os.Bundle;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.snackbar.Snackbar;
-import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
@@ -59,7 +58,7 @@ public class MentorList extends AppCompatActivity {
             case R.id.action_back_home:
                 Toast.makeText(this,"Home.",Toast.LENGTH_LONG).show();
                 return true;
-            case R.id.action_new:
+            case R.id.action_list:
                 return  true;
 
             default: return super.onOptionsItemSelected(item);
