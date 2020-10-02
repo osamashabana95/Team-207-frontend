@@ -45,4 +45,7 @@
     <string name="languages">laptop</string>
     <string name="Fullname">Fullname</string>
     <string name="title_activity_profile">Profile</string>
+    <string name="Edit">Edit</string>
+    <string name="title">title</string>
+    <string name="SignUp">SignUp</string>
 </resources>

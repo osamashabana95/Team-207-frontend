@@ -24,11 +24,11 @@
         <activity
             android:name=".AddProf"
             android:icon="@drawable/app_logo"
-            android:label="@string/Mentor"
+            android:label="@string/SignUp"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".Post"
-            android:label="AfroDevMeet" />
+            android:label="Post" />
         <activity
             android:name=".Listcomments"
             android:label="@string/Comments"

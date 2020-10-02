@@ -27,9 +27,14 @@ public class MentorList extends AppCompatActivity {
         setContentView(R.layout.activity_mentor_list);
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+        getSupportActionBar().setDisplayShowHomeEnabled(true);
+        getSupportActionBar().setIcon(R.drawable.ic_code_black_18dp);
+
         RecyclerView mentor_list = (RecyclerView) findViewById(R.id.mentor_list);
 
-        LinearLayoutManager messageLayoutManager = new LinearLayoutManager(this,LinearLayoutManager.VERTICAL,false);
+        LinearLayoutManager messageLayoutManager = new LinearLayoutManager(this,
+                LinearLayoutManager.VERTICAL,
+                false);
         mentor_list.setLayoutManager(messageLayoutManager);
         final MentorAdapter adapter = new MentorAdapter();
         mentor_list.setAdapter(adapter);

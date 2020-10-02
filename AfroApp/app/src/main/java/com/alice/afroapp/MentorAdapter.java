@@ -42,6 +42,9 @@ public class MentorAdapter extends RecyclerView.Adapter<MentorAdapter.ViewHolder
 
             @Override
             public void onChildChanged(@NonNull DataSnapshot snapshot, @Nullable String previousChildName) {
+                Mentor mentor = snapshot.getValue(Mentor.class);
+                mentor.setId(snapshot.getKey());
+                mentors.add(mentor);
 
             }
 
@@ -108,10 +111,10 @@ public class MentorAdapter extends RecyclerView.Adapter<MentorAdapter.ViewHolder
         public void onClick(View v) {
             int position = getAdapterPosition();
             Mentor selectedMentor = mentors.get(position);
-            String id = selectedMentor.getId();
+            String name = selectedMentor.getFullname();
             Log.d("message", String.valueOf(position));
             Intent intent = new Intent(itemView.getContext(), Prof.class);
-            intent.putExtra("id",id);
+            intent.putExtra("name",name);
             v.getContext().startActivity(intent);
 
         }

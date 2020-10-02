@@ -13,11 +13,15 @@ import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.Query;
 import com.google.firebase.database.ValueEventListener;
 
+import androidx.annotation.DrawableRes;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -31,34 +35,63 @@ public class Prof extends AppCompatActivity {
     private TextView fullname,proficiency,location,email;
     private FirebaseDatabase mFirebaseDatabase;
     private DatabaseReference mDatabaseReference;
+    private ChildEventListener mChildEventListerner;
+    private ValueEventListener mValueEventListener;
     private ArrayList<Mentor> mentors;
-
-
-
-
+    private  Mentor mentor;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_prof);
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+        getSupportActionBar().setDisplayShowHomeEnabled(true);
+        getSupportActionBar().setIcon(R.drawable.ic_code_black_18dp);
+
         fullname = (TextView) findViewById(R.id.fullname_text);
         proficiency = (TextView) findViewById(R.id.profciency_text);
         location = (TextView) findViewById(R.id.loc_text);
         email = (TextView) findViewById(R.id.email_addtext);
         mFirebaseDatabase = FirebaseDatabase.getInstance();
         mDatabaseReference = mFirebaseDatabase.getReference().child("mentors");
+        Intent intent = getIntent();
+        String Currentname = intent.getStringExtra("name");
+        final Query itemFilter = mDatabaseReference.orderByChild("fullname")
+                .equalTo(Currentname);
 
 
-        FloatingActionButton fab = findViewById(R.id.fab);
-        fab.setOnClickListener(new View.OnClickListener() {
+
+
+        itemFilter.addValueEventListener(new ValueEventListener() {
             @Override
-            public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
+            public void onDataChange(@NonNull DataSnapshot snapshot) {
+                for(DataSnapshot postSnapshot:snapshot.getChildren()){
+                    Mentor mentor = snapshot.child("fullname ").getValue(Mentor.class);
+                    String name = snapshot.child("mentors").child("fullname").getValue(String.class);
+                    System.out.println(mentor);
+
+
+                }
+                mentors.add(mentor);
+
+            }
+
+            @Override
+            public void onCancelled(@NonNull DatabaseError error) {
+
             }
         });
-        showProfile();
+
+            //fullname.setText(mentor.getFullname());
+//        proficiency.setText(mentor.getProficiency());
+//        location.setText(mentor.getLocation());
+//        email.setText(mentor.getEmail());
+
+
+
+
+
+
     }
 
     @Override
@@ -76,51 +109,19 @@ public class Prof extends AppCompatActivity {
                 return true;
             case R.id.action_edit:
                 return  true;
-
             default: return super.onOptionsItemSelected(item);
         }
     }
 
-     public void showProfile(){
-         Mentor mentor = new Mentor();
-         mentors = new ArrayList<Mentor>();
-         fullname = (TextView) findViewById(R.id.fullname_text);
-         mDatabaseReference = mFirebaseDatabase.getReference().child("mentors");
+    public void Editprofile(View view) {
+        if(mentor.getId()!= null){
+            mDatabaseReference.child(mentor.getId()
+            ).setValue(mentor);
+        }
+        else {
+            Toast.makeText(this,"cant be edited.",Toast.LENGTH_LONG).show();
 
+        }
 
-         Intent intent = getIntent();
-         String Currentid = intent.getStringExtra("id");
-         final Query itemFilter = mDatabaseReference.orderByChild("id")
-                 .equalTo(Currentid);
-
-         itemFilter.addChildEventListener(new ChildEventListener() {
-             @Override
-             public void onChildAdded(@NonNull DataSnapshot snapshot, @Nullable String previousChildName) {
-                 for(DataSnapshot childSnapshot: snapshot.getChildren()){
-                     Mentor mentor = childSnapshot.getValue(Mentor.class);
-                 }
-             }
-
-             @Override
-             public void onChildChanged(@NonNull DataSnapshot snapshot, @Nullable String previousChildName) {
-
-             }
-
-             @Override
-             public void onChildRemoved(@NonNull DataSnapshot snapshot) {
-
-             }
-
-             @Override
-             public void onChildMoved(@NonNull DataSnapshot snapshot, @Nullable String previousChildName) {
-
-             }
-
-             @Override
-             public void onCancelled(@NonNull DatabaseError error) {
-
-             }
-         });
-
-
-}}
+    }
+}

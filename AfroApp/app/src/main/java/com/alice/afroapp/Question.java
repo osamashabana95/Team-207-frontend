@@ -2,22 +2,26 @@ package com.alice.afroapp;
 
 public class Question {
 
-    private String questionId;
+    private String id;
     private String title;
-    String solution;
+    private String solution;
+    private String username;
 
-    public Question(String questionId, String title, String solution) {
-        this.questionId = questionId;
+    public Question() { }
+
+    public Question(String id, String title, String solution,String username) {
+        this.id = id;
         this.title = title;
         this.solution = solution;
+        this.username = username;
     }
 
-    public String getQuestionId() {
-        return questionId;
+    public String getId() {
+        return id;
     }
 
-    public void setQuestionId(String questionId) {
-        this.questionId = questionId;
+    public void setId(String id) {
+        this.id = id;
     }
 
     public String getTitle() {
@@ -35,4 +39,12 @@ public class Question {
     public void setSolution(String solution) {
         this.solution = solution;
     }
+    public String getUsername() {
+        return username;
+    }
+
+    public void setUsername(String username) {
+        this.username = username;
+    }
+
 }
