@@ -37,7 +37,7 @@ public class QuestionAdapter extends RecyclerView.Adapter<QuestionAdapter.Questi
     public void onBindViewHolder(@NonNull QuestionViewHolder holder, int position) {
 
         Map<String,String> map = mList.get(position);
-        holder.qNameTextview.setText(map.get("username"));
+        holder.qNameTextview.setText(map.get("userName"));
         holder.questionTextview.setText(map.get("title"));
 
     }

@@ -22,20 +22,18 @@ import java.util.Map;
 public class QuestionsActivity extends AppCompatActivity {
 
     private RecyclerView recyclerView;
-    private RecyclerView.Adapter questionsAdapter;
-    private RecyclerView.LayoutManager layoutManager;
     private DatabaseReference mQuestionsReference;
     private ValueEventListener mQuestionListener;
     private static final String TAG = "QuestionsActivity";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
 
+        super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_questions);
         recyclerView = (RecyclerView) findViewById(R.id.questions_recycler_view);
         recyclerView.setHasFixedSize(true);
-        layoutManager = new LinearLayoutManager(this);
+        RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(this);
         recyclerView.setLayoutManager(layoutManager);
         mQuestionsReference = FirebaseDatabase.getInstance().getReference().child("Questions");
 
@@ -49,10 +47,10 @@ public class QuestionsActivity extends AppCompatActivity {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
 
-                Map<String,Map<String,String>> map= (Map<String, Map<String,String>>) snapshot.child("Questions").getValue();
+                Map<String,Map<String,String>> map= (Map<String, Map<String,String>>) snapshot.getValue();
                 List<Map<String,String>>list = new ArrayList<>(map.values());
-                Log.w("TAG", list.get(0).get("username"));
-                questionsAdapter = new QuestionAdapter(list);
+                Log.w("TAG", list.get(0).get("userName"));
+                RecyclerView.Adapter questionsAdapter = new QuestionAdapter(list);
                 recyclerView.setAdapter(questionsAdapter);
 
             }
