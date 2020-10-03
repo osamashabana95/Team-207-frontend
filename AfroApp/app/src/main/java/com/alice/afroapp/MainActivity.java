@@ -9,6 +9,7 @@ import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.Toast;
 
+import com.alice.afroapp.ui.home.HomeFragment;
 import com.firebase.ui.auth.AuthUI;
 import com.firebase.ui.auth.IdpResponse;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
@@ -73,6 +74,10 @@ public class MainActivity extends AppCompatActivity {
             case R.id.action_home:
                 Toast.makeText(this,"Home.",Toast.LENGTH_LONG).show();
                 return true;
+            case R.id.action_post:
+                Post();
+                return true;
+
             case R.id.action_signout:
                 FirebaseAuth.getInstance()
                         .signOut();
@@ -135,19 +140,11 @@ public class MainActivity extends AppCompatActivity {
     }
 
     //function to view comments
-    public void ViewComments(MenuItem item) {
-        Intent intent= new Intent(MainActivity.this,Listcomments.class);
+    public void ViewComments(MenuItem item) { Intent intent= new Intent(
+            MainActivity.this,Listcomments.class);
         startActivity(intent);
-        Toast.makeText(this,"Comments list.",Toast.LENGTH_LONG).show();
     }
 
-
-
-    public void ViewProfile(){
-//        Intent intent= new Intent(MainActivity.this,Profile.class);
-//        startActivity(intent);
-        Toast.makeText(this,"View profile",Toast.LENGTH_LONG).show();
-    }
 
     @Override
     protected void onResume() {
@@ -168,8 +165,7 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
-
-    public void Post(View view) {
+    public void Post(){
         Intent intent= new Intent(MainActivity.this,Post.class);
         startActivity(intent);
     }

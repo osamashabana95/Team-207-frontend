@@ -9,13 +9,18 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.ImageButton;
+import android.widget.Toast;
+import android.widget.Toolbar;
 
+import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
 public class Post extends AppCompatActivity {
     private FirebaseDatabase mFirebaseDatabase;
     private DatabaseReference mDatabaseReference;
+    private FirebaseAuth mFirebaseAuth;
+    private FirebaseAuth.AuthStateListener mAuth;
     private EditText editQuestiion;
     private ImageButton postButton;
 
@@ -23,10 +28,14 @@ public class Post extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_post);
+        Toolbar toolbar = findViewById(R.id.toolbar);
+        getSupportActionBar().setDisplayShowHomeEnabled(true);
+        getSupportActionBar().setIcon(R.drawable.ic_code_black_18dp);
+
+
         editQuestiion  = (EditText) findViewById(R.id.editQuestion);
         postButton = (ImageButton)findViewById(R.id.postButton);
-       // mFirebaseDatabase = FirebaseUtil.mFirebaseDatabase;
-        //mDatabaseReference = FirebaseUtil.mDatabaseReference;
+        mFirebaseAuth = FirebaseAuth.getInstance();
         postButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -46,11 +55,11 @@ public class Post extends AppCompatActivity {
 
         int id = item.getItemId();
         switch (item.getItemId()){
-            case R.id.action_edit:
-                GoList();
-                return true;
             case R.id.action_home:
                 GoHome();
+                return true;
+            case R.id.action_questions_list:
+                GoList();
                 return true;
             default: return super.onOptionsItemSelected(item);
         }
@@ -68,10 +77,14 @@ public class Post extends AppCompatActivity {
 
     public void postQuestion(){
         String title = editQuestiion.getText().toString();
+        String username = mFirebaseAuth.getCurrentUser().getDisplayName();
         mFirebaseDatabase = FirebaseDatabase.getInstance();
-        mDatabaseReference = mFirebaseDatabase.getReference().child("Convesations");
-        mDatabaseReference.child("Conversations").child("Questions").
-                child("questionId").child("title").push().setValue(title);
+        Question question = new Question("id",title,"",username);
+        mDatabaseReference = mFirebaseDatabase.getReference().child("Questions");
+        mDatabaseReference.child("Questions").push().setValue(question);
+
+         Toast.makeText(this,"Posted.",Toast.LENGTH_LONG).show();
+
     }
 
 }

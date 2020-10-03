@@ -1,5 +1,7 @@
 package com.alice.afroapp;
 
+import android.content.Context;
+import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
@@ -27,14 +29,15 @@ public class CommentsAdapter extends RecyclerView.Adapter<CommentsAdapter.ViewHo
 
     public CommentsAdapter(){
         mFirebaseDatabase = FirebaseDatabase.getInstance();
-        mDatabaseReference = mFirebaseDatabase.getReference().child("Conversations").child("Questions");
+        mDatabaseReference = mFirebaseDatabase.getReference().child("Questions");
         mFirebaseAuth = FirebaseAuth.getInstance();
+        questions = new ArrayList<Question>();
         mChildEventListerner = new ChildEventListener() {
             @Override
             public void onChildAdded(@NonNull DataSnapshot snapshot, @Nullable String previousChildName) {
-                String solution = (String)snapshot.child("Solution").getValue();
-                String question = (String)snapshot.child("Question").getValue();
-
+                Question question = snapshot.getValue(Question.class);
+                question.setId(snapshot.getKey());
+                questions.add(question);
 
             }
 
@@ -64,17 +67,22 @@ public class CommentsAdapter extends RecyclerView.Adapter<CommentsAdapter.ViewHo
     @NonNull
     @Override
     public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        return null;
+        Context context = parent.getContext();
+        View itemView = LayoutInflater.from(context).inflate(R.layout.content_prof,parent,false);
+        return new ViewHolder(itemView);
     }
 
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
+        Question question = questions.get(position);
+        holder.bind(question);
+
 
     }
 
     @Override
     public int getItemCount() {
-        return 0;
+        return questions.size();
     }
 
     public class ViewHolder extends RecyclerView.ViewHolder{
@@ -82,11 +90,13 @@ public class CommentsAdapter extends RecyclerView.Adapter<CommentsAdapter.ViewHo
         TextView title;
         TextView username;
 
+
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
-            solution = (TextView) itemView.findViewById(R.id.solution_Text);
-            title = (TextView) itemView.findViewById(R.id.ques_text);
-            username = (TextView) itemView.findViewById(R.id.username_Text);
+            solution = (TextView) itemView.findViewById(R.id.solution_text);
+            title = (TextView) itemView.findViewById(R.id.title_text);
+           // username = (TextView) itemView.findViewById(R.id.username_text);
+
         }
 
         public void bind(Question question){

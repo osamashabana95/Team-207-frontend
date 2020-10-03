@@ -24,18 +24,17 @@
         android:layout_height="52dp"
         android:background="@drawable/submitt_shape"
         android:contentDescription="@string/post"
-        android:onClick="Post"
         android:textAlignment="textEnd"
         app:layout_constraintEnd_toEndOf="@+id/logo_image"
         app:layout_constraintTop_toBottomOf="@+id/logo_image"
-        app:srcCompat="@drawable/ic_create_black_24dp" />
+        app:srcCompat="@drawable/ic_emoji_emotions_white_18dp" />
 
     <Button
         android:id="@+id/welcome_button"
         android:layout_width="110dp"
         android:layout_height="wrap_content"
         android:background="@drawable/submitt_shape"
-        android:fontFamily="sans-serif-smallcaps"
+        android:fontFamily="cursive"
         android:text="Welcome!!"
         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
         android:textColor="#FFFFFF"

@@ -50,6 +50,10 @@ public class AddProf extends AppCompatActivity {
         setContentView(R.layout.activity_add);
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+        getSupportActionBar().setDisplayShowHomeEnabled(true);
+        getSupportActionBar().setIcon(R.drawable.ic_code_black_18dp);
+
+
 
         //initializing views
         editName = (EditText) findViewById(R.id.editName);
@@ -58,7 +62,6 @@ public class AddProf extends AppCompatActivity {
         editEmail= (EditText) findViewById(R.id.editEmail);
         imageView = (ImageView) findViewById(R.id.prof_pic);
         mFirebaseDatabase = FirebaseDatabase.getInstance();
-        FirebaseDatabase.getInstance().setPersistenceEnabled(true);
         mDatabaseReference = mFirebaseDatabase.getReference().child("mentors");
         storage = FirebaseStorage.getInstance();
         storageReference = storage.getReference();
@@ -169,17 +172,24 @@ public class AddProf extends AppCompatActivity {
         }
 
         uploadImage();
-        Uri imageUri = data.getData();
-        StorageReference ref = storageReference.child(imageUri.getLastPathSegment());
-        ref.putFile(imageUri).addOnSuccessListener(this, new OnSuccessListener<UploadTask.TaskSnapshot>() {
-            @Override
-            public void onSuccess(UploadTask.TaskSnapshot taskSnapshot) {
-                String url = taskSnapshot.getMetadata().getReference().getDownloadUrl().toString();
-                String pictureName = taskSnapshot.getStorage().getPath();
-                mDatabaseReference.child(mentor.getKey()).child("imageUrl").setValue(url);
+        final Uri imageUri = data.getData();
+            StorageReference ref = storageReference.child(imageUri.getLastPathSegment());
+            ref.putFile(imageUri).addOnSuccessListener(this, new OnSuccessListener<UploadTask.TaskSnapshot>() {
+                @Override
+                public void onSuccess(UploadTask.TaskSnapshot taskSnapshot) {
+                    String url = taskSnapshot.getMetadata().getReference().getDownloadUrl().toString();
+                    String pictureName = taskSnapshot.getStorage().getPath();
+                    mentor.setImageUrl(url);
+                    if(mDatabaseReference.child("mentor")!= null){
+                        mDatabaseReference.child(mentor.getKey()).child("imageUrl").push().setValue(url);
+                    }
+                    else{
+                        Toast.makeText(AddProf.this,"failed",Toast.LENGTH_LONG).show();
+                    }
 
-            }
-        });
+                }
+            });
+
 
     }
 
@@ -213,11 +223,6 @@ public class AddProf extends AppCompatActivity {
                                 public void onSuccess(
                                         UploadTask.TaskSnapshot taskSnapshot)
                                 {
-                                    String url = taskSnapshot.getMetadata().getReference()
-                                            .getDownloadUrl().toString();
-                                    mDatabaseReference.child(mentor.getKey().toString())
-                                            .child("imageUrl").setValue(url);
-                                    String pictureName = taskSnapshot.getStorage().getPath();
 
                                     // Image uploaded successfully
                                     // Dismiss dialog
@@ -270,7 +275,7 @@ public class AddProf extends AppCompatActivity {
         String location = editLoc.getText().toString();
         String email = editEmail.getText().toString();
         Mentor mentor = new Mentor("id",fullname,proficiency,location,email,
-                "","", "");
+                "imageUrl","imageName", "");
        DatabaseReference mentoRef= mDatabaseReference.push();
                mentoRef.setValue(mentor);
                String key = mentoRef.getKey();
