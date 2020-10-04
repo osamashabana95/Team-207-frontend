@@ -68,7 +68,7 @@ public class CommentsAdapter extends RecyclerView.Adapter<CommentsAdapter.ViewHo
     @Override
     public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         Context context = parent.getContext();
-        View itemView = LayoutInflater.from(context).inflate(R.layout.content_prof,parent,false);
+        View itemView = LayoutInflater.from(context).inflate(R.layout.comments_row,parent,false);
         return new ViewHolder(itemView);
     }
 
@@ -93,16 +93,16 @@ public class CommentsAdapter extends RecyclerView.Adapter<CommentsAdapter.ViewHo
 
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
-            solution = (TextView) itemView.findViewById(R.id.solution_text);
-            title = (TextView) itemView.findViewById(R.id.title_text);
+//            solution = (TextView) itemView.findViewById(R.id.solution_text);
+//            title = (TextView) itemView.findViewById(R.id.title_text);
            // username = (TextView) itemView.findViewById(R.id.username_text);
 
         }
 
         public void bind(Question question){
-            solution.setText(question.getSolution());
-            title.setText(question.getTitle());
-            username.setText(mFirebaseAuth.getCurrentUser().toString());
+//            solution.setText(question.getSolution());
+//            title.setText(question.getTitle());
+//            username.setText(mFirebaseAuth.getCurrentUser().toString());
 
         }
 

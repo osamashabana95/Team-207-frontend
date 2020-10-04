@@ -11,10 +11,19 @@ public class Mentor implements Serializable {
     private String imageUrl;
     private String imageName;
     private String key;
+
+
+
+    private String username;
+
+
+    public void Mentor() {
+    }
+
     public  Mentor(){}
 
     public Mentor(String id, String fullname, String proficiency, String location,
-                  String email, String imageUrl, String imageName, String key) {
+                  String email, String imageUrl, String imageName, String key,String username) {
         this.id = id;
         this.fullname = fullname;
         this.proficiency = proficiency;
@@ -23,6 +32,7 @@ public class Mentor implements Serializable {
         this.imageUrl = imageUrl;
         this.imageName = imageName;
         this.key = key;
+        this.username = username;
     }
 
     public String getId() {
@@ -88,4 +98,12 @@ public class Mentor implements Serializable {
     public void setKey(String key) {
         this.key = key;
     }
+    public String getUsername() {
+        return username;
+    }
+
+    public void setUsername(String username) {
+        this.username = username;
+    }
+
 }

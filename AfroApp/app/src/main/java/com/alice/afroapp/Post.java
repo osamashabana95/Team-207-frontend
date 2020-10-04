@@ -77,7 +77,7 @@ public class Post extends AppCompatActivity {
 
     public void postQuestion(){
         String title = editQuestiion.getText().toString();
-        String username = mFirebaseAuth.getCurrentUser().getDisplayName();
+        String username = mFirebaseAuth.getCurrentUser().getPhotoUrl().getLastPathSegment();
         mFirebaseDatabase = FirebaseDatabase.getInstance();
         Question question = new Question("id",title,"",username);
         mDatabaseReference = mFirebaseDatabase.getReference().child("Questions");

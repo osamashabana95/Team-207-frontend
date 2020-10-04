@@ -13,9 +13,13 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
+            android:name=".MyProfile"
+            android:label="@string/title_activity_my_profile"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity
             android:name=".Prof"
             android:label="@string/title_activity_profile"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".MentorList"
             android:icon="@drawable/app_logo"
@@ -36,6 +40,10 @@
         <activity
             android:name=".Listquestions"
             android:label="@string/question"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".QuestionsActivity"
+            android:label="@string/AfroDevMeet"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".MainActivity"

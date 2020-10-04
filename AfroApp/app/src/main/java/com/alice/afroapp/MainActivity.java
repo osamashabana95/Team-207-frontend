@@ -134,7 +134,7 @@ public class MainActivity extends AppCompatActivity {
 
     //function to go to listActivity
     public void ViewList(MenuItem item) {
-        Intent intent= new Intent(MainActivity.this,Listquestions.class);
+        Intent intent= new Intent(MainActivity.this,QuestionsActivity.class);
         startActivity(intent);
         Toast.makeText(this,"Questions list.",Toast.LENGTH_LONG).show();
     }

@@ -60,19 +60,15 @@ public class Prof extends AppCompatActivity {
                 .equalTo(Currentname);
 
 
-
-
         itemFilter.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
                 for(DataSnapshot postSnapshot:snapshot.getChildren()){
-                    Mentor mentor = snapshot.child("fullname ").getValue(Mentor.class);
-                    String name = snapshot.child("mentors").child("fullname").getValue(String.class);
-                    System.out.println(mentor);
-
-
+                fullname.setText(postSnapshot.child("fullname").getValue(String.class).toString());
+                proficiency.setText(postSnapshot.child("proficiency").getValue(String.class).toString());
+                location.setText(postSnapshot.child("location").getValue(String.class).toString());
+                email.setText(postSnapshot.child("email").getValue(String.class).toString());
                 }
-                mentors.add(mentor);
 
             }
 
@@ -81,17 +77,6 @@ public class Prof extends AppCompatActivity {
 
             }
         });
-
-            //fullname.setText(mentor.getFullname());
-//        proficiency.setText(mentor.getProficiency());
-//        location.setText(mentor.getLocation());
-//        email.setText(mentor.getEmail());
-
-
-
-
-
-
     }
 
     @Override
