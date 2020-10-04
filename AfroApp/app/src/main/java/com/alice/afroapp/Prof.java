@@ -53,7 +53,7 @@ public class Prof extends AppCompatActivity {
         location = (TextView) findViewById(R.id.loc_text);
         email = (TextView) findViewById(R.id.email_addtext);
         mFirebaseDatabase = FirebaseDatabase.getInstance();
-        mDatabaseReference = mFirebaseDatabase.getReference().child("mentors");
+        mDatabaseReference = mFirebaseDatabase.getReference().child("Mentors");
         Intent intent = getIntent();
         String Currentname = intent.getStringExtra("name");
         final Query itemFilter = mDatabaseReference.orderByChild("fullname")
@@ -99,14 +99,14 @@ public class Prof extends AppCompatActivity {
     }
 
     public void Editprofile(View view) {
-        if(mentor.getId()!= null){
-            mDatabaseReference.child(mentor.getId()
-            ).setValue(mentor);
-        }
-        else {
-            Toast.makeText(this,"cant be edited.",Toast.LENGTH_LONG).show();
-
-        }
+//        if(mentor.getId()!= null){
+//            mDatabaseReference.child(mentor.getId()
+//            ).setValue(mentor);
+//        }
+//        else {
+//            Toast.makeText(this,"cant be edited.",Toast.LENGTH_LONG).show();
+//
+//        }
 
     }
 }

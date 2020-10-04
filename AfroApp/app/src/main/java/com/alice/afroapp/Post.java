@@ -12,6 +12,7 @@ import android.widget.ImageButton;
 import android.widget.Toast;
 import android.widget.Toolbar;
 
+import com.alice.afroapp.utility.Database;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
@@ -77,11 +78,12 @@ public class Post extends AppCompatActivity {
 
     public void postQuestion(){
         String title = editQuestiion.getText().toString();
-        String username = mFirebaseAuth.getCurrentUser().getPhotoUrl().getLastPathSegment();
+        String username = mFirebaseAuth.getCurrentUser().getDisplayName();
         mFirebaseDatabase = FirebaseDatabase.getInstance();
-        Question question = new Question("id",title,"",username);
-        mDatabaseReference = mFirebaseDatabase.getReference().child("Questions");
-        mDatabaseReference.child("Questions").push().setValue(question);
+        Database datbase = new Database();
+        datbase.setQuestion(title,username);
+//        mDatabaseReference = mFirebaseDatabase.getReference().child("Questions");
+//        mDatabaseReference.child("Questions").push().setValue(question);
 
          Toast.makeText(this,"Posted.",Toast.LENGTH_LONG).show();
 

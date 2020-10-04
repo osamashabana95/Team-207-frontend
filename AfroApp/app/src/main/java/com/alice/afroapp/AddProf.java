@@ -1,43 +1,28 @@
 package com.alice.afroapp;
 
-import android.app.ProgressDialog;
 import android.content.Intent;
-import android.graphics.Bitmap;
-import android.graphics.BitmapFactory;
 import android.net.Uri;
 import android.os.Bundle;
 
-import com.google.android.gms.tasks.OnFailureListener;
-import com.google.android.gms.tasks.OnSuccessListener;
+import com.alice.afroapp.utility.Database;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.storage.FirebaseStorage;
-import com.google.firebase.storage.OnProgressListener;
 import com.google.firebase.storage.StorageReference;
-import com.google.firebase.storage.UploadTask;
 import com.squareup.picasso.Picasso;
 
-import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
-import android.provider.MediaStore;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.ImageView;
-import android.widget.Toast;
-
-import java.io.IOException;
-import java.io.InputStream;
-import java.net.HttpURLConnection;
-import java.net.URL;
-import java.util.UUID;
 
 public class AddProf extends AppCompatActivity {
     private static final int PICK_IMAGE_REQUEST = 22;
@@ -67,20 +52,13 @@ public class AddProf extends AppCompatActivity {
         editProf = (EditText) findViewById(R.id.editProf);
         editLoc = (EditText) findViewById(R.id.editLoc);
         editEmail= (EditText) findViewById(R.id.editEmail);
-        imageView = (ImageView) findViewById(R.id.prof_pic);
+        imageView = (ImageView) findViewById(R.id.myprof_pic);
 
         mFirebaseAuth = FirebaseAuth.getInstance();
         mFirebaseDatabase = FirebaseDatabase.getInstance();
         mDatabaseReference = mFirebaseDatabase.getReference().child("mentors");
         storage = FirebaseStorage.getInstance();
         storageReference = storage.getReference();
-        selectButton = (ImageButton)findViewById(R.id.select_button);
-        selectButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                SelectImage();
-            }
-        });
 
         FloatingActionButton fab = findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
@@ -283,12 +261,8 @@ public class AddProf extends AppCompatActivity {
         String email = editEmail.getText().toString();
         String imageUrl = mFirebaseAuth.getCurrentUser().getPhotoUrl().toString();
         String username = mFirebaseAuth.getCurrentUser().getDisplayName();
-        Mentor mentor = new Mentor("id",fullname,proficiency,location,email, imageUrl,
-                "imageName", "key",username);
-       DatabaseReference mentoRef= mDatabaseReference.push();
-               mentoRef.setValue(mentor);
-               String key = mentoRef.getKey();
-               mentor.setKey(key);
+        Database database = new Database();
+        database.setMentor(fullname,proficiency,location,email,imageUrl,"");
 
     }
 

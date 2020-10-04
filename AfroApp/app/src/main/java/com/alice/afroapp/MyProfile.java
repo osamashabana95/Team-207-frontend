@@ -13,12 +13,14 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.Query;
 import com.google.firebase.database.ValueEventListener;
+import com.squareup.picasso.Picasso;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
 import android.view.View;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 public class MyProfile extends AppCompatActivity {
@@ -28,6 +30,7 @@ public class MyProfile extends AppCompatActivity {
     private ChildEventListener mChildEventListerner;
     private ValueEventListener mValueEventListener;
     private FirebaseAuth mFirebaseAuth;
+    private ImageView imageView;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -42,11 +45,16 @@ public class MyProfile extends AppCompatActivity {
         proficiency = (TextView) findViewById(R.id.profciency_text);
         location = (TextView) findViewById(R.id.loc_text);
         email = (TextView) findViewById(R.id.email_addtext);
+        imageView = (ImageView) findViewById(R.id.myprof_pic);
 
         mFirebaseDatabase = FirebaseDatabase.getInstance();
-        mDatabaseReference = mFirebaseDatabase.getReference().child("mentors");
+        mDatabaseReference = mFirebaseDatabase.getReference().child("Mentors");
         mFirebaseAuth = FirebaseAuth.getInstance();
-        Intent intent = getIntent();
+
+        String imageUrl = mFirebaseAuth.getCurrentUser().getPhotoUrl().toString();
+        Picasso.with(this).load(imageUrl).placeholder(R.drawable.ic_person_black_24dp)
+                .resize(70,70)
+                .into(imageView);
         String Currentid = mFirebaseAuth.getCurrentUser().getDisplayName();
         final String email = mFirebaseAuth.getCurrentUser().getEmail();
 
@@ -77,18 +85,6 @@ public class MyProfile extends AppCompatActivity {
         mDatabaseReference.addValueEventListener(mValueEventListener);
 
 
-//        mDatabaseReference.addValueEventListener(new ValueEventListener() {
-//            @Override
-//            public void onDataChange(@NonNull DataSnapshot snapshot) {
-//                fullname.setText(snapshot.child("fullname").getValue(String.class).toString());
-//
-//            }
-//
-//            @Override
-//            public void onCancelled(@NonNull DatabaseError error) {
-//
-//            }
-//        });
 
         FloatingActionButton fab = findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
