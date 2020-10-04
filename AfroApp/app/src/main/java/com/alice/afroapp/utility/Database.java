@@ -1,5 +1,9 @@
 package com.alice.afroapp.utility;
 
+import com.alice.afroapp.Mentor;
+import com.alice.afroapp.NewQuestion;
+import com.alice.afroapp.Question;
+import com.alice.afroapp.Solution;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
@@ -7,6 +11,7 @@ import com.google.firebase.database.FirebaseDatabase;
 
 // class to get and set data to firebase database.
 public class Database {
+
     private DatabaseReference mFirebaseDatabase;
 
     public Database(){
@@ -15,20 +20,33 @@ public class Database {
 
     }
 
-    public void setUser (String userId, String userName, String e_mail){
+    public void setMentor (String fullName, String proficiency, String location,
+                           String email, String imageUrl, String imageName){
 
-        mFirebaseDatabase.child("Users").child(userId).child("username").setValue(userName);
-        mFirebaseDatabase.child("Users").child(userId).child("email").setValue(e_mail);
+        DatabaseReference newMentorRef = mFirebaseDatabase.child("Mentors").push();
+        String mentorId = newMentorRef.getKey();
+        Mentor mentor = new Mentor(mentorId,fullName,proficiency,location,email,imageUrl,imageName);
+        newMentorRef.setValue(mentor);
 
     }
 
-    public void setQuestion (String questionId, String title){
+    public void setQuestion (String userName, String title){
 
-        mFirebaseDatabase.child("Conversations").child("Questions").child(questionId).child("title").setValue(title);
+        DatabaseReference newQuestionRef = mFirebaseDatabase.child("Questions").push();
+        String questionId = newQuestionRef.getKey();
+        NewQuestion question = new NewQuestion(questionId,title,userName);
+        newQuestionRef.setValue(question);
+
     }
 
-    public void setSolution (String questionId, String solutionId, String solution){
+    public void setSolution (String questionId,String userName, String title){
 
-        mFirebaseDatabase.child("Conversations").child("Questions").child(questionId).child("Solutions").child(solutionId).setValue(solution);
+        DatabaseReference newSolutionRef = mFirebaseDatabase.child("Questions").child(questionId).child("Solutions").push();
+        String solutionId= newSolutionRef.getKey();
+        Solution solution = new Solution(solutionId,title,userName);
+        newSolutionRef.setValue(solution);
+
     }
+
+
 }
