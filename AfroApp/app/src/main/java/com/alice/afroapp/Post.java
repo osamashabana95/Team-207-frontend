@@ -37,6 +37,9 @@ public class Post extends AppCompatActivity {
         editQuestiion  = (EditText) findViewById(R.id.editQuestion);
         postButton = (ImageButton)findViewById(R.id.postButton);
         mFirebaseAuth = FirebaseAuth.getInstance();
+        mFirebaseDatabase = FirebaseDatabase.getInstance();
+        mDatabaseReference = mFirebaseDatabase.getReference().child("Questions");
+        mDatabaseReference.keepSynced(true);
         postButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

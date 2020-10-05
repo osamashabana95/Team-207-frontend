@@ -102,9 +102,9 @@ public final class R {
         public static final int async = 0x7f0a002d;
         public static final int blocking = 0x7f0a0032;
         public static final int chronometer = 0x7f0a004b;
-        public static final int forever = 0x7f0a0093;
-        public static final int icon = 0x7f0a00a3;
-        public static final int icon_group = 0x7f0a00a4;
+        public static final int forever = 0x7f0a0092;
+        public static final int icon = 0x7f0a00a2;
+        public static final int icon_group = 0x7f0a00a3;
         public static final int info = 0x7f0a00ae;
         public static final int italic = 0x7f0a00b2;
         public static final int line1 = 0x7f0a00b9;
@@ -114,15 +114,15 @@ public final class R {
         public static final int notification_background = 0x7f0a00db;
         public static final int notification_main_column = 0x7f0a00dc;
         public static final int notification_main_column_container = 0x7f0a00dd;
-        public static final int right_icon = 0x7f0a00fe;
-        public static final int right_side = 0x7f0a00ff;
-        public static final int tag_transition_group = 0x7f0a0132;
-        public static final int tag_unhandled_key_event_manager = 0x7f0a0133;
-        public static final int tag_unhandled_key_listeners = 0x7f0a0134;
-        public static final int text = 0x7f0a0135;
-        public static final int text2 = 0x7f0a0136;
-        public static final int time = 0x7f0a0145;
-        public static final int title = 0x7f0a0147;
+        public static final int right_icon = 0x7f0a00fb;
+        public static final int right_side = 0x7f0a00fc;
+        public static final int tag_transition_group = 0x7f0a012f;
+        public static final int tag_unhandled_key_event_manager = 0x7f0a0130;
+        public static final int tag_unhandled_key_listeners = 0x7f0a0131;
+        public static final int text = 0x7f0a0132;
+        public static final int text2 = 0x7f0a0133;
+        public static final int time = 0x7f0a0142;
+        public static final int title = 0x7f0a0144;
     }
     public static final class integer {
         private integer() {}

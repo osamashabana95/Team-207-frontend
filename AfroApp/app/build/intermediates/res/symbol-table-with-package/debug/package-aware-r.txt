@@ -1360,7 +1360,6 @@ id com_facebook_smart_instructions_or
 id com_facebook_tooltip_bubble_view_bottom_pointer
 id com_facebook_tooltip_bubble_view_text_body
 id com_facebook_tooltip_bubble_view_top_pointer
-id comments_list
 id confirmation_code
 id confirmation_code_layout
 id container
@@ -1443,6 +1442,7 @@ id imageView
 id imageView2
 id imageView3
 id imageView4
+id imageView5
 id imageView6
 id info
 id inline
@@ -1514,13 +1514,10 @@ id progress_bar
 id progress_circular
 id progress_horizontal
 id q_user_name
-id question_button
-id question_edit_text
 id question_image
 id question_title
 id questions_recycler_view
 id radio
-id relative_layout
 id resend_barrier
 id resend_code
 id right
@@ -1619,6 +1616,7 @@ id unknown
 id unlabeled
 id up
 id useLogo
+id user
 id view_offset_helper
 id visible
 id welcome_back_email_link_body

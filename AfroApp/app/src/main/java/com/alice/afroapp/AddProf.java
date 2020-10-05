@@ -94,9 +94,6 @@ public class AddProf extends AppCompatActivity {
             case R.id.action_home:
                 GoHome();
                 return true;
-            case R.id.action_prof:
-                MyProfile();
-                return true;
             case R.id.action_list:
                 GoList();
                 return true;
