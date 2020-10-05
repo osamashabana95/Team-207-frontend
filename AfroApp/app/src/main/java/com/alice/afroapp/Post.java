@@ -12,6 +12,7 @@ import android.widget.ImageButton;
 import android.widget.Toast;
 import android.widget.Toolbar;
 
+import com.alice.afroapp.utility.Database;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
@@ -36,6 +37,9 @@ public class Post extends AppCompatActivity {
         editQuestiion  = (EditText) findViewById(R.id.editQuestion);
         postButton = (ImageButton)findViewById(R.id.postButton);
         mFirebaseAuth = FirebaseAuth.getInstance();
+        mFirebaseDatabase = FirebaseDatabase.getInstance();
+        mDatabaseReference = mFirebaseDatabase.getReference().child("Questions");
+        mDatabaseReference.keepSynced(true);
         postButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -79,9 +83,10 @@ public class Post extends AppCompatActivity {
         String title = editQuestiion.getText().toString();
         String username = mFirebaseAuth.getCurrentUser().getDisplayName();
         mFirebaseDatabase = FirebaseDatabase.getInstance();
-        Question question = new Question("id",title,"",username);
-        mDatabaseReference = mFirebaseDatabase.getReference().child("Questions");
-        mDatabaseReference.child("Questions").push().setValue(question);
+        Database datbase = new Database();
+        datbase.setQuestion(title,username);
+//        mDatabaseReference = mFirebaseDatabase.getReference().child("Questions");
+//        mDatabaseReference.child("Questions").push().setValue(question);
 
          Toast.makeText(this,"Posted.",Toast.LENGTH_LONG).show();
 

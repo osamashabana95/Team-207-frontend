@@ -10,12 +10,11 @@
     tools:showIn="@layout/activity_add">
 
     <ImageView
-        android:id="@+id/prof_pic"
+        android:id="@+id/myprof_pic"
         android:layout_width="181dp"
         android:layout_height="134dp"
         android:layout_marginTop="16dp"
         android:contentDescription="@string/mentor_pic"
-        android:tint="@color/colorPrimary"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.597"
         app:layout_constraintStart_toStartOf="parent"
@@ -32,7 +31,7 @@
         android:background="#BDBDBD"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/prof_pic" />
+        app:layout_constraintTop_toBottomOf="@+id/myprof_pic" />
 
     <TextView
         android:id="@+id/textView"
@@ -164,16 +163,6 @@
         android:textSize="18sp"
         app:layout_constraintStart_toStartOf="@+id/textView"
         app:layout_constraintTop_toBottomOf="@+id/divider2" />
-
-    <ImageButton
-        android:id="@+id/select_button"
-        android:layout_width="45dp"
-        android:layout_height="wrap_content"
-        android:background="#BDBDBD"
-        android:contentDescription="@string/Add_Profile"
-        app:layout_constraintEnd_toEndOf="@+id/prof_pic"
-        app:layout_constraintTop_toTopOf="@+id/prof_pic"
-        app:srcCompat="@drawable/ic_camera_alt_black_24dp" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

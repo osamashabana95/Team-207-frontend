@@ -8,11 +8,32 @@
     tools:context=".Listcomments"
     tools:showIn="@layout/activity_listcomments">
 
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/comments_list"
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_person_black_24dp" />
+
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginTop="16dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/title_solu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/solution"
+            tools:text="@string/solution" />
+
+        <TextView
+            android:id="@+id/user"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/username" />
+    </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

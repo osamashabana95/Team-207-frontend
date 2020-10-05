@@ -29,13 +29,12 @@ public class MentorAdapter extends RecyclerView.Adapter<MentorAdapter.ViewHolder
 
     public MentorAdapter(){
         mFirebaseDatabase = FirebaseDatabase.getInstance();
-        mDatabaseReference = mFirebaseDatabase.getReference().child("mentors");
+        mDatabaseReference = mFirebaseDatabase.getReference().child("Mentors");
         mentors = new ArrayList<Mentor>();
         mChildEventListerner = new ChildEventListener() {
             @Override
             public void onChildAdded(@NonNull DataSnapshot snapshot, @Nullable String previousChildName) {
                 Mentor mentor = snapshot.getValue(Mentor.class);
-                mentor.setId(snapshot.getKey());
                 mentors.add(mentor);
                 notifyItemInserted(mentors.size()-1);
             }
@@ -43,7 +42,6 @@ public class MentorAdapter extends RecyclerView.Adapter<MentorAdapter.ViewHolder
             @Override
             public void onChildChanged(@NonNull DataSnapshot snapshot, @Nullable String previousChildName) {
                 Mentor mentor = snapshot.getValue(Mentor.class);
-                mentor.setId(snapshot.getKey());
                 mentors.add(mentor);
 
             }

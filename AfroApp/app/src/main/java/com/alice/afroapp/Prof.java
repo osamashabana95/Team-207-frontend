@@ -53,26 +53,22 @@ public class Prof extends AppCompatActivity {
         location = (TextView) findViewById(R.id.loc_text);
         email = (TextView) findViewById(R.id.email_addtext);
         mFirebaseDatabase = FirebaseDatabase.getInstance();
-        mDatabaseReference = mFirebaseDatabase.getReference().child("mentors");
+        mDatabaseReference = mFirebaseDatabase.getReference().child("Mentors");
         Intent intent = getIntent();
         String Currentname = intent.getStringExtra("name");
         final Query itemFilter = mDatabaseReference.orderByChild("fullname")
                 .equalTo(Currentname);
 
 
-
-
         itemFilter.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
                 for(DataSnapshot postSnapshot:snapshot.getChildren()){
-                    Mentor mentor = snapshot.child("fullname ").getValue(Mentor.class);
-                    String name = snapshot.child("mentors").child("fullname").getValue(String.class);
-                    System.out.println(mentor);
-
-
+                fullname.setText(postSnapshot.child("fullname").getValue(String.class).toString());
+                proficiency.setText(postSnapshot.child("proficiency").getValue(String.class).toString());
+                location.setText(postSnapshot.child("location").getValue(String.class).toString());
+                email.setText(postSnapshot.child("email").getValue(String.class).toString());
                 }
-                mentors.add(mentor);
 
             }
 
@@ -81,17 +77,6 @@ public class Prof extends AppCompatActivity {
 
             }
         });
-
-            //fullname.setText(mentor.getFullname());
-//        proficiency.setText(mentor.getProficiency());
-//        location.setText(mentor.getLocation());
-//        email.setText(mentor.getEmail());
-
-
-
-
-
-
     }
 
     @Override
@@ -114,14 +99,14 @@ public class Prof extends AppCompatActivity {
     }
 
     public void Editprofile(View view) {
-        if(mentor.getId()!= null){
-            mDatabaseReference.child(mentor.getId()
-            ).setValue(mentor);
-        }
-        else {
-            Toast.makeText(this,"cant be edited.",Toast.LENGTH_LONG).show();
-
-        }
+//        if(mentor.getId()!= null){
+//            mDatabaseReference.child(mentor.getId()
+//            ).setValue(mentor);
+//        }
+//        else {
+//            Toast.makeText(this,"cant be edited.",Toast.LENGTH_LONG).show();
+//
+//        }
 
     }
 }
