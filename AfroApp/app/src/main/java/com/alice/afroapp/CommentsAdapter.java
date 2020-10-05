@@ -88,14 +88,14 @@ public class CommentsAdapter extends RecyclerView.Adapter<CommentsAdapter.ViewHo
     public class ViewHolder extends RecyclerView.ViewHolder{
         TextView solution;
         TextView title;
-        TextView username;
+        //TextView username;
 
 
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
             solution = (TextView) itemView.findViewById(R.id.title_solu);
             title = (TextView) itemView.findViewById(R.id.question_title);
-            username = (TextView) itemView.findViewById(R.id.user_solu);
+           // username = (TextView) itemView.findViewById(R.id.user_solu);
 
         }
 
