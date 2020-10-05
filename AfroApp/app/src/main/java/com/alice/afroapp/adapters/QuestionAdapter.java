@@ -16,9 +16,11 @@ import java.util.Map;
 public class QuestionAdapter extends RecyclerView.Adapter<QuestionAdapter.QuestionViewHolder> {
 
     private List<Map<String,String>> mList;
+    private QuestionRecyclerViewItemClickListener questionItemClickListener;
 
-    public QuestionAdapter (List<Map<String,String>> list){
+    public QuestionAdapter (List<Map<String,String>> list, QuestionRecyclerViewItemClickListener itemClickListener){
 
+        questionItemClickListener=itemClickListener;
         mList = list;
 
     }
@@ -29,7 +31,21 @@ public class QuestionAdapter extends RecyclerView.Adapter<QuestionAdapter.Questi
 
         View view = LayoutInflater.from(parent.getContext())
                 .inflate(R.layout.list_item_question, parent, false);
-        return new QuestionViewHolder(view);
+
+        final QuestionViewHolder questionViewHolder= new QuestionViewHolder(view);
+        questionViewHolder.itemView.setOnClickListener(new View.OnClickListener()
+        {
+            @Override
+            public void onClick(View v)
+            {
+                Map<String,String> map = mList.get(questionViewHolder.getLayoutPosition());
+                questionItemClickListener.onItemClicked(map.get("id"));
+            }
+        });
+
+
+
+        return questionViewHolder;
 
     }
 
@@ -61,5 +77,9 @@ public class QuestionAdapter extends RecyclerView.Adapter<QuestionAdapter.Questi
             qNameTextview = (TextView) itemView.findViewById(R.id.q_user_name);
 
         }
+    }
+    public interface QuestionRecyclerViewItemClickListener
+    {
+        void onItemClicked(String id);
     }
 }
