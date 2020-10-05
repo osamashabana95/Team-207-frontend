@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 
@@ -50,7 +51,18 @@ public class QuestionsActivity extends AppCompatActivity {
                 Map<String,Map<String,String>> map= (Map<String, Map<String,String>>) snapshot.getValue();
                 List<Map<String,String>>list = new ArrayList<>(map.values());
                 Log.w("TAG", list.get(0).get("userName"));
-                RecyclerView.Adapter questionsAdapter = new QuestionAdapter(list);
+                RecyclerView.Adapter questionsAdapter = new QuestionAdapter(list, new QuestionAdapter.QuestionRecyclerViewItemClickListener() {
+
+                    @Override
+                    public void onItemClicked(String id) {
+
+                        Intent solutionsIntent = new Intent(QuestionsActivity.this, Listcomments.class);
+                        Log.w("Question_Id", id);
+                        solutionsIntent.putExtra("Question_Id", id);
+                        startActivity(solutionsIntent);
+                    }
+                });
+
                 recyclerView.setAdapter(questionsAdapter);
 
             }
