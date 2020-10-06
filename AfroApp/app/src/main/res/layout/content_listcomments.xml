@@ -8,15 +8,15 @@
     tools:context=".Listcomments"
     tools:showIn="@layout/activity_listcomments">
 
+
     <ImageView
         android:id="@+id/imageView5"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="32dp"
+        android:layout_width="32dp"
+        android:layout_height="28dp"
+        android:layout_marginTop="24dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/ic_person_black_24dp" />
+        app:srcCompat="@drawable/ic_code_black_18dp" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -24,14 +24,13 @@
         android:orientation="vertical">
 
         <TextView
-            android:id="@+id/title_solu"
+            android:id="@+id/solu_title"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/solution"
-            tools:text="@string/solution" />
+            android:text="@string/solution" />
 
         <TextView
-            android:id="@+id/user"
+            android:id="@+id/username"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/username" />

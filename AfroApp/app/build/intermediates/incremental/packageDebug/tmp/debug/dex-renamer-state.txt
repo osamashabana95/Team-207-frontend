@@ -1,4 +1,4 @@
-#Mon Oct 05 15:15:43 WAT 2020
+#Mon Oct 05 19:51:42 WAT 2020
 base.0=C\:\\Users\\Alice\\AndroidStudioProjects\\AfroApp\\Frontend\\Team-207-frontend\\AfroApp\\app\\build\\intermediates\\dex\\debug\\mergeDexDebug\\out\\classes.dex
 path.0=classes.dex
 renamed.0=classes.dex

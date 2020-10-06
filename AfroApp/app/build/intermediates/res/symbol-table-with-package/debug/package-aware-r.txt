@@ -1299,7 +1299,6 @@ id action_mode_bar
 id action_mode_bar_stub
 id action_mode_close_button
 id action_post
-id action_prof
 id action_questions_list
 id action_set
 id action_signout
@@ -1559,6 +1558,7 @@ id snackbar_action
 id snackbar_text
 id snap
 id snapMargins
+id solu_title
 id spacer
 id split_action_bar
 id spread
@@ -1616,7 +1616,7 @@ id unknown
 id unlabeled
 id up
 id useLogo
-id user
+id username
 id view_offset_helper
 id visible
 id welcome_back_email_link_body
