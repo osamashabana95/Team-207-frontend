@@ -56,7 +56,7 @@ public class QuestionsActivity extends AppCompatActivity {
                     @Override
                     public void onItemClicked(String id) {
 
-                        Intent solutionsIntent = new Intent(QuestionsActivity.this, Listcomments.class);
+                        Intent solutionsIntent = new Intent(QuestionsActivity.this, SolutionsActivity.class);
                         Log.w("Question_Id", id);
                         solutionsIntent.putExtra("Question_Id", id);
                         startActivity(solutionsIntent);
