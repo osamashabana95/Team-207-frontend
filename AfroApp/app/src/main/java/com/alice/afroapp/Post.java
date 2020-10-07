@@ -30,6 +30,7 @@ public class Post extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_post);
         Toolbar toolbar = findViewById(R.id.toolbar);
+        getSupportActionBar().getThemedContext();
         getSupportActionBar().setDisplayShowHomeEnabled(true);
         getSupportActionBar().setIcon(R.drawable.ic_code_black_18dp);
 

@@ -1,5 +1,6 @@
 package com.alice.afroapp;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
@@ -68,5 +69,11 @@ public class MentorList extends AppCompatActivity {
 
             default: return super.onOptionsItemSelected(item);
         }
+    }
+
+    public void Back(View view) {
+        Intent intent= new Intent(MentorList.this,AddProf.class);
+        startActivity(intent);
+        Toast.makeText(this,"Questions list.",Toast.LENGTH_LONG).show();
     }
 }

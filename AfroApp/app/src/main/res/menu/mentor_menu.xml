@@ -9,5 +9,5 @@
         app:showAsAction="always" />
     <item
         android:id="@+id/action_list"
-        android:title="@string/Add_Profile" />
+        android:title="item" />
 </menu>

@@ -20,6 +20,8 @@ MERGED from [androidx.lifecycle:lifecycle-extensions:2.1.0] C:\Users\Alice\.grad
 MERGED from [com.google.firebase:firebase-database:19.4.0] C:\Users\Alice\.gradle\caches\transforms-2\files-2.1\f3567960763b48d3d8060fdeb84937b2\firebase-database-19.4.0\AndroidManifest.xml:15:1-38:12
 MERGED from [com.google.firebase:firebase-core:16.0.9] C:\Users\Alice\.gradle\caches\transforms-2\files-2.1\942099517488e0bb01375420dc7940b9\firebase-core-16.0.9\AndroidManifest.xml:2:1-9:12
 MERGED from [com.google.firebase:firebase-storage:19.2.0] C:\Users\Alice\.gradle\caches\transforms-2\files-2.1\3ec160840b984f7492992cc97e2d1c68\firebase-storage-19.2.0\AndroidManifest.xml:15:1-39:12
+MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\Alice\.gradle\caches\transforms-2\files-2.1\626d78099049f59d374f2739e49d6261\cardview-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [de.hdodenhof:circleimageview:3.1.0] C:\Users\Alice\.gradle\caches\transforms-2\files-2.1\e81a7d616e92b36a0fc3012b8b411fe5\circleimageview-3.1.0\AndroidManifest.xml:2:1-11:12
 MERGED from [com.google.firebase:firebase-auth:19.2.0] C:\Users\Alice\.gradle\caches\transforms-2\files-2.1\852a035da1160f222ddd06b48127991b\firebase-auth-19.2.0\AndroidManifest.xml:17:1-42:12
 MERGED from [com.google.firebase:firebase-analytics:16.5.0] C:\Users\Alice\.gradle\caches\transforms-2\files-2.1\7431a7ce93636acda33e34017b1eaac7\firebase-analytics-16.5.0\AndroidManifest.xml:2:1-9:12
 MERGED from [com.google.android.gms:play-services-measurement-api:16.5.0] C:\Users\Alice\.gradle\caches\transforms-2\files-2.1\6766212979edab4a89e5d2f14efd9acd\jetified-play-services-measurement-api-16.5.0\AndroidManifest.xml:17:1-36:12
@@ -64,7 +66,6 @@ MERGED from [androidx.media:media:1.0.0] C:\Users\Alice\.gradle\caches\transform
 MERGED from [androidx.core:core:1.0.1] C:\Users\Alice\.gradle\caches\transforms-2\files-2.1\6ebc7be7a4dc8eaf4aac6ce64a2a98dd\core-1.0.1\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] C:\Users\Alice\.gradle\caches\transforms-2\files-2.1\9f38ae6e31a499bc395f6955d4935d88\versionedparcelable-1.0.0\AndroidManifest.xml:17:1-25:12
 MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\Alice\.gradle\caches\transforms-2\files-2.1\37d0b1673d9e2bc7d5c3dbbf5b55bbc8\cursoradapter-1.0.0\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\Alice\.gradle\caches\transforms-2\files-2.1\626d78099049f59d374f2739e49d6261\cardview-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [com.google.firebase:firebase-components:16.0.0] C:\Users\Alice\.gradle\caches\transforms-2\files-2.1\fdff28694107f7b08cc3f337223d3f4b\jetified-firebase-components-16.0.0\AndroidManifest.xml:15:1-23:12
 MERGED from [com.github.bumptech.glide:gifdecoder:4.11.0] C:\Users\Alice\.gradle\caches\transforms-2\files-2.1\8045a2747b4f9ea9f1d11b9710e56025\gifdecoder-4.11.0\AndroidManifest.xml:2:1-11:12
 MERGED from [androidx.exifinterface:exifinterface:1.0.0] C:\Users\Alice\.gradle\caches\transforms-2\files-2.1\5d7715363ad555bbabaa1c35cde534b0\exifinterface-1.0.0\AndroidManifest.xml:17:1-22:12
@@ -158,6 +159,8 @@ MERGED from [com.google.firebase:firebase-core:16.0.9] C:\Users\Alice\.gradle\ca
 MERGED from [com.google.firebase:firebase-core:16.0.9] C:\Users\Alice\.gradle\caches\transforms-2\files-2.1\942099517488e0bb01375420dc7940b9\firebase-core-16.0.9\AndroidManifest.xml:7:5-20
 MERGED from [com.google.firebase:firebase-storage:19.2.0] C:\Users\Alice\.gradle\caches\transforms-2\files-2.1\3ec160840b984f7492992cc97e2d1c68\firebase-storage-19.2.0\AndroidManifest.xml:29:5-37:19
 MERGED from [com.google.firebase:firebase-storage:19.2.0] C:\Users\Alice\.gradle\caches\transforms-2\files-2.1\3ec160840b984f7492992cc97e2d1c68\firebase-storage-19.2.0\AndroidManifest.xml:29:5-37:19
+MERGED from [de.hdodenhof:circleimageview:3.1.0] C:\Users\Alice\.gradle\caches\transforms-2\files-2.1\e81a7d616e92b36a0fc3012b8b411fe5\circleimageview-3.1.0\AndroidManifest.xml:9:5-20
+MERGED from [de.hdodenhof:circleimageview:3.1.0] C:\Users\Alice\.gradle\caches\transforms-2\files-2.1\e81a7d616e92b36a0fc3012b8b411fe5\circleimageview-3.1.0\AndroidManifest.xml:9:5-20
 MERGED from [com.google.firebase:firebase-auth:19.2.0] C:\Users\Alice\.gradle\caches\transforms-2\files-2.1\852a035da1160f222ddd06b48127991b\firebase-auth-19.2.0\AndroidManifest.xml:23:5-40:19
 MERGED from [com.google.firebase:firebase-auth:19.2.0] C:\Users\Alice\.gradle\caches\transforms-2\files-2.1\852a035da1160f222ddd06b48127991b\firebase-auth-19.2.0\AndroidManifest.xml:23:5-40:19
 MERGED from [com.google.firebase:firebase-analytics:16.5.0] C:\Users\Alice\.gradle\caches\transforms-2\files-2.1\7431a7ce93636acda33e34017b1eaac7\firebase-analytics-16.5.0\AndroidManifest.xml:7:5-20
@@ -354,6 +357,10 @@ MERGED from [com.google.firebase:firebase-core:16.0.9] C:\Users\Alice\.gradle\ca
 MERGED from [com.google.firebase:firebase-core:16.0.9] C:\Users\Alice\.gradle\caches\transforms-2\files-2.1\942099517488e0bb01375420dc7940b9\firebase-core-16.0.9\AndroidManifest.xml:5:5-44
 MERGED from [com.google.firebase:firebase-storage:19.2.0] C:\Users\Alice\.gradle\caches\transforms-2\files-2.1\3ec160840b984f7492992cc97e2d1c68\firebase-storage-19.2.0\AndroidManifest.xml:20:5-22:41
 MERGED from [com.google.firebase:firebase-storage:19.2.0] C:\Users\Alice\.gradle\caches\transforms-2\files-2.1\3ec160840b984f7492992cc97e2d1c68\firebase-storage-19.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\Alice\.gradle\caches\transforms-2\files-2.1\626d78099049f59d374f2739e49d6261\cardview-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\Alice\.gradle\caches\transforms-2\files-2.1\626d78099049f59d374f2739e49d6261\cardview-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [de.hdodenhof:circleimageview:3.1.0] C:\Users\Alice\.gradle\caches\transforms-2\files-2.1\e81a7d616e92b36a0fc3012b8b411fe5\circleimageview-3.1.0\AndroidManifest.xml:5:5-7:41
+MERGED from [de.hdodenhof:circleimageview:3.1.0] C:\Users\Alice\.gradle\caches\transforms-2\files-2.1\e81a7d616e92b36a0fc3012b8b411fe5\circleimageview-3.1.0\AndroidManifest.xml:5:5-7:41
 MERGED from [com.google.firebase:firebase-auth:19.2.0] C:\Users\Alice\.gradle\caches\transforms-2\files-2.1\852a035da1160f222ddd06b48127991b\firebase-auth-19.2.0\AndroidManifest.xml:21:5-44
 MERGED from [com.google.firebase:firebase-auth:19.2.0] C:\Users\Alice\.gradle\caches\transforms-2\files-2.1\852a035da1160f222ddd06b48127991b\firebase-auth-19.2.0\AndroidManifest.xml:21:5-44
 MERGED from [com.google.firebase:firebase-analytics:16.5.0] C:\Users\Alice\.gradle\caches\transforms-2\files-2.1\7431a7ce93636acda33e34017b1eaac7\firebase-analytics-16.5.0\AndroidManifest.xml:5:5-44
@@ -442,8 +449,6 @@ MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] C:\Users\Al
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] C:\Users\Alice\.gradle\caches\transforms-2\files-2.1\9f38ae6e31a499bc395f6955d4935d88\versionedparcelable-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\Alice\.gradle\caches\transforms-2\files-2.1\37d0b1673d9e2bc7d5c3dbbf5b55bbc8\cursoradapter-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\Alice\.gradle\caches\transforms-2\files-2.1\37d0b1673d9e2bc7d5c3dbbf5b55bbc8\cursoradapter-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\Alice\.gradle\caches\transforms-2\files-2.1\626d78099049f59d374f2739e49d6261\cardview-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\Alice\.gradle\caches\transforms-2\files-2.1\626d78099049f59d374f2739e49d6261\cardview-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [com.google.firebase:firebase-components:16.0.0] C:\Users\Alice\.gradle\caches\transforms-2\files-2.1\fdff28694107f7b08cc3f337223d3f4b\jetified-firebase-components-16.0.0\AndroidManifest.xml:19:5-21:41
 MERGED from [com.google.firebase:firebase-components:16.0.0] C:\Users\Alice\.gradle\caches\transforms-2\files-2.1\fdff28694107f7b08cc3f337223d3f4b\jetified-firebase-components-16.0.0\AndroidManifest.xml:19:5-21:41
 MERGED from [com.github.bumptech.glide:gifdecoder:4.11.0] C:\Users\Alice\.gradle\caches\transforms-2\files-2.1\8045a2747b4f9ea9f1d11b9710e56025\gifdecoder-4.11.0\AndroidManifest.xml:5:5-7:41

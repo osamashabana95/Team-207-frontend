@@ -17,6 +17,7 @@ import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
+import com.squareup.picasso.Picasso;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -168,5 +169,17 @@ public class MainActivity extends AppCompatActivity {
     public void Post(){
         Intent intent= new Intent(MainActivity.this,Post.class);
         startActivity(intent);
+    }
+
+    public void Posting(View view) {
+        Intent intent= new Intent(MainActivity.this,Post.class);
+        startActivity(intent);
+    }
+
+    public void showImage(){
+        String imageUrl = mFirebaseAuth.getCurrentUser().getPhotoUrl().toString();
+//        Picasso.with(this).load(imageUrl)
+//                .placeholder(R.drawable.ic_account_circle_black_24dp)
+//                .into(circleImageView);
     }
 }
