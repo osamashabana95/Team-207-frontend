@@ -16,7 +16,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/logo" />
+        app:srcCompat="@drawable/dev"
+        tools:srcCompat="@drawable/dev" />
 
     <ImageButton
         android:id="@+id/imageButton"
@@ -27,18 +28,15 @@
         android:textAlignment="textEnd"
         app:layout_constraintEnd_toEndOf="@+id/logo_image"
         app:layout_constraintTop_toBottomOf="@+id/logo_image"
-        app:srcCompat="@drawable/ic_emoji_emotions_white_18dp" />
+        app:srcCompat="@drawable/ic_post_add_white_18dp" />
 
-    <Button
-        android:id="@+id/welcome_button"
-        android:layout_width="110dp"
-        android:layout_height="wrap_content"
+    <ImageButton
+        android:id="@+id/imageButton2"
+        android:layout_width="100dp"
+        android:layout_height="52dp"
         android:background="@drawable/submitt_shape"
-        android:fontFamily="cursive"
-        android:text="Welcome!!"
-        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-        android:textColor="#FFFFFF"
         app:layout_constraintStart_toStartOf="@+id/logo_image"
-        app:layout_constraintTop_toBottomOf="@+id/logo_image" />
+        app:layout_constraintTop_toBottomOf="@+id/logo_image"
+        app:srcCompat="@drawable/ic_arrow_forward_24px" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -36,12 +36,12 @@
         "source": "C:\\Users\\Alice\\.gradle\\caches\\transforms-2\\files-2.1\\ae75dc4a2b296f178083775339bd6982\\jetified-facebook-common-4.30.0\\res\\drawable-xhdpi-v4\\com_facebook_button_icon_blue.png"
     },
     {
-        "merged": "C:\\Users\\Alice\\AndroidStudioProjects\\AfroApp\\Frontend\\Team-207-frontend\\AfroApp\\app\\build\\intermediates\\res\\merged\\debug\\layout_fui_confirmation_code_layout.xml.flat",
-        "source": "C:\\Users\\Alice\\.gradle\\caches\\transforms-2\\files-2.1\\9a83c26244cb6f630ecb56c7774e812b\\jetified-firebase-ui-auth-6.2.0\\res\\layout\\fui_confirmation_code_layout.xml"
-    },
-    {
         "merged": "C:\\Users\\Alice\\AndroidStudioProjects\\AfroApp\\Frontend\\Team-207-frontend\\AfroApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_design_ic_visibility.png.flat",
         "source": "C:\\Users\\Alice\\.gradle\\caches\\transforms-2\\files-2.1\\f360ad34a09902cce6977302fbd74461\\material-1.0.0\\res\\drawable-xxhdpi-v4\\design_ic_visibility.png"
+    },
+    {
+        "merged": "C:\\Users\\Alice\\AndroidStudioProjects\\AfroApp\\Frontend\\Team-207-frontend\\AfroApp\\app\\build\\intermediates\\res\\merged\\debug\\layout_fui_confirmation_code_layout.xml.flat",
+        "source": "C:\\Users\\Alice\\.gradle\\caches\\transforms-2\\files-2.1\\9a83c26244cb6f630ecb56c7774e812b\\jetified-firebase-ui-auth-6.2.0\\res\\layout\\fui_confirmation_code_layout.xml"
     },
     {
         "merged": "C:\\Users\\Alice\\AndroidStudioProjects\\AfroApp\\Frontend\\Team-207-frontend\\AfroApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_fui_idp_button_background_twitter.xml.flat",
@@ -1082,6 +1082,10 @@
     {
         "merged": "C:\\Users\\Alice\\AndroidStudioProjects\\AfroApp\\Frontend\\Team-207-frontend\\AfroApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_abc_ic_go_search_api_material.xml.flat",
         "source": "C:\\Users\\Alice\\.gradle\\caches\\transforms-2\\files-2.1\\8156c1d632e989f7c8b54339baffbe73\\appcompat-1.0.2\\res\\drawable\\abc_ic_go_search_api_material.xml"
+    },
+    {
+        "merged": "C:\\Users\\Alice\\AndroidStudioProjects\\AfroApp\\Frontend\\Team-207-frontend\\AfroApp\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_solutions.xml.flat",
+        "source": "C:\\Users\\Alice\\AndroidStudioProjects\\AfroApp\\Frontend\\Team-207-frontend\\AfroApp\\app\\src\\main\\res\\layout\\activity_solutions.xml"
     },
     {
         "merged": "C:\\Users\\Alice\\AndroidStudioProjects\\AfroApp\\Frontend\\Team-207-frontend\\AfroApp\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_my_profile.xml.flat",
@@ -2224,6 +2228,10 @@
         "source": "C:\\Users\\Alice\\.gradle\\caches\\transforms-2\\files-2.1\\6ebc7be7a4dc8eaf4aac6ce64a2a98dd\\core-1.0.1\\res\\drawable-v21\\notification_action_background.xml"
     },
     {
+        "merged": "C:\\Users\\Alice\\AndroidStudioProjects\\AfroApp\\Frontend\\Team-207-frontend\\AfroApp\\app\\build\\intermediates\\res\\merged\\debug\\layout_list_item_solution.xml.flat",
+        "source": "C:\\Users\\Alice\\AndroidStudioProjects\\AfroApp\\Frontend\\Team-207-frontend\\AfroApp\\app\\src\\main\\res\\layout\\list_item_solution.xml"
+    },
+    {
         "merged": "C:\\Users\\Alice\\AndroidStudioProjects\\AfroApp\\Frontend\\Team-207-frontend\\AfroApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_com_facebook_tooltip_blue_topnub.png.flat",
         "source": "C:\\Users\\Alice\\.gradle\\caches\\transforms-2\\files-2.1\\894f584b7845fa271a25d7ae9a76122e\\jetified-facebook-login-4.30.0\\res\\drawable-mdpi-v4\\com_facebook_tooltip_blue_topnub.png"
     },
@@ -2470,6 +2478,10 @@
     {
         "merged": "C:\\Users\\Alice\\AndroidStudioProjects\\AfroApp\\Frontend\\Team-207-frontend\\AfroApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_notification_bg_low_normal.9.png.flat",
         "source": "C:\\Users\\Alice\\.gradle\\caches\\transforms-2\\files-2.1\\6ebc7be7a4dc8eaf4aac6ce64a2a98dd\\core-1.0.1\\res\\drawable-mdpi-v4\\notification_bg_low_normal.9.png"
+    },
+    {
+        "merged": "C:\\Users\\Alice\\AndroidStudioProjects\\AfroApp\\Frontend\\Team-207-frontend\\AfroApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_arrow_forward_24px.xml.flat",
+        "source": "C:\\Users\\Alice\\AndroidStudioProjects\\AfroApp\\Frontend\\Team-207-frontend\\AfroApp\\app\\src\\main\\res\\drawable\\ic_arrow_forward_24px.xml"
     },
     {
         "merged": "C:\\Users\\Alice\\AndroidStudioProjects\\AfroApp\\Frontend\\Team-207-frontend\\AfroApp\\app\\build\\intermediates\\res\\merged\\debug\\layout_design_navigation_item_header.xml.flat",

@@ -6,6 +6,10 @@
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:navigationBarDividerColor">#BDBDBD</item>
+    </style>
+    <style name="CustomToolBarTheme"  parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:textSize">18sp</item>
     </style>
 
     <style name="AppTheme.NoActionBar">

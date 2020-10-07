@@ -70,9 +70,9 @@ public class AddProf extends AppCompatActivity {
         });
 
         String imageUrl = mFirebaseAuth.getCurrentUser().getPhotoUrl().toString();
-        Picasso.with(this).load(imageUrl).placeholder(R.drawable.ic_person_black_24dp)
-                .resize(70,70)
-                .into(imageView);
+        Picasso.with(this).load(imageUrl).centerCrop().fit().noFade()
+                .placeholder(R.drawable.ic_account_circle_black_24dp);
+
 
 
 

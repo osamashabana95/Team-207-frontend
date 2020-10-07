@@ -60,6 +60,10 @@
             android:label="@string/AfroDevMeet"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
+            android:name="com.alice.afroapp.SolutionsActivity"
+            android:label="@string/AfroDevMeet"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
             android:name="com.alice.afroapp.MainActivity"
             android:label="@string/AfroDevMeet" >
             <intent-filter>
