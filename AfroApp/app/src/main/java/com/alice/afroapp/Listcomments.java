@@ -34,7 +34,7 @@ public class Listcomments extends AppCompatActivity {
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         title = (TextView) findViewById(R.id.title_solu);
-        userName = (TextView) findViewById(R.id.user);
+        userName = (TextView) findViewById(R.id.username);
         mFirebaseDatabase = FirebaseDatabase.getInstance();
         mDatabaseReference = mFirebaseDatabase.getReference().child("Questions").child("Solutions");
 

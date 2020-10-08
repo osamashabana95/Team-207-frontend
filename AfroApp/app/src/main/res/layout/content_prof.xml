@@ -35,7 +35,7 @@
         android:id="@+id/divider2"
         android:layout_width="match_parent"
         android:layout_height="1dp"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="16dp"
         android:background="#BDBDBD"
         android:contentDescription="@string/mentor_pic"
         app:layout_constraintEnd_toEndOf="@+id/divider"
@@ -46,7 +46,7 @@
         android:id="@+id/divider3"
         android:layout_width="match_parent"
         android:layout_height="1dp"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="16dp"
         android:background="#BDBDBD"
         android:contentDescription="@string/mentor_pic"
         app:layout_constraintEnd_toEndOf="@+id/divider"
@@ -57,7 +57,7 @@
         android:id="@+id/divider4"
         android:layout_width="match_parent"
         android:layout_height="1dp"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="16dp"
         android:background="#BDBDBD"
         app:layout_constraintEnd_toEndOf="@+id/divider"
         app:layout_constraintHorizontal_bias="1.0"
@@ -66,7 +66,7 @@
 
     <TextView
         android:id="@+id/fullname_text"
-        android:layout_width="89dp"
+        android:layout_width="wrap_content"
         android:layout_height="20dp"
         android:layout_marginStart="226dp"
         android:layout_marginTop="20dp"
@@ -79,8 +79,8 @@
 
     <TextView
         android:id="@+id/profciency_text"
-        android:layout_width="82dp"
-        android:layout_height="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="32dp"
         android:text="@string/proficiency"
@@ -90,8 +90,8 @@
 
     <TextView
         android:id="@+id/loc_text"
-        android:layout_width="62dp"
-        android:layout_height="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="32dp"
         android:text="@string/location"

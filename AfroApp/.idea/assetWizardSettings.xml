@@ -28,8 +28,9 @@
                         </option>
                         <option name="values">
                           <map>
-                            <entry key="outputName" value="ic_arrow_back_black_24dp" />
-                            <entry key="sourceFile" value="C:\Users\Alice\Downloads\lock-white-18dp.svg" />
+                            <entry key="assetSourceType" value="FILE" />
+                            <entry key="outputName" value="ic_pointing_right_finger_svgrepo_com" />
+                            <entry key="sourceFile" value="C:\Users\Alice\Downloads\pointing-right-finger-svgrepo-com.svg" />
                           </map>
                         </option>
                       </PersistentState>

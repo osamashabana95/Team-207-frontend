@@ -161,6 +161,10 @@ attr chipStrokeColor
 attr chipStrokeWidth
 attr chipStyle
 attr circleCrop
+attr civ_border_color
+attr civ_border_overlay
+attr civ_border_width
+attr civ_circle_background_color
 attr closeIcon
 attr closeIconEnabled
 attr closeIconEndPadding
@@ -1139,9 +1143,11 @@ drawable abc_textfield_search_material
 drawable abc_vector_test
 drawable addprof
 drawable app_logo
+drawable applog
 drawable avd_hide_password
 drawable avd_show_password
 drawable btn_shape
+drawable circular_bordershape
 drawable com_facebook_auth_dialog_background
 drawable com_facebook_auth_dialog_cancel_background
 drawable com_facebook_auth_dialog_header_background
@@ -1221,6 +1227,7 @@ drawable ic_add_black_24dp
 drawable ic_add_circle_black_24dp
 drawable ic_add_new_black_24dp
 drawable ic_arrow_back_black_24dp
+drawable ic_arrow_forward_24px
 drawable ic_camera_alt_black_24dp
 drawable ic_code_black_18dp
 drawable ic_comment_black_24dp
@@ -1245,6 +1252,8 @@ drawable ic_note_add_black_24dp
 drawable ic_notifications_black_24dp
 drawable ic_person_add_black_24dp
 drawable ic_person_black_24dp
+drawable ic_pointing_right_finger_svgrepo_com
+drawable ic_pointing_up_finger_svgrepo_com
 drawable ic_post_add_black_18dp
 drawable ic_post_add_white_18dp
 drawable ic_search_black_24dp
@@ -1299,7 +1308,6 @@ id action_mode_bar
 id action_mode_bar_stub
 id action_mode_close_button
 id action_post
-id action_prof
 id action_questions_list
 id action_set
 id action_signout
@@ -1346,6 +1354,7 @@ id center_vertical
 id chains
 id checkbox
 id chronometer
+id circleImage
 id circular
 id clip_horizontal
 id clip_vertical
@@ -1438,6 +1447,7 @@ id icon_only
 id ifRoom
 id image
 id imageButton
+id imageButton2
 id imageView
 id imageView2
 id imageView3
@@ -1524,6 +1534,7 @@ id right
 id right_icon
 id right_side
 id root
+id s_user_name
 id save_image_matrix
 id save_non_transition_alpha
 id save_scale_type
@@ -1559,6 +1570,9 @@ id snackbar_action
 id snackbar_text
 id snap
 id snapMargins
+id solu_title
+id solution_title
+id solutions_recycler_view
 id spacer
 id split_action_bar
 id spread
@@ -1616,14 +1630,13 @@ id unknown
 id unlabeled
 id up
 id useLogo
-id user
+id username
 id view_offset_helper
 id visible
 id welcome_back_email_link_body
 id welcome_back_idp_button
 id welcome_back_idp_prompt
 id welcome_back_password_body
-id welcome_button
 id wide
 id withText
 id wrap
@@ -1687,6 +1700,7 @@ layout activity_my_profile
 layout activity_post
 layout activity_prof
 layout activity_questions
+layout activity_solutions
 layout browser_actions_context_menu_page
 layout browser_actions_context_menu_row
 layout com_facebook_activity_layout
@@ -1744,6 +1758,7 @@ layout fui_welcome_back_email_link_prompt_layout
 layout fui_welcome_back_idp_prompt_layout
 layout fui_welcome_back_password_prompt_layout
 layout list_item_question
+layout list_item_solution
 layout mentor_row
 layout mtrl_layout_snackbar
 layout mtrl_layout_snackbar_include
@@ -2229,6 +2244,8 @@ style Base_Widget_MaterialComponents_TextInputLayout
 style CardView
 style CardView_Dark
 style CardView_Light
+style CustomRecyclerTheme
+style CustomToolBarTheme
 style FirebaseUI
 style FirebaseUI_AuthMethodPicker
 style FirebaseUI_AuthMethodPicker_ButtonHolder
@@ -2622,6 +2639,7 @@ styleable ButtonBarLayout allowStacking
 styleable CardView android_minWidth android_minHeight cardBackgroundColor cardCornerRadius cardElevation cardMaxElevation cardPreventCornerOverlap cardUseCompatPadding contentPadding contentPaddingBottom contentPaddingLeft contentPaddingRight contentPaddingTop
 styleable Chip android_textAppearance android_ellipsize android_maxWidth android_text android_checkable checkedIcon checkedIconEnabled checkedIconVisible chipBackgroundColor chipCornerRadius chipEndPadding chipIcon chipIconEnabled chipIconSize chipIconTint chipIconVisible chipMinHeight chipStartPadding chipStrokeColor chipStrokeWidth closeIcon closeIconEnabled closeIconEndPadding closeIconSize closeIconStartPadding closeIconTint closeIconVisible hideMotionSpec iconEndPadding iconStartPadding rippleColor showMotionSpec textEndPadding textStartPadding
 styleable ChipGroup checkedChip chipSpacing chipSpacingHorizontal chipSpacingVertical singleLine singleSelection
+styleable CircleImageView civ_border_color civ_border_overlay civ_border_width civ_circle_background_color
 styleable CollapsingToolbarLayout collapsedTitleGravity collapsedTitleTextAppearance contentScrim expandedTitleGravity expandedTitleMargin expandedTitleMarginBottom expandedTitleMarginEnd expandedTitleMarginStart expandedTitleMarginTop expandedTitleTextAppearance scrimAnimationDuration scrimVisibleHeightTrigger statusBarScrim title titleEnabled toolbarId
 styleable CollapsingToolbarLayout_Layout layout_collapseMode layout_collapseParallaxMultiplier
 styleable ColorStateListItem android_color android_alpha alpha

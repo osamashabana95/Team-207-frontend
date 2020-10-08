@@ -24,6 +24,8 @@ import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 
+import de.hdodenhof.circleimageview.CircleImageView;
+
 public class AddProf extends AppCompatActivity {
     private static final int PICK_IMAGE_REQUEST = 22;
     private FirebaseDatabase mFirebaseDatabase;
@@ -36,6 +38,7 @@ public class AddProf extends AppCompatActivity {
     private Uri filePath;
     private ImageView imageView;
     private ImageButton selectButton;
+    private CircleImageView circleImageView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -52,6 +55,7 @@ public class AddProf extends AppCompatActivity {
         editProf = (EditText) findViewById(R.id.editProf);
         editLoc = (EditText) findViewById(R.id.editLoc);
         editEmail= (EditText) findViewById(R.id.editEmail);
+        circleImageView = (CircleImageView) findViewById(R.id.circleImage);
         imageView = (ImageView) findViewById(R.id.myprof_pic);
 
         mFirebaseAuth = FirebaseAuth.getInstance();
@@ -70,9 +74,9 @@ public class AddProf extends AppCompatActivity {
         });
 
         String imageUrl = mFirebaseAuth.getCurrentUser().getPhotoUrl().toString();
-        Picasso.with(this).load(imageUrl).placeholder(R.drawable.ic_person_black_24dp)
-                .resize(70,70)
-                .into(imageView);
+        Picasso.with(this).load(imageUrl)
+                .placeholder(R.drawable.ic_account_circle_black_24dp).into(circleImageView);
+
 
 
 
