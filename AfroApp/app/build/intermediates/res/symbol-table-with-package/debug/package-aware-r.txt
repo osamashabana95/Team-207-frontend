@@ -1142,6 +1142,7 @@ drawable abc_textfield_search_default_mtrl_alpha
 drawable abc_textfield_search_material
 drawable abc_vector_test
 drawable addprof
+drawable afronew
 drawable app_logo
 drawable applog
 drawable avd_hide_password
@@ -1456,6 +1457,7 @@ id imageView3
 id imageView4
 id imageView5
 id imageView6
+id imageView7
 id info
 id inline
 id invisible

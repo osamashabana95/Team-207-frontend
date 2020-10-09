@@ -2156,6 +2156,10 @@
         "source": "C:\\Users\\Alice\\.gradle\\caches\\transforms-2\\files-2.1\\8156c1d632e989f7c8b54339baffbe73\\appcompat-1.0.2\\res\\drawable-mdpi-v4\\abc_ic_star_black_36dp.png"
     },
     {
+        "merged": "C:\\Users\\Alice\\AndroidStudioProjects\\AfroApp\\Team-207\\Team-207-frontend\\AfroApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_afronew.png.flat",
+        "source": "C:\\Users\\Alice\\AndroidStudioProjects\\AfroApp\\Team-207\\Team-207-frontend\\AfroApp\\app\\src\\main\\res\\drawable\\afronew.png"
+    },
+    {
         "merged": "C:\\Users\\Alice\\AndroidStudioProjects\\AfroApp\\Team-207\\Team-207-frontend\\AfroApp\\app\\build\\intermediates\\res\\merged\\debug\\layout_fui_register_email_layout.xml.flat",
         "source": "C:\\Users\\Alice\\.gradle\\caches\\transforms-2\\files-2.1\\9a83c26244cb6f630ecb56c7774e812b\\jetified-firebase-ui-auth-6.2.0\\res\\layout\\fui_register_email_layout.xml"
     },
