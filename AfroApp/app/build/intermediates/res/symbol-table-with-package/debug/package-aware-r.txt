@@ -1142,6 +1142,7 @@ drawable abc_textfield_search_default_mtrl_alpha
 drawable abc_textfield_search_material
 drawable abc_vector_test
 drawable addprof
+drawable afronew
 drawable app_logo
 drawable applog
 drawable avd_hide_password
@@ -1322,6 +1323,8 @@ id alertTitle
 id all
 id always
 id anonymous_button
+id appBarLayout
+id appBarLayout2
 id apple_signin_button
 id async
 id auto
@@ -1454,6 +1457,7 @@ id imageView3
 id imageView4
 id imageView5
 id imageView6
+id imageView7
 id info
 id inline
 id invisible
@@ -1534,6 +1538,8 @@ id right
 id right_icon
 id right_side
 id root
+id s_edit_text
+id s_enter_button
 id s_user_name
 id save_image_matrix
 id save_non_transition_alpha

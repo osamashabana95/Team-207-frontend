@@ -6,16 +6,16 @@
 6
 7    <uses-sdk
 8        android:minSdkVersion="18"
-8-->C:\Users\Alice\AndroidStudioProjects\AfroApp\Frontend\Team-207-frontend\AfroApp\app\src\main\AndroidManifest.xml
+8-->C:\Users\Alice\AndroidStudioProjects\AfroApp\Team-207\Team-207-frontend\AfroApp\app\src\main\AndroidManifest.xml
 9        android:targetSdkVersion="28" />
-9-->C:\Users\Alice\AndroidStudioProjects\AfroApp\Frontend\Team-207-frontend\AfroApp\app\src\main\AndroidManifest.xml
+9-->C:\Users\Alice\AndroidStudioProjects\AfroApp\Team-207\Team-207-frontend\AfroApp\app\src\main\AndroidManifest.xml
 10
 11    <uses-permission android:name="android.permission.INTERNET" />
-11-->C:\Users\Alice\AndroidStudioProjects\AfroApp\Frontend\Team-207-frontend\AfroApp\app\src\main\AndroidManifest.xml:5:5-67
-11-->C:\Users\Alice\AndroidStudioProjects\AfroApp\Frontend\Team-207-frontend\AfroApp\app\src\main\AndroidManifest.xml:5:22-64
+11-->C:\Users\Alice\AndroidStudioProjects\AfroApp\Team-207\Team-207-frontend\AfroApp\app\src\main\AndroidManifest.xml:5:5-67
+11-->C:\Users\Alice\AndroidStudioProjects\AfroApp\Team-207\Team-207-frontend\AfroApp\app\src\main\AndroidManifest.xml:5:22-64
 12    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-12-->C:\Users\Alice\AndroidStudioProjects\AfroApp\Frontend\Team-207-frontend\AfroApp\app\src\main\AndroidManifest.xml:6:5-79
-12-->C:\Users\Alice\AndroidStudioProjects\AfroApp\Frontend\Team-207-frontend\AfroApp\app\src\main\AndroidManifest.xml:6:22-76
+12-->C:\Users\Alice\AndroidStudioProjects\AfroApp\Team-207\Team-207-frontend\AfroApp\app\src\main\AndroidManifest.xml:6:5-79
+12-->C:\Users\Alice\AndroidStudioProjects\AfroApp\Team-207\Team-207-frontend\AfroApp\app\src\main\AndroidManifest.xml:6:22-76
 13    <uses-permission android:name="android.permission.WAKE_LOCK" /> <!-- Required by older versions of Google Play services to create IID tokens -->
 13-->[com.google.android.gms:play-services-measurement-api:16.5.0] C:\Users\Alice\.gradle\caches\transforms-2\files-2.1\6766212979edab4a89e5d2f14efd9acd\jetified-play-services-measurement-api-16.5.0\AndroidManifest.xml:24:5-68
 13-->[com.google.android.gms:play-services-measurement-api:16.5.0] C:\Users\Alice\.gradle\caches\transforms-2\files-2.1\6766212979edab4a89e5d2f14efd9acd\jetified-play-services-measurement-api-16.5.0\AndroidManifest.xml:24:22-65
@@ -27,123 +27,123 @@
 15-->[com.google.android.gms:play-services-measurement:16.5.0] C:\Users\Alice\.gradle\caches\transforms-2\files-2.1\f950c59091c3fb4d753c7e06ef0318b1\jetified-play-services-measurement-16.5.0\AndroidManifest.xml:26:22-107
 16
 17    <application
-17-->C:\Users\Alice\AndroidStudioProjects\AfroApp\Frontend\Team-207-frontend\AfroApp\app\src\main\AndroidManifest.xml:8:5-66:19
+17-->C:\Users\Alice\AndroidStudioProjects\AfroApp\Team-207\Team-207-frontend\AfroApp\app\src\main\AndroidManifest.xml:8:5-66:19
 18        android:name="com.alice.afroapp.AfroApp"
-18-->C:\Users\Alice\AndroidStudioProjects\AfroApp\Frontend\Team-207-frontend\AfroApp\app\src\main\AndroidManifest.xml:14:9-32
+18-->C:\Users\Alice\AndroidStudioProjects\AfroApp\Team-207\Team-207-frontend\AfroApp\app\src\main\AndroidManifest.xml:14:9-32
 19        android:allowBackup="true"
-19-->C:\Users\Alice\AndroidStudioProjects\AfroApp\Frontend\Team-207-frontend\AfroApp\app\src\main\AndroidManifest.xml:9:9-35
+19-->C:\Users\Alice\AndroidStudioProjects\AfroApp\Team-207\Team-207-frontend\AfroApp\app\src\main\AndroidManifest.xml:9:9-35
 20        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
 20-->[androidx.core:core:1.0.1] C:\Users\Alice\.gradle\caches\transforms-2\files-2.1\6ebc7be7a4dc8eaf4aac6ce64a2a98dd\core-1.0.1\AndroidManifest.xml:22:18-86
 21        android:debuggable="true"
 22        android:icon="@mipmap/ic_launcher"
-22-->C:\Users\Alice\AndroidStudioProjects\AfroApp\Frontend\Team-207-frontend\AfroApp\app\src\main\AndroidManifest.xml:10:9-43
+22-->C:\Users\Alice\AndroidStudioProjects\AfroApp\Team-207\Team-207-frontend\AfroApp\app\src\main\AndroidManifest.xml:10:9-43
 23        android:label="@string/AfroDevMeet"
-23-->C:\Users\Alice\AndroidStudioProjects\AfroApp\Frontend\Team-207-frontend\AfroApp\app\src\main\AndroidManifest.xml:11:9-44
+23-->C:\Users\Alice\AndroidStudioProjects\AfroApp\Team-207\Team-207-frontend\AfroApp\app\src\main\AndroidManifest.xml:11:9-44
 24        android:roundIcon="@mipmap/ic_launcher_round"
-24-->C:\Users\Alice\AndroidStudioProjects\AfroApp\Frontend\Team-207-frontend\AfroApp\app\src\main\AndroidManifest.xml:12:9-54
+24-->C:\Users\Alice\AndroidStudioProjects\AfroApp\Team-207\Team-207-frontend\AfroApp\app\src\main\AndroidManifest.xml:12:9-54
 25        android:supportsRtl="true"
-25-->C:\Users\Alice\AndroidStudioProjects\AfroApp\Frontend\Team-207-frontend\AfroApp\app\src\main\AndroidManifest.xml:13:9-35
+25-->C:\Users\Alice\AndroidStudioProjects\AfroApp\Team-207\Team-207-frontend\AfroApp\app\src\main\AndroidManifest.xml:13:9-35
 26        android:testOnly="true"
 27        android:theme="@style/AppTheme" >
-27-->C:\Users\Alice\AndroidStudioProjects\AfroApp\Frontend\Team-207-frontend\AfroApp\app\src\main\AndroidManifest.xml:15:9-40
+27-->C:\Users\Alice\AndroidStudioProjects\AfroApp\Team-207\Team-207-frontend\AfroApp\app\src\main\AndroidManifest.xml:15:9-40
 28        <activity
-28-->C:\Users\Alice\AndroidStudioProjects\AfroApp\Frontend\Team-207-frontend\AfroApp\app\src\main\AndroidManifest.xml:16:9-19:59
+28-->C:\Users\Alice\AndroidStudioProjects\AfroApp\Team-207\Team-207-frontend\AfroApp\app\src\main\AndroidManifest.xml:16:9-19:59
 29            android:name="com.alice.afroapp.MyProfile"
-29-->C:\Users\Alice\AndroidStudioProjects\AfroApp\Frontend\Team-207-frontend\AfroApp\app\src\main\AndroidManifest.xml:17:13-38
+29-->C:\Users\Alice\AndroidStudioProjects\AfroApp\Team-207\Team-207-frontend\AfroApp\app\src\main\AndroidManifest.xml:17:13-38
 30            android:label="@string/title_activity_my_profile"
-30-->C:\Users\Alice\AndroidStudioProjects\AfroApp\Frontend\Team-207-frontend\AfroApp\app\src\main\AndroidManifest.xml:18:13-62
+30-->C:\Users\Alice\AndroidStudioProjects\AfroApp\Team-207\Team-207-frontend\AfroApp\app\src\main\AndroidManifest.xml:18:13-62
 31            android:theme="@style/AppTheme.NoActionBar" />
-31-->C:\Users\Alice\AndroidStudioProjects\AfroApp\Frontend\Team-207-frontend\AfroApp\app\src\main\AndroidManifest.xml:19:13-56
+31-->C:\Users\Alice\AndroidStudioProjects\AfroApp\Team-207\Team-207-frontend\AfroApp\app\src\main\AndroidManifest.xml:19:13-56
 32        <activity
-32-->C:\Users\Alice\AndroidStudioProjects\AfroApp\Frontend\Team-207-frontend\AfroApp\app\src\main\AndroidManifest.xml:20:9-23:59
+32-->C:\Users\Alice\AndroidStudioProjects\AfroApp\Team-207\Team-207-frontend\AfroApp\app\src\main\AndroidManifest.xml:20:9-23:59
 33            android:name="com.alice.afroapp.Prof"
-33-->C:\Users\Alice\AndroidStudioProjects\AfroApp\Frontend\Team-207-frontend\AfroApp\app\src\main\AndroidManifest.xml:21:13-33
+33-->C:\Users\Alice\AndroidStudioProjects\AfroApp\Team-207\Team-207-frontend\AfroApp\app\src\main\AndroidManifest.xml:21:13-33
 34            android:label="@string/title_activity_profile"
-34-->C:\Users\Alice\AndroidStudioProjects\AfroApp\Frontend\Team-207-frontend\AfroApp\app\src\main\AndroidManifest.xml:22:13-59
+34-->C:\Users\Alice\AndroidStudioProjects\AfroApp\Team-207\Team-207-frontend\AfroApp\app\src\main\AndroidManifest.xml:22:13-59
 35            android:theme="@style/AppTheme.NoActionBar" />
-35-->C:\Users\Alice\AndroidStudioProjects\AfroApp\Frontend\Team-207-frontend\AfroApp\app\src\main\AndroidManifest.xml:23:13-56
+35-->C:\Users\Alice\AndroidStudioProjects\AfroApp\Team-207\Team-207-frontend\AfroApp\app\src\main\AndroidManifest.xml:23:13-56
 36        <activity
-36-->C:\Users\Alice\AndroidStudioProjects\AfroApp\Frontend\Team-207-frontend\AfroApp\app\src\main\AndroidManifest.xml:24:9-28:59
+36-->C:\Users\Alice\AndroidStudioProjects\AfroApp\Team-207\Team-207-frontend\AfroApp\app\src\main\AndroidManifest.xml:24:9-28:59
 37            android:name="com.alice.afroapp.MentorList"
-37-->C:\Users\Alice\AndroidStudioProjects\AfroApp\Frontend\Team-207-frontend\AfroApp\app\src\main\AndroidManifest.xml:25:13-39
+37-->C:\Users\Alice\AndroidStudioProjects\AfroApp\Team-207\Team-207-frontend\AfroApp\app\src\main\AndroidManifest.xml:25:13-39
 38            android:icon="@drawable/app_logo"
-38-->C:\Users\Alice\AndroidStudioProjects\AfroApp\Frontend\Team-207-frontend\AfroApp\app\src\main\AndroidManifest.xml:26:13-46
+38-->C:\Users\Alice\AndroidStudioProjects\AfroApp\Team-207\Team-207-frontend\AfroApp\app\src\main\AndroidManifest.xml:26:13-46
 39            android:label="@string/title_activity_mentor_list"
-39-->C:\Users\Alice\AndroidStudioProjects\AfroApp\Frontend\Team-207-frontend\AfroApp\app\src\main\AndroidManifest.xml:27:13-63
+39-->C:\Users\Alice\AndroidStudioProjects\AfroApp\Team-207\Team-207-frontend\AfroApp\app\src\main\AndroidManifest.xml:27:13-63
 40            android:theme="@style/AppTheme.NoActionBar" />
-40-->C:\Users\Alice\AndroidStudioProjects\AfroApp\Frontend\Team-207-frontend\AfroApp\app\src\main\AndroidManifest.xml:28:13-56
+40-->C:\Users\Alice\AndroidStudioProjects\AfroApp\Team-207\Team-207-frontend\AfroApp\app\src\main\AndroidManifest.xml:28:13-56
 41        <activity
-41-->C:\Users\Alice\AndroidStudioProjects\AfroApp\Frontend\Team-207-frontend\AfroApp\app\src\main\AndroidManifest.xml:29:9-33:59
+41-->C:\Users\Alice\AndroidStudioProjects\AfroApp\Team-207\Team-207-frontend\AfroApp\app\src\main\AndroidManifest.xml:29:9-33:59
 42            android:name="com.alice.afroapp.AddProf"
-42-->C:\Users\Alice\AndroidStudioProjects\AfroApp\Frontend\Team-207-frontend\AfroApp\app\src\main\AndroidManifest.xml:30:13-36
+42-->C:\Users\Alice\AndroidStudioProjects\AfroApp\Team-207\Team-207-frontend\AfroApp\app\src\main\AndroidManifest.xml:30:13-36
 43            android:icon="@drawable/app_logo"
-43-->C:\Users\Alice\AndroidStudioProjects\AfroApp\Frontend\Team-207-frontend\AfroApp\app\src\main\AndroidManifest.xml:31:13-46
+43-->C:\Users\Alice\AndroidStudioProjects\AfroApp\Team-207\Team-207-frontend\AfroApp\app\src\main\AndroidManifest.xml:31:13-46
 44            android:label="@string/SignUp"
-44-->C:\Users\Alice\AndroidStudioProjects\AfroApp\Frontend\Team-207-frontend\AfroApp\app\src\main\AndroidManifest.xml:32:13-43
+44-->C:\Users\Alice\AndroidStudioProjects\AfroApp\Team-207\Team-207-frontend\AfroApp\app\src\main\AndroidManifest.xml:32:13-43
 45            android:theme="@style/AppTheme.NoActionBar" />
-45-->C:\Users\Alice\AndroidStudioProjects\AfroApp\Frontend\Team-207-frontend\AfroApp\app\src\main\AndroidManifest.xml:33:13-56
+45-->C:\Users\Alice\AndroidStudioProjects\AfroApp\Team-207\Team-207-frontend\AfroApp\app\src\main\AndroidManifest.xml:33:13-56
 46        <activity
-46-->C:\Users\Alice\AndroidStudioProjects\AfroApp\Frontend\Team-207-frontend\AfroApp\app\src\main\AndroidManifest.xml:34:9-36:36
+46-->C:\Users\Alice\AndroidStudioProjects\AfroApp\Team-207\Team-207-frontend\AfroApp\app\src\main\AndroidManifest.xml:34:9-36:36
 47            android:name="com.alice.afroapp.Post"
-47-->C:\Users\Alice\AndroidStudioProjects\AfroApp\Frontend\Team-207-frontend\AfroApp\app\src\main\AndroidManifest.xml:35:13-33
+47-->C:\Users\Alice\AndroidStudioProjects\AfroApp\Team-207\Team-207-frontend\AfroApp\app\src\main\AndroidManifest.xml:35:13-33
 48            android:label="Post" />
-48-->C:\Users\Alice\AndroidStudioProjects\AfroApp\Frontend\Team-207-frontend\AfroApp\app\src\main\AndroidManifest.xml:36:13-33
+48-->C:\Users\Alice\AndroidStudioProjects\AfroApp\Team-207\Team-207-frontend\AfroApp\app\src\main\AndroidManifest.xml:36:13-33
 49        <activity
-49-->C:\Users\Alice\AndroidStudioProjects\AfroApp\Frontend\Team-207-frontend\AfroApp\app\src\main\AndroidManifest.xml:37:9-40:59
+49-->C:\Users\Alice\AndroidStudioProjects\AfroApp\Team-207\Team-207-frontend\AfroApp\app\src\main\AndroidManifest.xml:37:9-40:59
 50            android:name="com.alice.afroapp.Listcomments"
-50-->C:\Users\Alice\AndroidStudioProjects\AfroApp\Frontend\Team-207-frontend\AfroApp\app\src\main\AndroidManifest.xml:38:13-41
+50-->C:\Users\Alice\AndroidStudioProjects\AfroApp\Team-207\Team-207-frontend\AfroApp\app\src\main\AndroidManifest.xml:38:13-41
 51            android:label="@string/Comments"
-51-->C:\Users\Alice\AndroidStudioProjects\AfroApp\Frontend\Team-207-frontend\AfroApp\app\src\main\AndroidManifest.xml:39:13-45
+51-->C:\Users\Alice\AndroidStudioProjects\AfroApp\Team-207\Team-207-frontend\AfroApp\app\src\main\AndroidManifest.xml:39:13-45
 52            android:theme="@style/AppTheme.NoActionBar" />
-52-->C:\Users\Alice\AndroidStudioProjects\AfroApp\Frontend\Team-207-frontend\AfroApp\app\src\main\AndroidManifest.xml:40:13-56
+52-->C:\Users\Alice\AndroidStudioProjects\AfroApp\Team-207\Team-207-frontend\AfroApp\app\src\main\AndroidManifest.xml:40:13-56
 53        <activity
-53-->C:\Users\Alice\AndroidStudioProjects\AfroApp\Frontend\Team-207-frontend\AfroApp\app\src\main\AndroidManifest.xml:41:9-44:59
+53-->C:\Users\Alice\AndroidStudioProjects\AfroApp\Team-207\Team-207-frontend\AfroApp\app\src\main\AndroidManifest.xml:41:9-44:59
 54            android:name="com.alice.afroapp.Listquestions"
-54-->C:\Users\Alice\AndroidStudioProjects\AfroApp\Frontend\Team-207-frontend\AfroApp\app\src\main\AndroidManifest.xml:42:13-42
+54-->C:\Users\Alice\AndroidStudioProjects\AfroApp\Team-207\Team-207-frontend\AfroApp\app\src\main\AndroidManifest.xml:42:13-42
 55            android:label="@string/question"
-55-->C:\Users\Alice\AndroidStudioProjects\AfroApp\Frontend\Team-207-frontend\AfroApp\app\src\main\AndroidManifest.xml:43:13-45
+55-->C:\Users\Alice\AndroidStudioProjects\AfroApp\Team-207\Team-207-frontend\AfroApp\app\src\main\AndroidManifest.xml:43:13-45
 56            android:theme="@style/AppTheme.NoActionBar" />
-56-->C:\Users\Alice\AndroidStudioProjects\AfroApp\Frontend\Team-207-frontend\AfroApp\app\src\main\AndroidManifest.xml:44:13-56
+56-->C:\Users\Alice\AndroidStudioProjects\AfroApp\Team-207\Team-207-frontend\AfroApp\app\src\main\AndroidManifest.xml:44:13-56
 57        <activity
-57-->C:\Users\Alice\AndroidStudioProjects\AfroApp\Frontend\Team-207-frontend\AfroApp\app\src\main\AndroidManifest.xml:45:9-48:59
+57-->C:\Users\Alice\AndroidStudioProjects\AfroApp\Team-207\Team-207-frontend\AfroApp\app\src\main\AndroidManifest.xml:45:9-48:59
 58            android:name="com.alice.afroapp.QuestionsActivity"
-58-->C:\Users\Alice\AndroidStudioProjects\AfroApp\Frontend\Team-207-frontend\AfroApp\app\src\main\AndroidManifest.xml:46:13-46
+58-->C:\Users\Alice\AndroidStudioProjects\AfroApp\Team-207\Team-207-frontend\AfroApp\app\src\main\AndroidManifest.xml:46:13-46
 59            android:label="@string/AfroDevMeet"
-59-->C:\Users\Alice\AndroidStudioProjects\AfroApp\Frontend\Team-207-frontend\AfroApp\app\src\main\AndroidManifest.xml:47:13-48
+59-->C:\Users\Alice\AndroidStudioProjects\AfroApp\Team-207\Team-207-frontend\AfroApp\app\src\main\AndroidManifest.xml:47:13-48
 60            android:theme="@style/AppTheme.NoActionBar" />
-60-->C:\Users\Alice\AndroidStudioProjects\AfroApp\Frontend\Team-207-frontend\AfroApp\app\src\main\AndroidManifest.xml:48:13-56
+60-->C:\Users\Alice\AndroidStudioProjects\AfroApp\Team-207\Team-207-frontend\AfroApp\app\src\main\AndroidManifest.xml:48:13-56
 61        <activity
-61-->C:\Users\Alice\AndroidStudioProjects\AfroApp\Frontend\Team-207-frontend\AfroApp\app\src\main\AndroidManifest.xml:49:9-52:59
+61-->C:\Users\Alice\AndroidStudioProjects\AfroApp\Team-207\Team-207-frontend\AfroApp\app\src\main\AndroidManifest.xml:49:9-52:59
 62            android:name="com.alice.afroapp.SolutionsActivity"
-62-->C:\Users\Alice\AndroidStudioProjects\AfroApp\Frontend\Team-207-frontend\AfroApp\app\src\main\AndroidManifest.xml:50:13-46
+62-->C:\Users\Alice\AndroidStudioProjects\AfroApp\Team-207\Team-207-frontend\AfroApp\app\src\main\AndroidManifest.xml:50:13-46
 63            android:label="@string/AfroDevMeet"
-63-->C:\Users\Alice\AndroidStudioProjects\AfroApp\Frontend\Team-207-frontend\AfroApp\app\src\main\AndroidManifest.xml:51:13-48
+63-->C:\Users\Alice\AndroidStudioProjects\AfroApp\Team-207\Team-207-frontend\AfroApp\app\src\main\AndroidManifest.xml:51:13-48
 64            android:theme="@style/AppTheme.NoActionBar" />
-64-->C:\Users\Alice\AndroidStudioProjects\AfroApp\Frontend\Team-207-frontend\AfroApp\app\src\main\AndroidManifest.xml:52:13-56
+64-->C:\Users\Alice\AndroidStudioProjects\AfroApp\Team-207\Team-207-frontend\AfroApp\app\src\main\AndroidManifest.xml:52:13-56
 65        <activity
-65-->C:\Users\Alice\AndroidStudioProjects\AfroApp\Frontend\Team-207-frontend\AfroApp\app\src\main\AndroidManifest.xml:53:9-61:20
+65-->C:\Users\Alice\AndroidStudioProjects\AfroApp\Team-207\Team-207-frontend\AfroApp\app\src\main\AndroidManifest.xml:53:9-61:20
 66            android:name="com.alice.afroapp.MainActivity"
-66-->C:\Users\Alice\AndroidStudioProjects\AfroApp\Frontend\Team-207-frontend\AfroApp\app\src\main\AndroidManifest.xml:54:13-41
+66-->C:\Users\Alice\AndroidStudioProjects\AfroApp\Team-207\Team-207-frontend\AfroApp\app\src\main\AndroidManifest.xml:54:13-41
 67            android:label="@string/AfroDevMeet" >
-67-->C:\Users\Alice\AndroidStudioProjects\AfroApp\Frontend\Team-207-frontend\AfroApp\app\src\main\AndroidManifest.xml:55:13-48
+67-->C:\Users\Alice\AndroidStudioProjects\AfroApp\Team-207\Team-207-frontend\AfroApp\app\src\main\AndroidManifest.xml:55:13-48
 68            <intent-filter>
-68-->C:\Users\Alice\AndroidStudioProjects\AfroApp\Frontend\Team-207-frontend\AfroApp\app\src\main\AndroidManifest.xml:56:13-60:29
+68-->C:\Users\Alice\AndroidStudioProjects\AfroApp\Team-207\Team-207-frontend\AfroApp\app\src\main\AndroidManifest.xml:56:13-60:29
 69                <action android:name="android.intent.action.MAIN" />
-69-->C:\Users\Alice\AndroidStudioProjects\AfroApp\Frontend\Team-207-frontend\AfroApp\app\src\main\AndroidManifest.xml:57:17-69
-69-->C:\Users\Alice\AndroidStudioProjects\AfroApp\Frontend\Team-207-frontend\AfroApp\app\src\main\AndroidManifest.xml:57:25-66
+69-->C:\Users\Alice\AndroidStudioProjects\AfroApp\Team-207\Team-207-frontend\AfroApp\app\src\main\AndroidManifest.xml:57:17-69
+69-->C:\Users\Alice\AndroidStudioProjects\AfroApp\Team-207\Team-207-frontend\AfroApp\app\src\main\AndroidManifest.xml:57:25-66
 70
 71                <category android:name="android.intent.category.LAUNCHER" />
-71-->C:\Users\Alice\AndroidStudioProjects\AfroApp\Frontend\Team-207-frontend\AfroApp\app\src\main\AndroidManifest.xml:59:17-77
-71-->C:\Users\Alice\AndroidStudioProjects\AfroApp\Frontend\Team-207-frontend\AfroApp\app\src\main\AndroidManifest.xml:59:27-74
+71-->C:\Users\Alice\AndroidStudioProjects\AfroApp\Team-207\Team-207-frontend\AfroApp\app\src\main\AndroidManifest.xml:59:17-77
+71-->C:\Users\Alice\AndroidStudioProjects\AfroApp\Team-207\Team-207-frontend\AfroApp\app\src\main\AndroidManifest.xml:59:27-74
 72            </intent-filter>
 73        </activity>
 74
 75        <meta-data
-75-->C:\Users\Alice\AndroidStudioProjects\AfroApp\Frontend\Team-207-frontend\AfroApp\app\src\main\AndroidManifest.xml:63:9-65:57
+75-->C:\Users\Alice\AndroidStudioProjects\AfroApp\Team-207\Team-207-frontend\AfroApp\app\src\main\AndroidManifest.xml:63:9-65:57
 76            android:name="preloaded_fonts"
-76-->C:\Users\Alice\AndroidStudioProjects\AfroApp\Frontend\Team-207-frontend\AfroApp\app\src\main\AndroidManifest.xml:64:13-43
+76-->C:\Users\Alice\AndroidStudioProjects\AfroApp\Team-207\Team-207-frontend\AfroApp\app\src\main\AndroidManifest.xml:64:13-43
 77            android:resource="@array/preloaded_fonts" />
-77-->C:\Users\Alice\AndroidStudioProjects\AfroApp\Frontend\Team-207-frontend\AfroApp\app\src\main\AndroidManifest.xml:65:13-54
+77-->C:\Users\Alice\AndroidStudioProjects\AfroApp\Team-207\Team-207-frontend\AfroApp\app\src\main\AndroidManifest.xml:65:13-54
 78        <meta-data
 78-->[com.firebaseui:firebase-ui-auth:6.2.0] C:\Users\Alice\.gradle\caches\transforms-2\files-2.1\9a83c26244cb6f630ecb56c7774e812b\jetified-firebase-ui-auth-6.2.0\AndroidManifest.xml:16:9-18:69
 79            android:name="com.google.android.gms.version"

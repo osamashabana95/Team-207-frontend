@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\Alice\\AndroidStudioProjects\\AfroApp\\Frontend\\Team-207-frontend\\AfroApp\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-id\\values-id.xml",
+            "outputFile": "C:\\Users\\Alice\\AndroidStudioProjects\\AfroApp\\Team-207\\Team-207-frontend\\AfroApp\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-id\\values-id.xml",
             "map": [
                 {
                     "source": "C:\\Users\\Alice\\.gradle\\caches\\transforms-2\\files-2.1\\ae75dc4a2b296f178083775339bd6982\\jetified-facebook-common-4.30.0\\res\\values-id\\values-id.xml",

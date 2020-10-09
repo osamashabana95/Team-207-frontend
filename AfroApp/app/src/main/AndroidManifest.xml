@@ -44,11 +44,11 @@
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".QuestionsActivity"
-            android:label="@string/AfroDevMeet"
+            android:label="Questions"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".SolutionsActivity"
-            android:label="@string/AfroDevMeet"
+            android:label="Solutions"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".MainActivity"

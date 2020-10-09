@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\Alice\\AndroidStudioProjects\\AfroApp\\Frontend\\Team-207-frontend\\AfroApp\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-sw600dp-v13\\values-sw600dp-v13.xml",
+            "outputFile": "C:\\Users\\Alice\\AndroidStudioProjects\\AfroApp\\Team-207\\Team-207-frontend\\AfroApp\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-sw600dp-v13\\values-sw600dp-v13.xml",
             "map": [
                 {
                     "source": "C:\\Users\\Alice\\.gradle\\caches\\transforms-2\\files-2.1\\f360ad34a09902cce6977302fbd74461\\material-1.0.0\\res\\values-sw600dp-v13\\values-sw600dp-v13.xml",

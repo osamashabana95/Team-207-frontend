@@ -44,10 +44,12 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         BottomNavigationView navView = findViewById(R.id.nav_view);
-        AppBarConfiguration appBarConfiguration = new AppBarConfiguration.Builder()
-                .build();
+       // AppBarConfiguration appBarConfiguration = new AppBarConfiguration.Builder()
+        //        .build();
+        getSupportActionBar().setIcon(R.drawable.ic_code_black_18dp);
+
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment);
-        NavigationUI.setupActionBarWithNavController(this, navController, appBarConfiguration);
+        NavigationUI.setupActionBarWithNavController(this, navController);
         NavigationUI.setupWithNavController(navView, navController);
 
         mFirebaseAuth = FirebaseAuth.getInstance();
@@ -142,7 +144,7 @@ public class MainActivity extends AppCompatActivity {
 
     //function to view comments
     public void ViewComments(MenuItem item) { Intent intent= new Intent(
-            MainActivity.this,Listcomments.class);
+            MainActivity.this,Post.class);
         startActivity(intent);
     }
 
