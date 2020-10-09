@@ -7,8 +7,14 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import android.os.Bundle;
 import android.util.Log;
+import android.view.View;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.Toast;
 
 import com.alice.afroapp.adapters.SolutionAdapter;
+import com.alice.afroapp.utility.Database;
+import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
@@ -21,6 +27,8 @@ import java.util.Map;
 
 public class SolutionsActivity extends AppCompatActivity {
     private RecyclerView recyclerView;
+    private EditText s_editText;
+    private String questionId;
     private DatabaseReference mSolutionsReference;
     private ValueEventListener mSolutionListener;
     private static final String TAG = "SolutionActivity";
@@ -30,8 +38,30 @@ public class SolutionsActivity extends AppCompatActivity {
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_solutions);
-        final String questionId = getIntent().getStringExtra("Question_Id");
+        questionId = getIntent().getStringExtra("Question_Id");
         recyclerView = (RecyclerView) findViewById(R.id.solutions_recycler_view);
+        s_editText= (EditText) findViewById(R.id.s_edit_text);
+        Button button = (Button) findViewById(R.id.s_enter_button);
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                String solution = String.valueOf(s_editText.getText());
+                String userName = FirebaseAuth.getInstance().getCurrentUser().getDisplayName();
+                if (solution.isEmpty()) {
+
+                    Toast.makeText(SolutionsActivity.this, "Enter Your Solution", Toast.LENGTH_LONG).show();
+
+                }else {
+
+                    Database db = new Database();
+                    db.setSolution(questionId, userName, solution);
+                    s_editText.setText("");
+
+                }
+
+            }
+        });
         recyclerView.setHasFixedSize(true);
         RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(this);
         recyclerView.setLayoutManager(layoutManager);
@@ -82,8 +112,10 @@ public class SolutionsActivity extends AppCompatActivity {
     protected void onStop() {
         super.onStop();
         if (mSolutionListener != null) {
+
             mSolutionsReference.removeEventListener(mSolutionListener);
 
         }
     }
+
 }
