@@ -36,7 +36,9 @@
             android:layout_height="0dp"
             android:layout_weight="2"
             android:hint="Question"
-            android:textSize="16dp" />
+            android:textSize="24sp"
+            android:fontFamily="sans-serif-condensed-medium"
+            />
 
 
         <TextView
@@ -45,7 +47,8 @@
             android:layout_height="0dp"
             android:layout_weight="1"
             android:hint="User Name"
-            android:textSize="14dp" />
+            android:textSize="16sp"
+            android:fontFamily="sans-serif-thin"/>
 
     </LinearLayout>
 
