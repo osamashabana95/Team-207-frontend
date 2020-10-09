@@ -13,7 +13,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Solution"
-        android:textSize="24sp"
+        android:textSize="20sp"
         android:minLines="1"
         android:maxLines="5"
         android:background="#C8E6C9"
@@ -32,8 +32,8 @@
         android:hint="User Name"
         android:padding="4dp"
         android:textColor="#000000"
-
         android:textSize="16sp"
-        android:textStyle="italic" />
+        android:textStyle="italic"
+        android:fontFamily="sans-serif-light"/>
 
 </LinearLayout>
