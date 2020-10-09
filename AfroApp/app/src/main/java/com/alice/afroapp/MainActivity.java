@@ -144,7 +144,7 @@ public class MainActivity extends AppCompatActivity {
 
     //function to view comments
     public void ViewComments(MenuItem item) { Intent intent= new Intent(
-            MainActivity.this,Listcomments.class);
+            MainActivity.this,Post.class);
         startActivity(intent);
     }
 

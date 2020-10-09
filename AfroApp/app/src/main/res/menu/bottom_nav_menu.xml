@@ -15,8 +15,8 @@
 
     <item
         android:id="@+id/navigation_notifications"
-        android:icon="@drawable/ic_comment_black_24dp"
+        android:icon="@drawable/ic_post_add_white_18dp"
         android:onClick="ViewComments"
-        android:title="@string/Comments" />
+        android:title="@string/Add_post" />
 
 </menu>
