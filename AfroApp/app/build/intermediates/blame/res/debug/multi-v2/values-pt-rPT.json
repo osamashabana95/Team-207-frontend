@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\Alice\\AndroidStudioProjects\\AfroApp\\Frontend\\Team-207-frontend\\AfroApp\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-pt-rPT\\values-pt-rPT.xml",
+            "outputFile": "C:\\Users\\Alice\\AndroidStudioProjects\\AfroApp\\Team-207\\Team-207-frontend\\AfroApp\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-pt-rPT\\values-pt-rPT.xml",
             "map": [
                 {
                     "source": "C:\\Users\\Alice\\.gradle\\caches\\transforms-2\\files-2.1\\7033a13de051cd9ac71fd158e9fba23d\\play-services-base-17.1.0\\res\\values-pt-rPT\\values.xml",

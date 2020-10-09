@@ -1322,6 +1322,8 @@ id alertTitle
 id all
 id always
 id anonymous_button
+id appBarLayout
+id appBarLayout2
 id apple_signin_button
 id async
 id auto
@@ -1534,6 +1536,8 @@ id right
 id right_icon
 id right_side
 id root
+id s_edit_text
+id s_enter_button
 id s_user_name
 id save_image_matrix
 id save_non_transition_alpha

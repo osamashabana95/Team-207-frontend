@@ -71,9 +71,10 @@ public class MentorList extends AppCompatActivity {
         }
     }
 
-    public void Back(View view) {
+    public void backToProf(){
         Intent intent= new Intent(MentorList.this,AddProf.class);
         startActivity(intent);
         Toast.makeText(this,"Questions list.",Toast.LENGTH_LONG).show();
     }
+   
 }
