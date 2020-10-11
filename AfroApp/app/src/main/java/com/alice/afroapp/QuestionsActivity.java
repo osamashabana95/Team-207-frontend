@@ -2,12 +2,15 @@ package com.alice.afroapp;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.Menu;
+import android.view.MenuItem;
 
 import com.alice.afroapp.adapters.QuestionAdapter;
 import com.google.firebase.database.DataSnapshot;
@@ -32,6 +35,11 @@ public class QuestionsActivity extends AppCompatActivity {
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_questions);
+
+        Toolbar questionsToolbar = (Toolbar) findViewById(R.id.questions_toolbar);
+        setSupportActionBar(questionsToolbar);
+        getSupportActionBar().setIcon(R.drawable.ic_code_black_18dp);
+
         recyclerView = (RecyclerView) findViewById(R.id.questions_recycler_view);
         recyclerView.setHasFixedSize(true);
         RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(this);
@@ -92,5 +100,33 @@ public class QuestionsActivity extends AppCompatActivity {
 
         }
 
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+
+        getMenuInflater().inflate(R.menu.go_home,menu);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+
+        int id = item.getItemId();
+        switch (item.getItemId()){
+
+            case R.id.action_home:
+                goHome();
+                return true;
+
+            default: return super.onOptionsItemSelected(item);
+
+        }
+    }
+
+    public void goHome(){
+
+        Intent intent= new Intent(QuestionsActivity.this,MainActivity.class);
+        startActivity(intent);
     }
 }
