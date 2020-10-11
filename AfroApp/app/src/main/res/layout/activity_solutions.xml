@@ -6,24 +6,23 @@
     android:layout_height="match_parent"
     tools:context=".SolutionsActivity">
 
-    <com.google.android.material.appbar.AppBarLayout
-        android:id="@+id/appBarLayout2"
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/solutions_toolbar"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:theme="@style/AppTheme.AppBarOverlay"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:elevation="4dp"
+        app:title="Solutions"
+        android:paddingStart="8dp"
+        android:paddingEnd="8dp"
+        app:titleTextColor="#ffffff"
+        app:titleMargin="8dp"
+        android:theme="@style/CustomToolBarTheme"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        >
+        app:layout_constraintTop_toTopOf="parent" />
 
-        <androidx.appcompat.widget.Toolbar
-            android:id="@+id/toolbar"
-            android:layout_width="match_parent"
-            android:layout_height="?attr/actionBarSize"
-            android:background="?attr/colorPrimary"
-            app:popupTheme="@style/AppTheme.PopupOverlay" />
-
-    </com.google.android.material.appbar.AppBarLayout>
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/solutions_recycler_view"
@@ -36,7 +35,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/appBarLayout2"
+        app:layout_constraintTop_toBottomOf="@+id/solutions_toolbar"
         tools:listitem="@layout/list_item_solution" />
 
     <EditText
