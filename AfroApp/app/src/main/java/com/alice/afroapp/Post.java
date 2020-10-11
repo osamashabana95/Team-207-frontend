@@ -85,7 +85,7 @@ public class Post extends AppCompatActivity {
         String username = mFirebaseAuth.getCurrentUser().getDisplayName();
         mFirebaseDatabase = FirebaseDatabase.getInstance();
         Database datbase = new Database();
-        datbase.setQuestion(title,username);
+        datbase.setQuestion(username,title);
 //        mDatabaseReference = mFirebaseDatabase.getReference().child("Questions");
 //        mDatabaseReference.child("Questions").push().setValue(question);
 
