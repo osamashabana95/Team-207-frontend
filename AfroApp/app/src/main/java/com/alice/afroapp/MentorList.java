@@ -44,8 +44,7 @@ public class MentorList extends AppCompatActivity {
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
+                Backhome();
             }
         });
 
@@ -62,7 +61,7 @@ public class MentorList extends AppCompatActivity {
         int id = item.getItemId();
         switch (item.getItemId()){
             case R.id.action_back_home:
-                Toast.makeText(this,"Home.",Toast.LENGTH_LONG).show();
+                Backhome();
                 return true;
             case R.id.action_list:
                 return  true;
@@ -74,7 +73,12 @@ public class MentorList extends AppCompatActivity {
     public void backToProf(){
         Intent intent= new Intent(MentorList.this,AddProf.class);
         startActivity(intent);
-        Toast.makeText(this,"Questions list.",Toast.LENGTH_LONG).show();
+    }
+
+    public void Backhome()
+    {
+        Intent intent= new Intent(MentorList.this,MainActivity.class);
+        startActivity(intent);
     }
    
 }

@@ -3,6 +3,7 @@ package com.alice.afroapp;
 import android.content.Intent;
 import android.os.Bundle;
 
+import com.alice.afroapp.utility.Database;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.snackbar.Snackbar;
 import com.google.firebase.auth.FirebaseAuth;
@@ -19,18 +20,26 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
+import android.util.Log;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Map;
+
 public class MyProfile extends AppCompatActivity {
     private TextView fullname,proficiency,location,email;
-    private FirebaseDatabase mFirebaseDatabase;
+    private static FirebaseDatabase mFirebaseDatabase;
     private DatabaseReference mDatabaseReference;
     private ChildEventListener mChildEventListerner;
     private ValueEventListener mValueEventListener;
     private FirebaseAuth mFirebaseAuth;
     private ImageView imageView;
+    private static final String TAG = "MyProfile";
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -48,33 +57,23 @@ public class MyProfile extends AppCompatActivity {
         imageView = (ImageView) findViewById(R.id.myprof_pic);
 
         mFirebaseDatabase = FirebaseDatabase.getInstance();
+        FirebaseDatabase.getInstance().setPersistenceEnabled(true);
+
+
         mDatabaseReference = mFirebaseDatabase.getReference().child("Mentors");
         mFirebaseAuth = FirebaseAuth.getInstance();
 
         String imageUrl = mFirebaseAuth.getCurrentUser().getPhotoUrl().toString();
-        Picasso.with(this).load(imageUrl).placeholder(R.drawable.ic_person_black_24dp)
-                .resize(70,70)
-                .into(imageView);
-        String Currentid = mFirebaseAuth.getCurrentUser().getDisplayName();
-        final String email = mFirebaseAuth.getCurrentUser().getEmail();
 
-        final Query itemFilter = mDatabaseReference.orderByChild("username")
-                .equalTo(Currentid);
+        String Currentname = mFirebaseAuth.getCurrentUser().getDisplayName();
 
-       mDatabaseReference.addValueEventListener(new ValueEventListener() {
+        final Query itemFilter = mDatabaseReference.orderByChild("fullname")
+                .equalTo(Currentname);
+
+       itemFilter.addValueEventListener(new ValueEventListener() {
            @Override
            public void onDataChange(@NonNull DataSnapshot snapshot) {
-               if(snapshot != null){
-                   if(email == snapshot.child("email").getValue()){
-                       for (DataSnapshot postSnapshot:snapshot.getChildren())  {
-                           fullname.setText(postSnapshot.child("fullname").
-                                   getValue(String.class).toString()); }
-                   }
-
-               }
-
-
-
+              String name = snapshot.child("fullname").getValue(String.class).toString();
            }
            @Override
            public void onCancelled(@NonNull DatabaseError error) {

@@ -35,14 +35,6 @@
             android:name=".Post"
             android:label="Post" />
         <activity
-            android:name=".Listcomments"
-            android:label="@string/Comments"
-            android:theme="@style/AppTheme.NoActionBar" />
-        <activity
-            android:name=".Listquestions"
-            android:label="@string/question"
-            android:theme="@style/AppTheme.NoActionBar" />
-        <activity
             android:name=".QuestionsActivity"
             android:label="Questions"
             android:theme="@style/AppTheme.NoActionBar" />

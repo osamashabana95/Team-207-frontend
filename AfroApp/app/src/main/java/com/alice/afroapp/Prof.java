@@ -12,6 +12,7 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.Query;
 import com.google.firebase.database.ValueEventListener;
+import com.squareup.picasso.Picasso;
 
 import androidx.annotation.DrawableRes;
 import androidx.annotation.NonNull;
@@ -31,6 +32,8 @@ import android.widget.Toast;
 import java.util.ArrayList;
 import java.util.Map;
 
+import de.hdodenhof.circleimageview.CircleImageView;
+
 public class Prof extends AppCompatActivity {
     private TextView fullname,proficiency,location,email;
     private FirebaseDatabase mFirebaseDatabase;
@@ -39,6 +42,9 @@ public class Prof extends AppCompatActivity {
     private ValueEventListener mValueEventListener;
     private ArrayList<Mentor> mentors;
     private  Mentor mentor;
+    private  String imageUrl;
+    private CircleImageView circleImageView;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -54,6 +60,8 @@ public class Prof extends AppCompatActivity {
         email = (TextView) findViewById(R.id.email_addtext);
         mFirebaseDatabase = FirebaseDatabase.getInstance();
         mDatabaseReference = mFirebaseDatabase.getReference().child("Mentors");
+
+
         Intent intent = getIntent();
         String Currentname = intent.getStringExtra("name");
         final Query itemFilter = mDatabaseReference.orderByChild("fullname")
@@ -68,6 +76,7 @@ public class Prof extends AppCompatActivity {
                 proficiency.setText(postSnapshot.child("proficiency").getValue(String.class).toString());
                 location.setText(postSnapshot.child("location").getValue(String.class).toString());
                 email.setText(postSnapshot.child("email").getValue(String.class).toString());
+                String imageUrl = postSnapshot.child("imageUrl").getValue(String.class).toString();
                 }
 
             }
@@ -77,11 +86,17 @@ public class Prof extends AppCompatActivity {
 
             }
         });
+        Picasso.with(this).load(imageUrl)
+                .placeholder(R.drawable.ic_account_circle_black_24dp).into(circleImageView);
     }
+
+
+
+
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
-        getMenuInflater().inflate(R.menu.mentorprofie,menu);
+        getMenuInflater().inflate(R.menu.mentor_menu,menu);
         return true;
     }
 
@@ -89,13 +104,23 @@ public class Prof extends AppCompatActivity {
     public boolean onOptionsItemSelected(MenuItem item) {
         int id = item.getItemId();
         switch (item.getItemId()){
-            case R.id.action_tohome:
-                Toast.makeText(this,"Home.",Toast.LENGTH_LONG).show();
+            case R.id.action_back_home:
+                backHome();
                 return true;
             case R.id.action_edit:
                 return  true;
             default: return super.onOptionsItemSelected(item);
         }
+    }
+
+    public void GoToList(){
+        Intent intent= new Intent(Prof.this,MentorList.class);
+        startActivity(intent);
+    }
+
+    public void backHome(){
+        Intent intent= new Intent(Prof.this,MainActivity.class);
+        startActivity(intent);
     }
 
     public void Editprofile(View view) {
@@ -108,5 +133,10 @@ public class Prof extends AppCompatActivity {
 //
 //        }
 
+    }
+
+    public void goHome(View view) {
+        Intent intent= new Intent(Prof.this,MentorList.class);
+        startActivity(intent);
     }
 }
