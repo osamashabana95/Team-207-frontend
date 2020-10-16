@@ -197,26 +197,4 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
-
-    @Override
-    public void onBackPressed() {
-        super.onBackPressed();
-        new AlertDialog.Builder(this).
-                setMessage("Are you sure you want to exit")
-                .setCancelable(false).setPositiveButton("yes", new DialogInterface.OnClickListener() {
-            @Override
-            public void onClick(DialogInterface dialog, int which) {
-                ActivityCompat.finishAffinity(MainActivity.this);
-                finish();
-
-            }
-        }).setNegativeButton("No", new DialogInterface.OnClickListener() {
-            @Override
-            public void onClick(DialogInterface dialog, int which) {
-                dialog.cancel();
-            }
-        }).create().show();
-
-
-    }
 }

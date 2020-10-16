@@ -58,6 +58,8 @@ public class Prof extends AppCompatActivity {
         proficiency = (TextView) findViewById(R.id.profciency_text);
         location = (TextView) findViewById(R.id.loc_text);
         email = (TextView) findViewById(R.id.email_addtext);
+        circleImageView = (CircleImageView) findViewById(R.id.circleImage);
+
         mFirebaseDatabase = FirebaseDatabase.getInstance();
         mDatabaseReference = mFirebaseDatabase.getReference().child("Mentors");
 
@@ -77,7 +79,10 @@ public class Prof extends AppCompatActivity {
                 location.setText(postSnapshot.child("location").getValue(String.class).toString());
                 email.setText(postSnapshot.child("email").getValue(String.class).toString());
                 String imageUrl = postSnapshot.child("imageUrl").getValue(String.class).toString();
+                    Picasso.with(Prof.this).load(imageUrl)
+                            .placeholder(R.drawable.ic_account_circle_black_24dp).into(circleImageView);
                 }
+
 
             }
 
@@ -86,11 +91,10 @@ public class Prof extends AppCompatActivity {
 
             }
         });
+
         Picasso.with(this).load(imageUrl)
-                .placeholder(R.drawable.ic_account_circle_black_24dp).into(circleImageView);
+               .placeholder(R.drawable.ic_account_circle_black_24dp).into(circleImageView);
     }
-
-
 
 
 

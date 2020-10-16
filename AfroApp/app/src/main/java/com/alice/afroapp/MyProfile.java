@@ -41,6 +41,39 @@ public class MyProfile extends AppCompatActivity {
 
 
     @Override
+    protected void onStart() {
+        super.onStart();
+        mFirebaseDatabase = FirebaseDatabase.getInstance();
+        // FirebaseDatabase.getInstance().setPersistenceEnabled(true);
+
+
+        mDatabaseReference = mFirebaseDatabase.getReference().child("Mentors");
+        mFirebaseAuth = FirebaseAuth.getInstance();
+
+
+        String Currentname = mFirebaseAuth.getCurrentUser().getDisplayName();
+
+        final Query itemFilter = mDatabaseReference.orderByChild("fullname")
+                .equalTo(Currentname);
+
+        itemFilter.addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot snapshot) {
+                String name = snapshot.child("fullname").getValue(String.class).toString();
+            }
+            @Override
+            public void onCancelled(@NonNull DatabaseError error) {
+
+            }
+        });
+
+        itemFilter.addValueEventListener(mValueEventListener);
+
+
+
+    }
+
+    @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_my_profile);
@@ -55,33 +88,6 @@ public class MyProfile extends AppCompatActivity {
         location = (TextView) findViewById(R.id.loc_text);
         email = (TextView) findViewById(R.id.email_addtext);
         imageView = (ImageView) findViewById(R.id.myprof_pic);
-
-        mFirebaseDatabase = FirebaseDatabase.getInstance();
-        FirebaseDatabase.getInstance().setPersistenceEnabled(true);
-
-
-        mDatabaseReference = mFirebaseDatabase.getReference().child("Mentors");
-        mFirebaseAuth = FirebaseAuth.getInstance();
-
-        String imageUrl = mFirebaseAuth.getCurrentUser().getPhotoUrl().toString();
-
-        String Currentname = mFirebaseAuth.getCurrentUser().getDisplayName();
-
-        final Query itemFilter = mDatabaseReference.orderByChild("fullname")
-                .equalTo(Currentname);
-
-       itemFilter.addValueEventListener(new ValueEventListener() {
-           @Override
-           public void onDataChange(@NonNull DataSnapshot snapshot) {
-              String name = snapshot.child("fullname").getValue(String.class).toString();
-           }
-           @Override
-           public void onCancelled(@NonNull DatabaseError error) {
-
-           }
-       });
-
-        mDatabaseReference.addValueEventListener(mValueEventListener);
 
 
 
