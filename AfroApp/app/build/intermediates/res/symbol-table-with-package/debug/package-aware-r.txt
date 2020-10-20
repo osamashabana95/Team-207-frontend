@@ -1308,7 +1308,7 @@ id action_menu_presenter
 id action_mode_bar
 id action_mode_bar_stub
 id action_mode_close_button
-id action_post
+id action_profile
 id action_questions_list
 id action_set
 id action_signout
@@ -1323,8 +1323,6 @@ id alertTitle
 id all
 id always
 id anonymous_button
-id appBarLayout
-id appBarLayout2
 id apple_signin_button
 id async
 id auto
@@ -1455,7 +1453,6 @@ id imageView
 id imageView2
 id imageView3
 id imageView4
-id imageView5
 id imageView6
 id imageView7
 id info
@@ -1531,6 +1528,7 @@ id q_user_name
 id question_image
 id question_title
 id questions_recycler_view
+id questions_toolbar
 id radio
 id resend_barrier
 id resend_code
@@ -1576,9 +1574,9 @@ id snackbar_action
 id snackbar_text
 id snap
 id snapMargins
-id solu_title
 id solution_title
 id solutions_recycler_view
+id solutions_toolbar
 id spacer
 id split_action_bar
 id spread
@@ -1636,7 +1634,6 @@ id unknown
 id unlabeled
 id up
 id useLogo
-id username
 id view_offset_helper
 id visible
 id welcome_back_email_link_body
@@ -1698,8 +1695,6 @@ layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
 layout activity_add
-layout activity_listcomments
-layout activity_listquestions
 layout activity_main
 layout activity_mentor_list
 layout activity_my_profile
@@ -1715,8 +1710,6 @@ layout com_facebook_login_fragment
 layout com_facebook_smart_device_dialog_fragment
 layout com_facebook_tooltip_bubble
 layout content_add
-layout content_listcomments
-layout content_listquestions
 layout content_mentor_list
 layout content_my_profile
 layout content_prof
@@ -1790,6 +1783,7 @@ layout select_dialog_singlechoice_material
 layout solutions_row
 layout support_simple_spinner_dropdown_item
 menu bottom_nav_menu
+menu go_home
 menu home_menu
 menu mentor_menu
 menu mentorprofie
@@ -1800,6 +1794,7 @@ mipmap ic_launcher_round
 navigation mobile_navigation
 plurals fui_error_weak_password
 string Add_Profile
+string Add_post
 string AfroDevMeet
 string Comments
 string Edit

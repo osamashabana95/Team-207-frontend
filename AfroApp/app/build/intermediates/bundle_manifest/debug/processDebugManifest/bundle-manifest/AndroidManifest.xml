@@ -47,20 +47,12 @@
             android:name="com.alice.afroapp.Post"
             android:label="Post" />
         <activity
-            android:name="com.alice.afroapp.Listcomments"
-            android:label="@string/Comments"
-            android:theme="@style/AppTheme.NoActionBar" />
-        <activity
-            android:name="com.alice.afroapp.Listquestions"
-            android:label="@string/question"
-            android:theme="@style/AppTheme.NoActionBar" />
-        <activity
             android:name="com.alice.afroapp.QuestionsActivity"
-            android:label="@string/AfroDevMeet"
+            android:label="Questions"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name="com.alice.afroapp.SolutionsActivity"
-            android:label="@string/AfroDevMeet"
+            android:label="Solutions"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name="com.alice.afroapp.MainActivity"

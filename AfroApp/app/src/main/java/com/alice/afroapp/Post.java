@@ -47,6 +47,16 @@ public class Post extends AppCompatActivity {
                 postQuestion();
             }
         });
+        editQuestiion.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(v == editQuestiion){
+                    clean();
+                }
+
+            }
+        });
+
 
     }
     @Override
@@ -71,7 +81,7 @@ public class Post extends AppCompatActivity {
     }
 //function to go view list questions
     public void GoList(){
-        Intent intent= new Intent(Post.this,Listquestions.class);
+        Intent intent= new Intent(Post.this,QuestionsActivity.class);
         startActivity(intent);
     }
 
@@ -80,14 +90,20 @@ public class Post extends AppCompatActivity {
         startActivity(intent);
     }
 
+    private void clean() {
+        editQuestiion.setText("");
+    }
+
     public void postQuestion(){
         String title = editQuestiion.getText().toString();
         String username = mFirebaseAuth.getCurrentUser().getDisplayName();
         mFirebaseDatabase = FirebaseDatabase.getInstance();
         Database datbase = new Database();
-        datbase.setQuestion(title,username);
+        datbase.setQuestion(username,title);
 //        mDatabaseReference = mFirebaseDatabase.getReference().child("Questions");
 //        mDatabaseReference.child("Questions").push().setValue(question);
+        Intent intent= new Intent(Post.this,QuestionsActivity.class);
+        startActivity(intent);
 
          Toast.makeText(this,"Posted.",Toast.LENGTH_LONG).show();
 

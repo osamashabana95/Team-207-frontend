@@ -1,5 +1,6 @@
 package com.alice.afroapp;
 
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
@@ -21,7 +22,9 @@ import com.squareup.picasso.Picasso;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.app.ActivityCompat;
 import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
 import androidx.navigation.ui.AppBarConfiguration;
@@ -30,6 +33,8 @@ import androidx.navigation.ui.NavigationUI;
 import java.util.Arrays;
 import java.util.List;
 
+import de.hdodenhof.circleimageview.CircleImageView;
+
 public class MainActivity extends AppCompatActivity {
     private FirebaseDatabase mFirebaseDatabase;
     private DatabaseReference mDatabaseReference;
@@ -37,6 +42,9 @@ public class MainActivity extends AppCompatActivity {
     private FirebaseAuth.AuthStateListener mAuth;
     private ImageButton postButton;
     private static final int RC_SIGN_IN=123;
+    private CircleImageView circleImageView;
+
+
 
 
     @Override
@@ -46,13 +54,18 @@ public class MainActivity extends AppCompatActivity {
         BottomNavigationView navView = findViewById(R.id.nav_view);
        // AppBarConfiguration appBarConfiguration = new AppBarConfiguration.Builder()
         //        .build();
-        getSupportActionBar().setIcon(R.drawable.ic_code_black_18dp);
+        mFirebaseAuth = FirebaseAuth.getInstance();
+        getSupportActionBar().setDisplayShowHomeEnabled(true);
+        getSupportActionBar().setIcon(R.drawable.ic_account_circle_black_24dp);
+        String name = mFirebaseAuth.getCurrentUser().getDisplayName();
+
+        getSupportActionBar().setTitle(name);
 
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment);
         NavigationUI.setupActionBarWithNavController(this, navController);
         NavigationUI.setupWithNavController(navView, navController);
+        circleImageView = (CircleImageView) findViewById(R.id.circleImage);
 
-        mFirebaseAuth = FirebaseAuth.getInstance();
         mAuth = new FirebaseAuth.AuthStateListener() {
             @Override
             public void onAuthStateChanged(@NonNull FirebaseAuth firebaseAuth) {
@@ -75,16 +88,16 @@ public class MainActivity extends AppCompatActivity {
         int id = item.getItemId();
         switch (item.getItemId()){
             case R.id.action_home:
-                Toast.makeText(this,"Home.",Toast.LENGTH_LONG).show();
+                Toast.makeText(this,"Home.",
+                        Toast.LENGTH_LONG).show();
                 return true;
-            case R.id.action_post:
-                Post();
-                return true;
-
-            case R.id.action_signout:
+                case R.id.action_signout:
                 FirebaseAuth.getInstance()
                         .signOut();
                 return  true;
+            case R.id.action_profile:
+                showProfile();
+                return true;
 
             default: return super.onOptionsItemSelected(item);
         }
@@ -178,10 +191,10 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
-    public void showImage(){
-        String imageUrl = mFirebaseAuth.getCurrentUser().getPhotoUrl().toString();
-//        Picasso.with(this).load(imageUrl)
-//                .placeholder(R.drawable.ic_account_circle_black_24dp)
-//                .into(circleImageView);
+    public void showProfile(){
+        Intent intent= new Intent(MainActivity.this,MyProfile.class);
+        startActivity(intent);
     }
+
+
 }

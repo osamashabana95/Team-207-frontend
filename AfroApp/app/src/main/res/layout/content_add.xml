@@ -9,18 +9,6 @@
     tools:context=".AddProf"
     tools:showIn="@layout/activity_add">
 
-    <!--    <ImageView-->
-<!--        android:id="@+id/myprof_pic"-->
-<!--        android:layout_width="181dp"-->
-<!--        android:layout_height="134dp"-->
-<!--        android:layout_marginTop="16dp"-->
-<!--        android:contentDescription="@string/mentor_pic"-->
-<!--        app:layout_constraintEnd_toEndOf="parent"-->
-<!--        app:layout_constraintHorizontal_bias="0.597"-->
-<!--        app:layout_constraintStart_toStartOf="parent"-->
-<!--        app:layout_constraintTop_toTopOf="parent"-->
-<!--        app:srcCompat="@drawable/ic_account_circle_black_24dp" />-->
-
     <de.hdodenhof.circleimageview.CircleImageView
         android:id="@+id/circleImage"
         android:layout_width="196dp"
@@ -40,7 +28,6 @@
         android:layout_marginTop="16dp"
         android:layout_marginEnd="16dp"
         android:background="#BDBDBD"
-        android:scaleType="centerInside"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/circleImage" />
@@ -51,7 +38,6 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:text="@string/full_name"
-        android:textColor="@color/colorAccent"
         android:textSize="18sp"
         app:layout_constraintStart_toStartOf="@+id/divider"
         app:layout_constraintTop_toBottomOf="@+id/divider" />
@@ -77,6 +63,7 @@
         android:background="@drawable/addprof"
         android:contentDescription="@string/full_name"
         android:ems="10"
+        android:maxLength="20"
         android:gravity="start|top"
         android:inputType="textMultiLine"
         app:layout_constraintStart_toEndOf="@+id/textView"
